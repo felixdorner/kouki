@@ -132,11 +132,11 @@ add_action( 'wp_enqueue_scripts', 'kouki_scripts' );
 /**
  * Load custom theme modules
  */
-require get_template_directory() . '/inc/kouki-style-options.php';
-require get_template_directory() . '/inc/kouki-helper-classes.php';
-require get_template_directory() . '/inc/kouki-comments-output.php';
-require get_template_directory() . '/inc/kouki-gallery-output.php';
-require get_template_directory() . '/inc/kouki-jetpack-functions.php';
+require get_template_directory() . '/inc/style-options.php';
+require get_template_directory() . '/inc/helper-classes.php';
+require get_template_directory() . '/inc/comments-output.php';
+require get_template_directory() . '/inc/gallery-output.php';
+require get_template_directory() . '/inc/jetpack-functions.php';
 
 /**
  * Replaces the excerpt ellipsis with a Read More link

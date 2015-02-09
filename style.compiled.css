@@ -40,6 +40,8 @@ body {
 }
 
 *, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -388,6 +390,8 @@ address {
  * Flexbox centering
  */
 .flexbox {
+  display: -webkit-box;
+  display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -774,6 +778,10 @@ Links
 a {
   color: inherit;
   text-decoration: none;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
   transition: all .2s linear;
 }
 
@@ -813,6 +821,10 @@ input[type=submit],
   background: none;
   text-decoration: none;
   font-weight: 300;
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -ms-transition: all .2s linear;
+  -o-transition: all .2s linear;
   transition: all .2s linear;
 }
 
@@ -877,6 +889,10 @@ Top-bar
   top: 0;
   z-index: 99;
   padding: 30px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
   transition: all .2s;
   /* Hardware accelerate transitions */
   -webkit-transform: translateZ(0);
@@ -884,6 +900,10 @@ Top-bar
 
 .tb-large {
   padding: 30px;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
   transition: all .2s;
   /* Hardware accelerate transitions */
   -webkit-transform: translateZ(0);
@@ -903,6 +923,10 @@ Top-bar
   padding: 0px 30px;
   background: #fff;
   background: rgba(255, 255, 255, 0.9);
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -ms-transition: all .2s;
+  -o-transition: all .2s;
   transition: all .2s;
   /* Hardware accelerate transitions */
   -webkit-transform: translateZ(0);
@@ -992,8 +1016,7 @@ Navigation Toggle
 #toggle span {
   position: relative;
   display: block;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 #toggle span,
@@ -1003,6 +1026,9 @@ Navigation Toggle
   height: 2px;
   border-radius: 2px;
   background-color: #151515;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
   transition: all .3s;
 }
 
@@ -1013,14 +1039,16 @@ Navigation Toggle
 
 #toggle.on span:before {
   -webkit-transform: rotate(45deg) translate(5px, 5px);
-  -ms-transform: rotate(45deg) translate(5px, 5px);
-      transform: rotate(45deg) translate(5px, 5px);
+  -moz-transform: rotate(45deg) translate(5px, 5px);
+  -o-transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 #toggle.on span:after {
   -webkit-transform: rotate(-45deg) translate(7px, -8px);
-  -ms-transform: rotate(-45deg) translate(7px, -8px);
-      transform: rotate(-45deg) translate(7px, -8px);
+  -moz-transform: rotate(-45deg) translate(7px, -8px);
+  -o-transform: rotate(-45deg) translate(7px, -8px);
+  transform: rotate(-45deg) translate(7px, -8px);
 }
 
 /*
@@ -1061,6 +1089,9 @@ Navigation Toggle
   padding: 10px 0;
   color: #fff;
   text-decoration: none;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
   transition: all .2s;
 }
 
@@ -1135,6 +1166,10 @@ Portfolio Thumbs
 .projects img {
   width: 100%;
   height: auto;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
   transition: all .4s ease-out;
   /* Added to hardware-accelerate CSS*/
   -webkit-transform: translateZ(0);
@@ -1143,6 +1178,9 @@ Portfolio Thumbs
 
 .projects a:hover img {
   opacity: .1;
+  -moz-transition: scale(1.04);
+  -ms-transition: scale(1.04);
+  -o-transition: scale(1.04);
   transition: scale(1.04);
   -webkit-transform: scale(1.04);
   -webkit-backface-visibility: hidden;
@@ -1154,6 +1192,10 @@ Portfolio Thumbs
   top: 20px;
   width: 100%;
   height: 100%;
+  -webkit-transition: top .4s ease-out;
+  -moz-transition: top .4s ease-out;
+  -ms-transition: top .4s ease-out;
+  -o-transition: top .4s ease-out;
   transition: top .4s ease-out;
   /* Added to hardware-accelerate CSS*/
   -webkit-transform: translateZ(0);
@@ -1168,6 +1210,10 @@ Portfolio Thumbs
 .projects h3,
 .projects .meta {
   opacity: 0;
+  -webkit-transition: opacity .4s ease-out;
+  -moz-transition: opacity .4s ease-out;
+  -ms-transition: opacity .4s ease-out;
+  -o-transition: opacity .4s ease-out;
   transition: opacity .4s ease-out;
   /* Added to hardware-accelerate CSS*/
   -webkit-transform: translateZ(0);
@@ -1327,6 +1373,10 @@ img.alignleft {
   letter-spacing: .08em;
   font-weight: 300;
   opacity: 0;
+  -webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
   transition: all .5s ease-out;
   pointer-events: none;
 }
@@ -1461,6 +1511,8 @@ Comments
   display: inline-block;
   margin-right: 2%;
   max-width: 14%;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
   border-radius: 40px;
   vertical-align: top;
   -o-border-radius: 40px;

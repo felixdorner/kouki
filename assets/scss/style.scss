@@ -11,24 +11,20 @@ Text Domain: kouki
 Tags: gray, white, light, one-column, two-columns, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
 */
 
-/* Reset
-**************************************************/
+// Reset
 @import "base/reset";
 
-/* Globals
-**************************************************/
+// Globals
 @import "base/elements";
 @import "base/layout";
 @import "base/colors";
 
-/* Components
-**************************************************/
+// Components
 @import "components/typo";
 @import "components/links";
 @import "components/buttons";
 
-/* Partials
-**************************************************/
+// Partials
 @import "partials/header";
 @import "partials/navigation-toggle";
 @import "partials/portfolio-thumbs";
@@ -37,8 +33,5 @@ Tags: gray, white, light, one-column, two-columns, responsive-layout, custom-col
 @import "partials/wp-comments";
 @import "partials/wp-widgets";
 
-/* Plugins
-**************************************************/
+// Plugins
 @import "plugins/jetpack";
-//@import "plugins/revslider";
-//@import "plugins/woo-testimonials";

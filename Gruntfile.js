@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['assets/scss/**/*.{scss,sass}'],
-                tasks: ['sass']
+                tasks: ['sass', 'autoprefixer']
             }
         },
 
@@ -23,7 +23,20 @@ module.exports = function(grunt) {
                     sourcemap: 'none'
                 },
                 files: {
-                    'style.css': 'assets/scss/style.scss'
+                    'style.compiled.css': 'assets/scss/style.scss'
+                }
+            }
+        },
+
+        // autoprefixer
+        autoprefixer: {
+
+            dist: {
+                options: {
+                    browsers: ['last 2 versions', 'ie 8', 'ie 9']
+                },          
+                files: {
+                  'style.css': 'style.compiled.css'
                 }
             }
         },
@@ -48,7 +61,7 @@ module.exports = function(grunt) {
         copy: {
           build: {
             expand: true, 
-            src: ['**/*', '!**/node_modules/**', '!**/scss/**', '!Gruntfile.js', '!package.json'], 
+            src: ['**/*', '!**/node_modules/**', '!**/scss/**', '!Gruntfile.js', '!package.json', '!style.compiled.css'], 
             dest: 'kouki/'     
           },
         },
@@ -56,8 +69,8 @@ module.exports = function(grunt) {
     });
 
     // register task
-    grunt.registerTask('default', ['sass']);
-    grunt.registerTask('serve', ['sass', 'browserSync', 'watch']);
-    grunt.registerTask('build', ['sass', 'clean:build', 'copy:build']);
+    grunt.registerTask('default', ['sass', 'autoprefixer']);
+    grunt.registerTask('serve', ['sass', 'autoprefixer', 'browserSync', 'watch']);
+    grunt.registerTask('build', ['sass', 'autoprefixer', 'clean:build', 'copy:build']);
 
 };
