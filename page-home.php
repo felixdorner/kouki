@@ -2,33 +2,10 @@
 /**
  * Template Name: Home
  *
- * Displays the following modules:
- * 1.0 Revolution Slider (id = 'main')
- * 2.0 Hero Message
- * 3.0 Featured Portfolio Items
- * 4.0 Recent News
- * 5.0 Random WooThemes Testimonial
- * 6.0 Footer
- *
  * @package kouki
  */
 
 get_header(); ?>
-
-
-
-<?php
-/**
- * Start Module: Slideshow
- */
-$slideshow_enabled = of_get_option( 'kouki_slideshow_enabled' );
-/**
- * If the slideshow is enabled via theme-options and Revolution Slider is activated
- * we will output the slideshow with the id 'main'.
- */
-if ( $slideshow_enabled && ( function_exists ( 'putRevSlider' ) ) ) { ?>
-    <?php putRevSlider ( 'main' ); ?>
-<?php } ?>
 
 
 
@@ -191,33 +168,6 @@ if( $home_post_count > 0 ) : ?>
   </section>
 
 <?php endif; ?>
-
-
-
-<?php
-/**
- * Start module: Testimonials
- */
-if ( ( function_exists ( 'woothemes_testimonials' ) ) && ( of_get_option( 'kouki_show_testimonial' ) ) ) { ?>
-
-  <section class="testimonials pad-2 aligncenter">
-
-    <h2 class="meta m-0-0-1">
-    <?php
-      /**
-       * Checking theme-options to echo the right title for this section.
-       */
-      $home_testimonial_title = of_get_option( 'kouki_home_testimonial_title' );
-      echo $home_testimonial_title
-      ?>
-    </h2>
-
-    <?php do_action( 'woothemes_testimonials', array( 'size' => 80, 'limit' => 1, 'orderby' => 'rand' ) ); ?>
-
-  </section>
-
-<?php } ?>
-
 
 
 <?php get_footer(); ?>

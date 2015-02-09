@@ -42,14 +42,14 @@ module.exports = function(grunt) {
         },
 
         clean: {
-          build: ["dist"],          
+          build: ["kouki"],          
         },
 
         copy: {
           build: {
             expand: true, 
             src: ['**/*', '!**/node_modules/**', '!**/scss/**', '!Gruntfile.js', '!package.json'], 
-            dest: 'dist/'     
+            dest: 'kouki/'     
           },
         },
 
@@ -58,6 +58,6 @@ module.exports = function(grunt) {
     // register task
     grunt.registerTask('default', ['sass']);
     grunt.registerTask('serve', ['sass', 'browserSync', 'watch']);
-    grunt.registerTask('build', ['clean:build', 'copy:build']);
+    grunt.registerTask('build', ['sass', 'clean:build', 'copy:build']);
 
 };

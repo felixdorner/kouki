@@ -48,26 +48,13 @@ function optionsframework_options() {
 		'btn-extra' => __('Extra', 'kouki')
 	);
 
-	// Array for layouts
-	$layouts = array(
-		'boxed' => __('Boxed', 'kouki'),
-		'full' => __('Full-Width', 'kouki')
-	);
-
 	// If using image radio buttons, define a directory path
 	$imagepath =  get_stylesheet_directory_uri() . '/images/';
 
 	$options = array();
 
 	$options[] = array( "name" => __('General','kouki'),
-						"type" => "heading");
-
-	$options[] = array( "name" => __('Overall Layout','kouki'),
-						"desc" => __('Choose between a boxed or full-width layout.','kouki'),
-						"id" => "kouki_layout",
-						"std" => "boxed",
-						"type" => "radio",
-						"options" => $layouts, );
+						"type" => "heading");	
 
 	$options[] = array( "name" => __('Logo','kouki'),
 						"desc" => __('Upload a custom logo.','kouki'),
@@ -122,19 +109,7 @@ function optionsframework_options() {
 						"desc" => __('Select a color for meta texts, section dividers and other small texts.','kouki'),
 						"id" => "kouki_meta_color",
 						"std" => "#c0c0c0",
-						"type" => "color");
-
-	$options[] = array( "name" => __('Module: Testimonials Background','kouki'),
-						"desc" => __('Select a background-color for the testimonials module if activated.','kouki'),
-						"id" => "kouki_testimonials_bg",
-						"std" => "#2ecc71",
-						"type" => "color");
-
-	$options[] = array( "name" => __('Module: Testimonials Text','kouki'),
-						"desc" => __('Select a text-color for the testimonials module if activated.','kouki'),
-						"id" => "kouki_testimonials_color",
-						"std" => "#ffffff",
-						"type" => "color");
+						"type" => "color");	
 
 	$options[] = array( "name" => __('Module: CTA Background','kouki'),
 						"desc" => __('Select a background-color for the call-to-action module if activated.','kouki'),
@@ -184,12 +159,6 @@ function optionsframework_options() {
 	$options[] = array( "name" => __('Front Page','kouki'),
 						"type" => "heading");
 
-	$options[] = array( "name" => __('Show Revolution Slider','kouki'),
-						"desc" => __('Check this box to show the slider if activated. You have to name your prefered slideshow "main"!', 'kouki'),
-						"id" => "kouki_slideshow_enabled",
-						"std" => "0",
-						"type" => "checkbox");
-
 	$options[] = array( "name" => __('Hero Message','kouki'),
 						"desc" => __('Here you can include a bold statement to introduce your site. If nothing is typed, the section will not be displayed.','kouki'),
 						"id" => "kouki_message",
@@ -219,18 +188,6 @@ function optionsframework_options() {
 						"id" => "kouki_home_post_show_featured_image",
 						"std" => "0",
 						"type" => "checkbox");
-
-	$options[] = array( "name" => __('Show Testimonial','kouki'),
-						"desc" => __('If you check this box a random testimonial of the WooThemes plugin will be displayed on the front-page','kouki'),
-						"id" => "kouki_show_testimonial",
-						"std" => "0",
-						"type" => "checkbox");
-
-	$options[] = array( "name" => __('Section Title: Testimonials','kouki'),
-						"desc" => __('Type a headline to describe this section.','kouki'),
-						"id" => "kouki_home_testimonial_title",
-						"std" => "Testimonial",
-						"type" => "text");
 
 	$options[] = array( "name" => __('Portfolio','kouki'),
 						"type" => "heading");
@@ -572,30 +529,6 @@ function kouki_customizer_register($wp_customize) {
 			'section' => 'kouki_colors',
 			'settings'   => 'kouki[kouki_meta_color]',
 			'priority' => 7
-		) ) );
-
-	$wp_customize->add_setting( 'kouki[kouki_testimonials_color]', array(
-		'default' => $options['kouki_testimonials_color']['std'],
-		'type' => 'option'
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'testimonials_color', array(
-			'label'   => __( 'Module: Testimonials Text', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_testimonials_color]',
-			'priority' => 8
-		) ) );
-
-	$wp_customize->add_setting( 'kouki[kouki_testimonials_bg]', array(
-		'default' => $options['kouki_testimonials_bg']['std'],
-		'type' => 'option'
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'testimonials_bg', array(
-			'label'   => __( 'Module: Testimonials Background', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_testimonials_bg]',
-			'priority' => 9
 		) ) );
 
 	$wp_customize->add_setting( 'kouki[kouki_cta_color]', array(

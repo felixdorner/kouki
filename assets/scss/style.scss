@@ -4,41 +4,41 @@ Version: 1.0
 Author: Felix Dorner
 Author URI: http://felixdorner.com
 Theme URI: http://demo.felixdorner.com/kouki/
-Description: A beautiful & responsive portfolio theme for creatives, agencies & photographers.
+Description: A beautiful & responsive Jetpack portfolio theme for creatives, agencies & photographers.
 License: GNU GENERAL PUBLIC LICENSE, Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: kouki
-Tags: gray, white, light, responsive-layout, fluid-layout, full-width-template, right-sidebar, rtl-language-support, custom-menu, featured-images, theme-options, translation-ready, one-column, two-columns, threaded-comments
+Tags: gray, white, light, one-column, two-columns, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
 */
 
 /* Reset
 **************************************************/
-@import "base/reset.css";
+@import "base/reset";
 
 /* Globals
 **************************************************/
-@import "base/elements.css";
-@import "base/layout.css";
-@import "base/colors.css";
+@import "base/elements";
+@import "base/layout";
+@import "base/colors";
 
 /* Components
 **************************************************/
-@import "components/typo.css";
-@import "components/links.css";
-@import "components/buttons.css";
+@import "components/typo";
+@import "components/links";
+@import "components/buttons";
 
 /* Partials
 **************************************************/
-@import "partials/header.css";
-@import "partials/navigation-toggle.css";
-@import "partials/portfolio-thumbs.css";
-@import "partials/footer.css";
-@import "partials/wp-formatting.css";
-@import "partials/wp-comments.css";
-@import "partials/wp-widgets.css";
+@import "partials/header";
+@import "partials/navigation-toggle";
+@import "partials/portfolio-thumbs";
+@import "partials/footer";
+@import "partials/wp-formatting";
+@import "partials/wp-comments";
+@import "partials/wp-widgets";
 
 /* Plugins
 **************************************************/
-@import "plugin/jetpack.css";
-@import "plugin/revslider.css";
-@import "plugin/woo-testimonials.css";
+@import "plugins/jetpack";
+//@import "plugins/revslider";
+//@import "plugins/woo-testimonials";

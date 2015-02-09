@@ -41,6 +41,11 @@ img.alignleft {
 }
 .bypostauthor {
 }
+.post:after {
+  clear: both;
+  display: table;
+  content: '';
+}
 
  /**
  * Image Captions

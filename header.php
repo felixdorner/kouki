@@ -33,18 +33,6 @@
 
 </head>
 
-<?php
-/**
- * Check theme-options for the layout.
- */
-$kouki_layout = of_get_option( 'kouki_layout' );
-if ( $kouki_layout == 'boxed' ) :
-  $layout = 'boxed';
-else :
-  $layout = 'full';
-endif;
-?>
-
 <body <?php body_class( 'boxed' ); ?>>
 
 	<div class="wrapper m-top-bar fade">
@@ -57,8 +45,7 @@ endif;
 			/**
 			 * Check if there are uploaded logos.
 			 */
-			$logo = of_get_option( 'kouki_logo' );
-			$logo_retina = of_get_option( 'kouki_logo_retina' );
+			$logo = of_get_option( 'kouki_logo' );			
 			if( $logo ) : ?>
 
 				<a href="<?php echo home_url(); ?>" class="logo">
