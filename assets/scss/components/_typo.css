@@ -1,0 +1,194 @@
+/* --------------------------------------------------------------
+Typography
+-------------------------------------------------------------- */
+
+/**
+ * Typo Helpers
+ */
+.t-lightweight {
+  font-weight: 300;
+}
+.t-italic {
+  font-style: italic;
+}
+
+/**
+ * Globals
+ */
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 16px;
+  font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+
+  text-rendering: optimizeLegibility;
+}
+small {
+  font-size: .8em;
+}
+big {
+  font-size: 1.4em;
+}
+b, strong {
+  font-weight: bold;
+}
+dfn, cite, em, i {
+  font-style: italic;
+}
+pre {
+  overflow: auto;
+  padding: 30px;
+  max-width: 100%;
+  background: #f5f5f5;
+  font-family: 'Courier', monospace;
+}
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+}
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+sup, sub {
+  position: relative;
+  height: 0;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+sup {
+  bottom: 1ex;
+}
+sub {
+  top: .5ex;
+}
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+.widgetTitle {
+  clear: both;
+  font-family: 'Julius Sans One', Open Sans, Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+}
+h1 {
+  font-size: 3.8em;
+}
+h2 {
+  font-size: 2.4em;
+  line-height: 1.2em;
+}
+.col-8 h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.6em;
+}
+h5 {
+  font-size: 1.4em;
+}
+h6 {
+  font-size: 1.2em;
+}
+blockquote {
+  font-size: 2em;
+}
+
+/**
+ * Theme-related typo styles
+ */
+.meta, .more-link {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: 300;
+  font-size: .8em;
+}
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  margin-bottom: 30px;
+}
+
+/**
+ * Responsive settings for typo
+ */
+@media only screen and (max-width: 768px) {
+
+  /* Headings */
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+  h4 {
+    font-size: 1.6em;
+  }
+  h5 {
+    font-size: 1.4em;
+  }
+  h6 {
+    font-size: 1.2em;
+  }
+  blockquote {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  /* Globals */
+  pre {
+    padding: 15px;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  blockquote {
+    font-size: 1.2em;
+  }
+
+  /* Theme-related typo styles */
+  .meta {
+    font-size: .7em;
+  }
+}

@@ -1,0 +1,69 @@
+/* --------------------------------------------------------------
+Testimonials by WooThemes
+-------------------------------------------------------------- */
+
+section.testimonials {
+  /* Colors are only needed when running without Options Framework;
+  background: #e0e0e0;
+  color: #fff;
+  */
+  text-align: center;
+}
+.widget_woothemes_testimonials.sidebarBox blockquote {
+  font-size: 1em;
+}
+/* Colors are only needed when running without Options Framework;
+section.testimonials .meta, section.testimonials a {
+  color: #fff;
+}
+*/
+.widget_woothemes_testimonials .quote {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.widget_woothemes_testimonials .quote {
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  text-align: center;
+}
+.widget_woothemes_testimonials .quote.last {
+  margin: 0;
+  border: none;
+}
+.widget_woothemes_testimonials img {
+  margin-bottom: 15px;
+  -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+          border-radius: 60px;
+}
+.widget_woothemes_testimonials cite span {
+  display:block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-style: normal;
+  font-size: .7em;
+}
+.widget_woothemes_testimonials cite span.title,
+.widget_woothemes_testimonials cite span.url {
+  opacity: .3;
+}
+.widget_woothemes_testimonials cite span.url {
+  font-size: .6em;
+}
+
+/**
+ * Responsive settings for testimonials
+ */
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 480px) {
+
+  .widget_woothemes_testimonials .quote {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+  .widget_woothemes_testimonials img {
+    margin-bottom: 5px;
+  }
+}

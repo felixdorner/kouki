@@ -1,0 +1,75 @@
+/* --------------------------------------------------------------
+Portfolio Thumbs
+-------------------------------------------------------------- */
+
+.projects .col-6,
+.projects .col-12,
+.projects .col-4 {
+  overflow: hidden;
+}
+.projects a {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.projects img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all .4s ease-out;
+     -moz-transition: all .4s ease-out;
+      -ms-transition: all .4s ease-out;
+       -o-transition: all .4s ease-out;
+          transition: all .4s ease-out;
+  /* Added to hardware-accelerate CSS*/
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.projects a:hover img {
+  opacity: .1;
+  -moz-transition: scale(1.04);
+   -ms-transition: scale(1.04);
+    -o-transition: scale(1.04);
+       transition: scale(1.04);
+  -webkit-transform: scale(1.04);
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.projects .inside {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top .4s ease-out;
+     -moz-transition: top .4s ease-out;
+      -ms-transition: top .4s ease-out;
+       -o-transition: top .4s ease-out;
+          transition: top .4s ease-out;
+  /* Added to hardware-accelerate CSS*/
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.projects .inside:hover {
+  top: 0;
+}
+.projects h2,
+.projects h3,
+.projects .meta {
+  opacity: 0;
+  -webkit-transition: opacity .4s ease-out;
+     -moz-transition: opacity .4s ease-out;
+      -ms-transition: opacity .4s ease-out;
+       -o-transition: opacity .4s ease-out;
+          transition: opacity .4s ease-out;
+  /* Added to hardware-accelerate CSS*/
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.projects a:hover h2,
+.projects a:hover h3,
+.projects a:hover .meta {
+  opacity: 1;
+}

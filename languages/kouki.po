@@ -1,0 +1,1053 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kouki\n"
+"POT-Creation-Date: 2014-09-29 13:12+0100\n"
+"PO-Revision-Date: 2014-09-29 13:13+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: inc/class-tgm-plugin-activation.php:196 functions.php:211
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:197 functions.php:212
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:198 functions.php:213
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:199
+msgid "Something went wrong."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:200 functions.php:215
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:201 functions.php:216
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:202 functions.php:217
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:203 functions.php:218
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:204 functions.php:219
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:205 functions.php:220
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:206 functions.php:221
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:207 functions.php:222
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:208 functions.php:223
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:209 functions.php:224
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:210 functions.php:225
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:211
+msgid "Return to the dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:212
+#: inc/class-tgm-plugin-activation.php:1965 functions.php:226
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:213
+#: inc/class-tgm-plugin-activation.php:1652
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:214
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:215
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:556
+#: inc/class-tgm-plugin-activation.php:2182
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1186
+msgid "Private Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1189
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1194
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1197
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1197
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1200
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1202
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1304
+#: inc/class-tgm-plugin-activation.php:1412
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1326
+#: inc/class-tgm-plugin-activation.php:1413
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1375
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1391
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1392
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1393
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1394
+msgid "Status"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1522
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1630
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1948
+msgid "Install package not available."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1949
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1950
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1951
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1952
+msgid "Plugin install failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1953
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1964
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2078
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2079
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2079
+#: inc/class-tgm-plugin-activation.php:2088
+msgid "Show Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2079
+#: inc/class-tgm-plugin-activation.php:2088
+msgid "Hide Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2080
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2081
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2085
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2086
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2087
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2088
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2089
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2090
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/kouki-comments-output.php:18
+#, php-format
+msgid "<h4 class=\"comment-cite\">%s</h4>"
+msgstr ""
+
+#: inc/kouki-comments-output.php:19
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/kouki-comments-output.php:30
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/kouki-helper-classes.php:91 inc/kouki-helper-classes.php:99
+msgid "Older Projects"
+msgstr ""
+
+#: inc/kouki-helper-classes.php:93
+#: inc/kouki-helper-classes.php:101
+msgid "Older Posts"
+msgstr ""
+
+#: inc/kouki-helper-classes.php:109
+#: inc/kouki-helper-classes.php:111
+#: inc/kouki-helper-classes.php:117
+#: inc/kouki-helper-classes.php:119
+msgid "Newer posts"
+msgstr ""
+
+#: inc/kouki-jetpack-functions.php:48
+msgid "More Projects"
+msgstr ""
+
+#: inc/kouki-jetpack-functions.php:51
+msgid "More Posts"
+msgstr ""
+
+#: archive-jetpack-portfolio.php:13
+msgid "Portfolio "
+msgstr ""
+
+#: archive.php:26 taxonomy-jetpack-portfolio-tag.php:13
+#, php-format
+msgid "#%s"
+msgstr ""
+
+#: archive.php:39
+msgid "Author: "
+msgstr ""
+
+#: archive.php:42
+msgid "Archive"
+msgstr ""
+
+#: comments.php:21
+#, php-format
+msgid "One thought"
+msgid_plural "%1$s thoughts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:39
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:40
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:41
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:57
+msgid "Name"
+msgstr ""
+
+#: comments.php:60
+msgid "Email"
+msgstr ""
+
+#: comments.php:63
+msgid "Website"
+msgstr ""
+
+#: comments.php:66
+msgid "Comment"
+msgstr ""
+
+#: content-none.php:11
+msgid "Nothing here"
+msgstr ""
+
+#: content-none.php:12
+msgid "Sorry, but what you're looking for could not be found."
+msgstr ""
+
+#: content-post-meta.php:18
+msgid "Posted "
+msgstr ""
+
+#: content-post-meta.php:19
+msgid "by "
+msgstr ""
+
+#: content-post-meta.php:19
+msgid " "
+msgstr ""
+
+#: content-post-meta.php:20
+msgid "on"
+msgstr ""
+
+#: content-post-meta.php:21
+msgid "in"
+msgstr ""
+
+#: content-post-meta.php:24
+msgid "No Comments"
+msgstr ""
+
+#: content-post-meta.php:24
+msgid "One Comment"
+msgstr ""
+
+#: content-post-meta.php:24
+msgid "% Comments"
+msgstr ""
+
+#: footer.php:99
+msgid "All Rights Reserved."
+msgstr ""
+
+#: functions.php:82
+msgid ""
+"This is the default widget area for the sidebar. This will be displayed if "
+"the other sidebars have not been populated with widgets."
+msgstr ""
+
+#: functions.php:92
+msgid ""
+"This is the a widget area for the sidebar. It will be displayed on pages."
+msgstr ""
+
+#: functions.php:214
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions.php:227
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions.php:264
+msgctxt "post archive url slug"
+msgid "testimonials-archive"
+msgstr ""
+
+#: options.php:39
+msgid "Two"
+msgstr ""
+
+#: options.php:40
+msgid "Three"
+msgstr ""
+
+#: options.php:45
+msgid "Neutral"
+msgstr ""
+
+#: options.php:46
+msgid "Positive"
+msgstr ""
+
+#: options.php:47
+msgid "Negative"
+msgstr ""
+
+#: options.php:48
+msgid "Extra"
+msgstr ""
+
+#: options.php:53
+msgid "Boxed"
+msgstr ""
+
+#: options.php:54
+msgid "Full-Width"
+msgstr ""
+
+#: options.php:62
+msgid "General"
+msgstr ""
+
+#: options.php:65
+msgid "Overall Layout"
+msgstr ""
+
+#: options.php:66
+msgid "Choose between a boxed or full-width layout."
+msgstr ""
+
+#: options.php:72
+msgid "Logo"
+msgstr ""
+
+#: options.php:73
+msgid "Upload a custom logo."
+msgstr ""
+
+#: options.php:77
+msgid "Favicon"
+msgstr ""
+
+#: options.php:78
+msgid "Upload a custom favicon."
+msgstr ""
+
+#: options.php:82 options.php:489
+msgid "Colors"
+msgstr ""
+
+#: options.php:85 options.php:499
+msgid "Text Color"
+msgstr ""
+
+#: options.php:86
+msgid "Select a text-color for your theme."
+msgstr ""
+
+#: options.php:91 options.php:511
+msgid "Headline Color"
+msgstr ""
+
+#: options.php:92
+msgid "Select a color for your headlines."
+msgstr ""
+
+#: options.php:97 options.php:523
+msgid "Link Color"
+msgstr ""
+
+#: options.php:98
+msgid "Select a color for your links."
+msgstr ""
+
+#: options.php:103 options.php:535
+msgid "Positive Buttons"
+msgstr ""
+
+#: options.php:104
+msgid "Select a color for positive buttons."
+msgstr ""
+
+#: options.php:109 options.php:547
+msgid "Negative Buttons"
+msgstr ""
+
+#: options.php:110
+msgid "Select a color for negative buttons."
+msgstr ""
+
+#: options.php:115 options.php:559
+msgid "Extra Buttons"
+msgstr ""
+
+#: options.php:116
+msgid "Select a color for extra buttons."
+msgstr ""
+
+#: options.php:121 options.php:571
+msgid "Meta Text"
+msgstr ""
+
+#: options.php:122
+msgid "Select a color for meta texts, section dividers and other small texts."
+msgstr ""
+
+#: options.php:127 options.php:595
+msgid "Module: Testimonials Background"
+msgstr ""
+
+#: options.php:128
+msgid "Select a background-color for the testimonials module if activated."
+msgstr ""
+
+#: options.php:133 options.php:583
+msgid "Module: Testimonials Text"
+msgstr ""
+
+#: options.php:134
+msgid "Select a text-color for the testimonials module if activated."
+msgstr ""
+
+#: options.php:139 options.php:619
+msgid "Module: CTA Background"
+msgstr ""
+
+#: options.php:140
+msgid "Select a background-color for the call-to-action module if activated."
+msgstr ""
+
+#: options.php:145 options.php:607
+msgid "Module: CTA Text"
+msgstr ""
+
+#: options.php:146
+msgid "Select a text-color for the call-to-action module if activated."
+msgstr ""
+
+#: options.php:151 options.php:643
+msgid "Footer Background"
+msgstr ""
+
+#: options.php:152
+msgid "Select a background-color for the footer."
+msgstr ""
+
+#: options.php:157 options.php:631
+msgid "Footer Text"
+msgstr ""
+
+#: options.php:158
+msgid "Select a text-color for the footer."
+msgstr ""
+
+#: options.php:163 options.php:441
+msgid "Fonts"
+msgstr ""
+
+#: options.php:166 options.php:451
+msgid "Primary Font"
+msgstr ""
+
+#: options.php:167 options.php:484
+msgid ""
+"Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
+"\"_blank\">Google Web Font</a> you want to use for texts."
+msgstr ""
+
+#: options.php:172 options.php:464
+msgid "Secondary Font"
+msgstr ""
+
+#: options.php:173
+msgid ""
+"Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
+"\"_blank\">Google Web Font</a> you want to use for headings. Hint: Leave "
+"blank if you do not want to load this style."
+msgstr ""
+
+#: options.php:178 options.php:477
+msgid "Logo Font"
+msgstr ""
+
+#: options.php:179
+msgid ""
+"Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
+"\"_blank\">Google Web Font</a> you want to use for the logo. Hint: Leave "
+"blank if you do not want to load this style."
+msgstr ""
+
+#: options.php:184
+msgid "Front Page"
+msgstr ""
+
+#: options.php:187
+msgid "Show Revolution Slider"
+msgstr ""
+
+#: options.php:188
+msgid ""
+"Check this box to show the slider if activated. You have to name your "
+"prefered slideshow \"main\"!"
+msgstr ""
+
+#: options.php:193
+msgid "Hero Message"
+msgstr ""
+
+#: options.php:194
+msgid ""
+"Here you can include a bold statement to introduce your site. If nothing is "
+"typed, the section will not be displayed."
+msgstr ""
+
+#: options.php:199
+msgid "Project Count"
+msgstr ""
+
+#: options.php:200
+msgid ""
+"How many projects do you like to display? This theme uses the portolio post-"
+"type of the Jetpack plugin. Hint: This section only displays projects, which "
+"are tagged as \"featured\"! If zero is typed, the section will not be "
+"displayed."
+msgstr ""
+
+#: options.php:205
+msgid "Section Title: Recent-News"
+msgstr ""
+
+#: options.php:206
+msgid ""
+"Set a title for the recent-news section. If nothing is typed, the title will "
+"not be displayed."
+msgstr ""
+
+#: options.php:211
+msgid "Post Count"
+msgstr ""
+
+#: options.php:212
+msgid ""
+"How many articles do you like to show on the front-page? If zero is typed, "
+"the whole section including the title set above will not be displayed."
+msgstr ""
+
+#: options.php:217 options.php:257
+msgid "Show Featured Image"
+msgstr ""
+
+#: options.php:218
+msgid "Check this box to show the featured image for posts on the front-page."
+msgstr ""
+
+#: options.php:223
+msgid "Show Testimonial"
+msgstr ""
+
+#: options.php:224
+msgid ""
+"If you check this box a random testimonial of the WooThemes plugin will be "
+"displayed on the front-page"
+msgstr ""
+
+#: options.php:229
+msgid "Section Title: Testimonials"
+msgstr ""
+
+#: options.php:230
+msgid "Type a headline to describe this section."
+msgstr ""
+
+#: options.php:235
+msgid "Portfolio"
+msgstr ""
+
+#: options.php:238
+msgid "Project Columns"
+msgstr ""
+
+#: options.php:239
+msgid ""
+"Select the number of columns in which to display your projects on home- & "
+"archive-pages."
+msgstr ""
+
+#: options.php:245
+msgid "Show Project-Type"
+msgstr ""
+
+#: options.php:246
+msgid "Check this box if you like to display the project-type."
+msgstr ""
+
+#: options.php:251
+msgid "Show Portfolio-Tags"
+msgstr ""
+
+#: options.php:252
+msgid ""
+"Check this box to show the portfolio-tags below the content of single "
+"portfolio items."
+msgstr ""
+
+#: options.php:258
+msgid "Check this box to show the featured image on single portfolio items."
+msgstr ""
+
+#: options.php:263
+msgid "Posts"
+msgstr ""
+
+#: options.php:266
+msgid "Enable Full-Width"
+msgstr ""
+
+#: options.php:267
+msgid ""
+"Check this box to make your posts span the width of the page. The sidebar "
+"will disappear."
+msgstr ""
+
+#: options.php:278
+msgid "Show Full Posts"
+msgstr ""
+
+#: options.php:279
+msgid ""
+"Check this box to show the full post on index and archive pages instead of "
+"the excerpt."
+msgstr ""
+
+#: options.php:284
+msgid "Show Author"
+msgstr ""
+
+#: options.php:285
+msgid "Check this box to show the author."
+msgstr ""
+
+#: options.php:290
+msgid "Show Date"
+msgstr ""
+
+#: options.php:291
+msgid "Check this box to show the publish date."
+msgstr ""
+
+#: options.php:296
+msgid "Show Category"
+msgstr ""
+
+#: options.php:297
+msgid "Check this box to show the category."
+msgstr ""
+
+#: options.php:302
+msgid "Show Comment-Count"
+msgstr ""
+
+#: options.php:303
+msgid "Check this box to show the comment count."
+msgstr ""
+
+#: options.php:308
+msgid "Show Tags"
+msgstr ""
+
+#: options.php:309
+msgid "Check this box to show tags on single articles below the content."
+msgstr ""
+
+#: options.php:314
+msgid "Show Featured-Image"
+msgstr ""
+
+#: options.php:315
+msgid "Check this box to show the featured image on single posts."
+msgstr ""
+
+#: options.php:320
+msgid "Footer"
+msgstr ""
+
+#: options.php:323
+msgid "Module CTA: Your promotion text"
+msgstr ""
+
+#: options.php:324
+msgid ""
+"Type a little text to advertise your call-to-action button. If nothing is "
+"typed, this section will not be displayed."
+msgstr ""
+
+#: options.php:329
+msgid "Module CTA: Button-label"
+msgstr ""
+
+#: options.php:330
+msgid "Enter a name for your call-to-action button."
+msgstr ""
+
+#: options.php:335
+msgid "Module CTA: Button-link"
+msgstr ""
+
+#: options.php:336
+msgid "Enter a link for the button."
+msgstr ""
+
+#: options.php:341
+msgid "Module CTA: Button-Style"
+msgstr ""
+
+#: options.php:342
+msgid "Select a style for your Button."
+msgstr ""
+
+#: options.php:348
+msgid "Mail Icon"
+msgstr ""
+
+#: options.php:349
+msgid ""
+"Enter your Email Address if you like to display the icon at the bottom of "
+"the footer."
+msgstr ""
+
+#: options.php:354
+msgid "RSS Feed Icon"
+msgstr ""
+
+#: options.php:355
+msgid ""
+"Enter the link to your RSS Feed if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:360
+msgid "Social: Behance Icon"
+msgstr ""
+
+#: options.php:361
+msgid ""
+"Enter the link to your Behance page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:366
+msgid "Social: Dribbble Icon"
+msgstr ""
+
+#: options.php:367
+msgid ""
+"Enter the link to your Dribbble page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:372
+msgid "Social: Facebook Icon"
+msgstr ""
+
+#: options.php:373
+msgid ""
+"Enter the link to your Facebook page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:378
+msgid "Social: Instagram Icon"
+msgstr ""
+
+#: options.php:379
+msgid ""
+"Enter the link to your Instagram page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:384
+msgid "Social: LinkedIn Icon"
+msgstr ""
+
+#: options.php:385
+msgid ""
+"Enter the link to your LinkedIn page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:390
+msgid "Social: Pinterest Icon"
+msgstr ""
+
+#: options.php:391
+msgid ""
+"Enter the link to your Pinterest page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:396
+msgid "Social: SoundCloud Icon"
+msgstr ""
+
+#: options.php:397
+msgid ""
+"Enter the link to your SoundCloud page if you like to display the icon at "
+"the bottom of the footer."
+msgstr ""
+
+#: options.php:402
+msgid "Social: Tumblr Icon"
+msgstr ""
+
+#: options.php:403
+msgid ""
+"Enter the link to your Tumblr page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:408
+msgid "Social: Twitter Icon"
+msgstr ""
+
+#: options.php:409
+msgid ""
+"Enter the link to your Twitter page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:414
+msgid "Footer-credits"
+msgstr ""
+
+#: options.php:415
+msgid "The text will appear below the footer."
+msgstr ""
+
+#: options.php:649
+msgid "Change theme colors."
+msgstr ""
+
+#: search.php:11
+msgid "Search Results"
+msgstr ""
+
+#: searchform.php:8
+msgid "Type and press enter to search."
+msgstr ""
+
+#: single-jetpack-portfolio.php:22
+msgctxt ""
+msgid ", "
+msgstr ""
+
+#: single-jetpack-portfolio.php:30
+msgctxt ""
+msgid " #"
+msgstr ""

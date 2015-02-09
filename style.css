@@ -1,0 +1,1694 @@
+/*
+Theme Name: Kouki
+Version: 1.0
+Author: Felix Dorner
+Author URI: http://felixdorner.com
+Theme URI: http://demo.felixdorner.com/kouki/
+Description: A beautiful & responsive portfolio theme for creatives, agencies & photographers.
+License: GNU GENERAL PUBLIC LICENSE, Version 2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wunderbar
+Tags: gray, white, light, responsive-layout, fluid-layout, full-width-template, right-sidebar, rtl-language-support, custom-menu, featured-images, theme-options, translation-ready, one-column, two-columns, threaded-comments
+*/
+
+/* --------------------------------------------------------------
+Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+html {
+  overflow-y: scroll;
+  font-size: 62.5%;
+
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  background: #fff;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, nav, section {
+  display: block;
+}
+table {
+  border-spacing: 0;
+  /* tables still need 'cellspacing="0"' in the markup */
+  border-collapse: separate;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+}
+blockquote, q {
+  quotes: '' '';
+}
+a:focus {
+  outline: thin dotted;
+}
+a:hover, a:active {
+  outline: 0;
+}
+a img {
+  border: 0;
+}
+
+/* --------------------------------------------------------------
+Elements
+-------------------------------------------------------------- */
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin: 0 0 30px 30px;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin: .6em 0 .6em 1.5em;
+}
+.post ul, .post ol {
+  line-height: 2em;
+}
+
+/**
+ * Tables
+ */
+table {
+  margin-bottom: 5%;
+  padding: 0;
+  width: 100%;
+}
+table thead {
+  background: #f5f5f5;
+}
+table thead th {
+  padding: 10px;
+  font-weight: bold;
+}
+table td, #content table th {
+  padding: 10px;
+}
+table td {
+  border-bottom: solid 1px #f7f7f7;
+}
+table tr:last-child td {
+  border-bottom: none;
+}
+table tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+/**
+ * Forms
+ */
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+}
+
+/**
+ * Media
+ */
+video {
+  max-width: 100%;
+  height: auto;
+}
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/**
+ * Other
+ */
+hr {
+  margin: 5% 0;
+  height: 1px;
+  border: 0;
+  border-bottom: solid 1px #eee;
+  background-color: transparent;
+}
+
+/**
+ * Responsive settings for elements
+ */
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 480px) {
+
+  /* Lists */
+  ul, ol {
+    margin: 0 0 15px 15px;
+  }
+}
+
+/* --------------------------------------------------------------
+Layout
+-------------------------------------------------------------- */
+
+/**
+ * Wordpress specific classes for the content-width theme-feature
+ * Reference: http://codex.wordpress.org/Content_Width
+ */
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+ * Set the frame
+ */
+.boxed header, .boxed .wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  /* Should be the same width as content_width in functions.php */
+  max-width: 1200px;
+  width: 100%;
+}
+.full header, .full .wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+.page.full article,
+.single.full article,
+.inline-holder {
+  margin: 0 auto;
+  /* Should be the same width as content_width in functions.php */
+  max-width: 1200px;
+}
+
+/**
+ * Column helpers
+ */
+.col-12 {
+  width: 100%;
+}
+.col-8 {
+  width: 66.6667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-4 {
+  width: 33.333333333%;
+}
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/**
+ * Floats
+ */
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+
+/**
+ * Padding System
+ * pad-0 - No value
+ * pad-1 - Original value
+ * pad-2 - Double the value
+ * pad-2-1 - Combination of values
+ */
+
+.pad-0-0-1 {
+  padding-bottom: 30px;
+}
+.pad-0-0-2 {
+  padding-bottom: 60px;
+}
+.pad-0-1-1 {
+  padding: 0 30px 30px;
+}
+.pad-0-1-2 {
+  padding: 0 30px 60px;
+}
+.pad-1 {
+  padding: 30px;
+}
+.pad-1-0-0 {
+  padding-top: 30px;
+}
+.pad-1-0-1-1 {
+  padding: 30px 0 30px 30px;
+}
+.pad-1-1-0 {
+  padding: 30px 30px 0;
+}
+.pad-1-1-2 {
+  padding: 30px 30px 60px;
+}
+.pad-2 {
+  padding: 60px;
+}
+.pad-2-0-0 {
+  padding: 60px 0 0;
+}
+.pad-2-0-1 {
+  padding: 60px 0 30px;
+}
+.pad-2-1 {
+  padding: 60px 30px;
+}
+.pad-2-1-0 {
+  padding: 60px 30px 0;
+}
+.pad-2-1-1 {
+  padding: 60px 30px 30px;
+}
+
+/**
+ * Margins
+ * m-0 - No value
+ * m-1 - Original value
+ * m-2 - Double the value
+ * m-2-1 - Combination of values
+ */
+.m-0 {
+  margin: 0;
+}
+.m-0-0-1 {
+  margin-bottom: 30px;
+}
+.m-1-0-0 {
+  margin-top: 30px;
+}
+.full .m-top-bar {
+  /* Should have the same height as the fixed top-bar */
+  margin-top: 130px;
+}
+.boxed .m-top-bar {
+  /* Should have the same height as the fixed top-bar */
+  margin-top: 129px;
+}
+
+/* Global margins */
+p, pre {
+  margin-bottom: 30px;
+}
+address {
+  margin-bottom: 1.4em;
+}
+
+/**
+ * Positioning helpers
+ */
+.v-top {
+  vertical-align: top;
+}
+.inline {
+  display: inline-block;
+}
+
+/**
+ * Flexbox centering
+ */
+.flexbox {
+  display: -webkit-box;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:         flex;
+}
+.flexbox-child {
+  margin: auto;
+}
+
+/**
+ * Responsive settings for the layout
+ */
+@media only screen and (max-width: 768px) {
+
+  /* Column helpers */
+  .col-6, .col-4 {
+    width: 100%;
+  }
+  aside.col-4.pad-1 {
+    padding: 15px;
+  }
+  .col-8 {
+    padding: 0 15px;
+    width: 100%;
+  }
+  .col-8 .pad-1-0-1-1 {
+    padding: 30px 0 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* Paddings */
+  .pad-0-0-1 {
+    padding-bottom: 15px;
+  }
+  .pad-0-0-2 {
+    padding-bottom: 30px;
+  }
+  .pad-0-1-1 {
+    padding: 0 15px 15px;
+  }
+  .pad-0-1-2 {
+    padding: 0 15px 30px;
+  }
+  .pad-1 {
+    padding: 15px;
+  }
+  .pad-1-0-0 {
+    padding-top: 15px;
+  }
+  .pad-1-0-1-1 {
+    padding: 15px 0 15px 15px;
+  }
+  .col-8 .pad-1-0-1-1 {
+    padding: 15px 0 0;
+  }
+  .pad-1-1-0 {
+    padding: 15px 15px 0;
+  }
+  .pad-1-1-2 {
+    padding: 15px 15px 30px;
+  }
+  .pad-2 {
+    padding: 30px;
+  }
+  .pad-2-0-0 {
+    padding: 30px 0 0;
+  }
+  .pad-2-0-1 {
+    padding: 30px 0 15px;
+  }
+  .pad-2-1 {
+    padding: 30px 15px;
+  }
+  .pad-2-1-0 {
+    padding: 30px 15px 0;
+  }
+  .pad-2-1-1 {
+    padding: 30px 15px 15px;
+  }
+
+  /* Margins */
+  .full .m-top-bar {
+    margin-top: 100px;
+  }
+  .boxed .m-top-bar {
+    margin-top: 99px;
+  }
+  p, pre {
+    margin-bottom: 15px;
+  }
+}
+
+
+/* --------------------------------------------------------------
+Colors
+-------------------------------------------------------------- */
+
+/**
+ * Globals
+ */
+body {
+  color: #151515;
+}
+body.boxed {
+  background: #f5f5f5;
+}
+body.full {
+  background: #fff;
+}
+
+/**
+ * Grid
+ */
+.boxed .wrapper {
+  background: #fff;
+}
+
+/**
+ * Content
+ */
+.meta, .wp-caption-text {
+  color: #c0c0c0;
+}
+.projects .meta {
+  color: #151515;
+}
+
+/**
+ * Footer
+ */
+footer {
+  color: #c0c0c0;
+}
+.call-to-action {
+  background: #eee;
+}
+
+/* --------------------------------------------------------------
+Typography
+-------------------------------------------------------------- */
+
+/**
+ * Typo Helpers
+ */
+.t-lightweight {
+  font-weight: 300;
+}
+.t-italic {
+  font-style: italic;
+}
+
+/**
+ * Globals
+ */
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 16px;
+  font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.6em;
+
+  text-rendering: optimizeLegibility;
+}
+small {
+  font-size: .8em;
+}
+big {
+  font-size: 1.4em;
+}
+b, strong {
+  font-weight: bold;
+}
+dfn, cite, em, i {
+  font-style: italic;
+}
+pre {
+  overflow: auto;
+  padding: 30px;
+  max-width: 100%;
+  background: #f5f5f5;
+  font-family: 'Courier', monospace;
+}
+code, kbd, tt, var {
+  font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+}
+abbr, acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+mark, ins {
+  background: #fff9c0;
+  text-decoration: none;
+}
+sup, sub {
+  position: relative;
+  height: 0;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+sup {
+  bottom: 1ex;
+}
+sub {
+  top: .5ex;
+}
+
+/**
+ * Headings
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+.widgetTitle {
+  clear: both;
+  font-family: 'Julius Sans One', Open Sans, Helvetica, Arial, sans-serif;
+  line-height: 1.4em;
+}
+h1 {
+  font-size: 3.8em;
+}
+h2 {
+  font-size: 2.4em;
+  line-height: 1.2em;
+}
+.col-8 h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.6em;
+}
+h5 {
+  font-size: 1.4em;
+}
+h6 {
+  font-size: 1.2em;
+}
+blockquote {
+  font-size: 2em;
+}
+
+/**
+ * Theme-related typo styles
+ */
+.meta, .more-link {
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: 300;
+  font-size: .8em;
+}
+.post h1,
+.post h2,
+.post h3,
+.post h4,
+.post h5,
+.post h6 {
+  margin-bottom: 30px;
+}
+
+/**
+ * Responsive settings for typo
+ */
+@media only screen and (max-width: 768px) {
+
+  /* Headings */
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+  h4 {
+    font-size: 1.6em;
+  }
+  h5 {
+    font-size: 1.4em;
+  }
+  h6 {
+    font-size: 1.2em;
+  }
+  blockquote {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  /* Globals */
+  pre {
+    padding: 15px;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  blockquote {
+    font-size: 1.2em;
+  }
+
+  /* Theme-related typo styles */
+  .meta {
+    font-size: .7em;
+  }
+}
+
+/* --------------------------------------------------------------
+Links
+-------------------------------------------------------------- */
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+      -ms-transition: all .2s linear;
+       -o-transition: all .2s linear;
+          transition: all .2s linear;
+}
+a:hover,
+input[type=submit]:hover {
+  opacity: .8;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover {
+  color: inherit;
+}
+
+/* --------------------------------------------------------------
+Buttons
+-------------------------------------------------------------- */
+
+/**
+ * General attributes
+ */
+.btn,
+.pagination a,
+input[type=submit],
+#infinite-handle span {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 2px;
+  background: none;
+  text-decoration: none;
+  font-weight: 300;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+      -ms-transition: all .2s linear;
+       -o-transition: all .2s linear;
+          transition: all .2s linear;
+}
+
+/**
+ * Button Color: Only needed when running without Options Framework;
+
+/**
+ * Neutral button-color
+
+a.btn-neutral,
+.pagination a,
+#infinite-handle span {
+  border: 1px solid #151515;
+  color: #151515;
+}
+
+/**
+ * Positive button-color
+
+a.btn-positive,
+input[type=submit] {
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
+}
+
+/**
+ * Negative button-color
+
+a.btn-negative {
+  border: 1px solid #ff4136;
+  color: #ff4136;
+}
+
+/**
+ * Extra button-color
+
+a.btn-extra {
+  border: 1px solid #0d8eff;
+  color: #0d8eff;
+}
+
+*/
+
+/**
+ * Behaviour for button-hover state
+ */
+.btn:hover,
+.pagination a:hover,
+input[type=submit]:hover,
+#infinite-handle span:hover {
+  opacity: .4;
+  cursor: pointer;
+}
+
+
+/* --------------------------------------------------------------
+Top-bar
+-------------------------------------------------------------- */
+
+/**
+ * Layout of the top-bar wrapper
+ */
+.top-bar {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  padding: 30px;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+  /* Hardware accelerate transitions */
+  -webkit-transform: translateZ(0);
+}
+.tb-large {
+  padding: 30px;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+  /* Hardware accelerate transitions */
+  -webkit-transform: translateZ(0);
+}
+.full .top-bar,
+.full .tb-large {
+  border-bottom: 1px solid rgba(0,0,0,.05);
+}
+.home .top-bar,
+.home .tb-large {
+  /*border: none;*/
+}
+.tb-small {
+  padding: 0px 30px;
+  background: #fff;
+  background: rgba(255,255,255,.9);
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+  /* Hardware accelerate transitions */
+  -webkit-transform: translateZ(0);
+}
+
+/**
+ * Layout of branding in top-bar
+ */
+.tb-logo {
+  float: left;
+  width: 80%;
+}
+
+.tb-logo h1 {
+  float: left;
+  clear: right;
+  margin-top: 18px;
+  text-align: left;
+  font-size: 1.6em;
+}
+.tb-logo img {
+  float: left;
+  margin: 16px 15px 0 0;
+  max-height: 35px;
+  width: auto;
+  text-align: left;
+}
+
+/**
+ * Container holding the toggle menu
+ */
+.navigation-toggle-wrapper {
+  position: relative;
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+
+/**
+ * Responsive settings for the top-bar
+ */
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 480px) {
+
+  /* Layout of the top-bar wrapper */
+  .top-bar, .tb-large {
+    padding: 15px;
+  }
+  .tb-small {
+    padding: 0 15px;
+  }
+
+  /* Layout of branding in top-bar */
+  .tb-logo img {
+    margin: 18px 10px 0 0;
+    max-height: 30px;
+  }
+  .tb-logo h1 {
+    margin-top: 19px;
+    font-size: 1.4em;
+  }
+}
+
+/* --------------------------------------------------------------
+Navigation Toggle
+-------------------------------------------------------------- */
+
+/* Important styles */
+#toggle {
+  display: inline-block;
+  margin: 32px 0 0;
+  width: 30px;
+  height: 30px;
+}
+
+#toggle span:after,
+#toggle span:before {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  content: '';
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+
+  backface-visibility: hidden;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #151515;
+  -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+       -o-transition: all .3s;
+          transition: all .3s;
+}
+
+/* on activation */
+#toggle.on span {
+  background-color: transparent;
+}
+#toggle.on span:before {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+     -moz-transform: rotate(45deg) translate(5px, 5px);
+       -o-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  -webkit-transform: rotate(-45deg) translate(7px, -8px);
+     -moz-transform: rotate(-45deg) translate(7px, -8px);
+       -o-transform: rotate(-45deg) translate(7px, -8px);
+          transform: rotate(-45deg) translate(7px, -8px);
+}
+
+/*
+ * Needed when slide-toggle is deactivated
+#toggle.on + #menu {
+  display: block;
+}*/
+
+/* menu appearance*/
+#menu {
+  position: absolute;
+  z-index: 99999;
+  display: none;
+}
+.full #menu {
+  right: 0;
+}
+.boxed #menu {
+  right: -30px;
+}
+#menu ul, #menu li, #menu li a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#menu > ul {
+  padding: 15px 30px;
+  min-width: 200px;
+  background: rgba(0,0,0, .85);
+  text-align: right;
+}
+#menu li a {
+  padding: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+}
+#menu > ul > li > a {
+  border-bottom: 1px solid rgba( 255, 255, 255, .1);
+}
+#menu > ul > li.menu-item-has-children > a {
+  border: none;
+}
+#menu > ul > li.menu-item-has-children > a:after,
+#menu > ul ul > li.menu-item-has-children > a:after {
+  top: 50%;
+  right: 0px;
+  margin-top: -6px;
+  margin-left: 4px;
+  height: auto;
+  content: '\f107';
+  font-family: 'FontAwesome';
+  line-height: 12px;
+}
+#menu li a:hover,
+#menu li a:focus {
+  opacity: .4;
+}
+#menu ul ul {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba( 255, 255, 255, .1);
+}
+#menu ul ul ul {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba( 255, 255, 255, .1);
+  font-size: .8em;
+}
+#menu ul ul li a,
+#menu ul ul ul li a {
+  padding: 2px 0;
+  font-size: .8em;
+}
+
+/**
+ * Responsive settings for the toggle navigation
+ */
+@media only screen and (max-width: 1200px) {
+
+  /* menu appearance*/
+  .boxed #menu {
+    right: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 480px) {
+}
+
+/* --------------------------------------------------------------
+Portfolio Thumbs
+-------------------------------------------------------------- */
+
+.projects .col-6,
+.projects .col-12,
+.projects .col-4 {
+  overflow: hidden;
+}
+.projects a {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.projects img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: all .4s ease-out;
+     -moz-transition: all .4s ease-out;
+      -ms-transition: all .4s ease-out;
+       -o-transition: all .4s ease-out;
+          transition: all .4s ease-out;
+  /* Added to hardware-accelerate CSS*/
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.projects a:hover img {
+  opacity: .1;
+  -moz-transition: scale(1.04);
+   -ms-transition: scale(1.04);
+    -o-transition: scale(1.04);
+       transition: scale(1.04);
+  -webkit-transform: scale(1.04);
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.projects .inside {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top .4s ease-out;
+     -moz-transition: top .4s ease-out;
+      -ms-transition: top .4s ease-out;
+       -o-transition: top .4s ease-out;
+          transition: top .4s ease-out;
+  /* Added to hardware-accelerate CSS*/
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.projects .inside:hover {
+  top: 0;
+}
+.projects h2,
+.projects h3,
+.projects .meta {
+  opacity: 0;
+  -webkit-transition: opacity .4s ease-out;
+     -moz-transition: opacity .4s ease-out;
+      -ms-transition: opacity .4s ease-out;
+       -o-transition: opacity .4s ease-out;
+          transition: opacity .4s ease-out;
+  /* Added to hardware-accelerate CSS*/
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+.projects a:hover h2,
+.projects a:hover h3,
+.projects a:hover .meta {
+  opacity: 1;
+}
+
+/* --------------------------------------------------------------
+Footer
+-------------------------------------------------------------- */
+
+/**
+ * Social Icons
+ */
+.social {
+  font-size: 2em;
+}
+.social i {
+  display: inline-block;
+  padding: 15px;
+}
+
+/**
+ * Responsive settings for the footer
+ */
+@media only screen and (max-width: 768px) {
+
+  /* Social Icons */
+  .social {
+    font-size: 1.8em;
+  }
+}
+@media only screen and (max-width: 480px) {
+
+  /* Social Icons */
+  .social i {
+    display: inline-block;
+    padding: 15px 5px;
+  }
+}
+
+
+/* --------------------------------------------------------------
+Wordpress Formatting Styles
+-------------------------------------------------------------- */
+
+/**
+ * Pulls & Alignments
+ */
+.aligncenter {
+  text-align: center;
+}
+.alignleft {
+  text-align: left;
+}
+.alignright {
+  text-align: right;
+}
+img.alignright {
+  float: right;
+  margin: 0 0 30px 30px;
+}
+.post > div.alignright {
+  float: right;
+  margin-left: 30px;
+}
+img.alignleft {
+  float: left;
+  margin: 0 30px 30px 0;
+}
+.post > div.alignleft {
+  float: left;
+  margin-right: 30px;
+}
+.pull-wider {
+  margin-right:-30px;
+  margin-left: -30px;
+  max-width: 1200px;
+  /* Width & margins need to be set according to the overall width of the layout-wrapper */
+  width: 1200px;
+}
+.sticky {
+}
+.bypostauthor {
+}
+
+ /**
+ * Image Captions
+ */
+.wp-caption {
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+}
+.wp-caption-text {
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
+}
+
+/**
+ * Password protected posts
+ */
+
+.post-password-form {
+  padding: 30px;
+  background: #f5f5f5;
+}
+
+/**
+ * WP Gallery
+ */
+.gallery {
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto 30px;
+}
+.gallery .gallery-item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0 0 1%;
+  list-style: none;
+  text-align: center;
+}
+.gallery .gallery-item img {
+  max-width: 98%;
+  height: auto;;
+}
+.gallery dt.gallery-icon {
+  position: relative;
+}
+.gallery figcaption.gallery-caption {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  background: rgba(255, 255, 255, .9);
+  color: #151515;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transition: all .5s ease-out;
+     -moz-transition: all .5s ease-out;
+      -ms-transition: all .5s ease-out;
+       -o-transition: all .5s ease-out;
+          transition: all .5s ease-out;
+  pointer-events: none;
+}
+.gallery .gallery-item:hover figcaption.gallery-caption {
+  bottom: 0;
+  opacity: 1;
+}
+/* Image sizes depending on the number of columns */
+.gallery-columns-0 .gallery-item,
+.gallery-columns-1 .gallery-item {
+  width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+  width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+  width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+  width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+  width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+  width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+  width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+  width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+  width: 11.11%;
+}
+
+/**
+ * Responsive settings for WordPress formattings
+ */
+@media only screen and (max-width: 1200px) {
+
+  /* Pulls */
+  .pull-wider {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  /* Gallery */
+  .gallery-columns-0 .gallery-item,
+  .gallery-columns-1 .gallery-item {
+    width: 100%;
+  }
+  .gallery-columns-2 .gallery-item,
+  .gallery-columns-3 .gallery-item {
+    width: 50%;
+  }
+  .gallery-columns-4 .gallery-item,
+  .gallery-columns-5 .gallery-item,
+  .gallery-columns-6 .gallery-item,
+  .gallery-columns-7 .gallery-item,
+  .gallery-columns-8 .gallery-item,
+  .gallery-columns-9 .gallery-item {
+    width: 33.3333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* Alignements */
+  img.alignright,
+  .post > div.alignright,
+  img.alignleft,
+  .post > div.alignleft {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Post passwords */
+  .post-password-form {
+    padding: 15px;
+  }
+
+  /* Gallery */
+  .gallery-columns-2 .gallery-item,
+  .gallery-columns-3 .gallery-item {
+    width: 100%;
+  }
+  .gallery-columns-4 .gallery-item,
+  .gallery-columns-5 .gallery-item,
+  .gallery-columns-6 .gallery-item,
+  .gallery-columns-7 .gallery-item,
+  .gallery-columns-8 .gallery-item,
+  .gallery-columns-9 .gallery-item {
+    width: 50%;
+  }
+}
+
+/* --------------------------------------------------------------
+Comments
+-------------------------------------------------------------- */
+
+#comments ol {
+  margin: 0;
+  list-style: none;
+}
+#comments li {
+  margin-bottom: 30px;
+  width: 100%;
+  background: #f5f5f5;
+}
+#comments .children li {
+  margin-top: 30px;
+  padding: 0;
+  width: 100%;
+}
+#comments .avatar {
+  display: inline-block;
+  margin-right: 2%;
+  max-width: 14%;
+  -webkit-border-radius: 40px;
+     -moz-border-radius: 40px;
+          border-radius: 40px;
+  vertical-align: top;
+
+       -o-border-radius: 40px;
+      -ms-border-radius: 40px;
+}
+.comment-wrap {
+  width: 84%;
+}
+#comments .comment-cite {
+  clear: right;
+}
+.comment-respond {
+  padding: 30px;
+  width: 100%;
+  background: #f5f5f5;
+}
+.comment-respond h3 {
+  margin-bottom: 30px;
+}
+.comment-respond h3 small a {
+  font-size: .5em;
+  opacity: .4;
+}
+#comments input[type=text] {
+  width: 60%;
+}
+#comments textarea {
+  width:100%;
+}
+
+/* --------------------------------------------------------------
+Widgets
+-------------------------------------------------------------- */
+
+/*
+ * General widget styles
+ */
+.widgetBox {
+  float: left;
+  margin-bottom: 30px;
+  padding: 30px;
+  width: 100%;
+  background: #f5f5f5;
+}
+.widgetTitle {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 1.6em;
+}
+.widgetBox ul {
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  line-height: 1.6em;
+}
+.widgetBox ul li {
+  margin-bottom: 10px;
+}
+.widgetBox ul li:before {
+  margin-right: 15px;
+  content: '—';
+  opacity: .2;
+}
+.widgetBox ul ul {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+.widgetBox select {
+  width: 100%;
+  background: #fff;
+  font-size: inherit;
+}
+
+/**
+ * RSS Widget
+ */
+a.rsswidget img {
+  display: none;
+}
+
+/**
+ * Calendar
+ */
+#calendar_wrap {
+  float:left;
+  width: 100%;
+}
+#wp-calendar {
+  width: 100%;
+  text-align: center;
+}
+#wp-calendar caption {
+  padding: 4px;
+  border-bottom: 1px solid;
+}
+#wp-calendar tfoot {
+  text-align: left;
+}
+#wp-calendar thead tr {
+  border-bottom: 1px solid #eee;
+}
+
+/**
+ * Recent Posts
+ */
+.widget_recent_entries li span {
+  display: block;
+  margin-left: 28px;
+  font-size: .7em;
+}
+
+/**
+ * Search
+ */
+.widget_search input[type='text'] {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  color: #c0c0c0;
+  font-size: .8em;
+}
+
+
+/* --------------------------------------------------------------
+Custom Jetpack Styles
+-------------------------------------------------------------- */
+
+/**
+ * Infinite Scroll Handler
+ */
+#infinite-handle {
+  position: absolute;
+  bottom: 0;
+  margin: 60px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.new-infinite-posts article:last-child {
+  margin-bottom: 150px;
+}
+
+/**
+ * Hides navigation links and site footer when infinite scroll is active
+ */
+.infinite-scroll .pagination,
+.infinite-scroll.neverending #footer {
+  display: none;
+}
+
+/**
+ * Shows the footer again in case all posts have been loaded
+ */
+.infinity-end.neverending #footer {
+  display: block;
+}
+
+/**
+ * Feedback Form
+ */
+.contact-form {
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.contact-form input[type='text'],
+ .contact-form input[type='email'] {
+  margin-bottom: 30px !important;
+}
+
+/**
+ * Widget: Gravatar
+ */
+.widget-grofile {
+  text-align: center;
+}
+.grofile-thumbnail {
+  max-width: 50%;
+  border-radius: 120px;
+}
+.widget-grofile h4 {
+  font-size: .8em;
+}
+.widget-grofile .grofile-meta h4 {
+  font-size: 1.4em;
+}
+
+/* --------------------------------------------------------------
+Revolution Slider
+-------------------------------------------------------------- */
+
+.tparrows {
+  width: 30px !important;
+  height: 30px !important;
+  -webkit-border-radius: 30px;
+          border-radius:30px;
+  background: rgba(255, 255, 255, .1) !important;
+}
+
+.tparrows.default:after {
+  position: absolute;
+  top:0px;
+  left:0px;
+  z-index: 10;
+  width:30px;
+  color: #ccc;
+  text-align:center;
+  font-weight: 300;
+  font-size: 1.4em;
+  font-family: 'FontAwesome';
+  line-height:30px;
+}
+
+.tp-rightarrow.tparrows.default:after {
+  content: '\f105';
+}
+.tp-leftarrow.tparrows.default:after {
+  content: '\f104';
+}
+
+/* --------------------------------------------------------------
+Testimonials by WooThemes
+-------------------------------------------------------------- */
+
+section.testimonials {
+  /* Colors are only needed when running without Options Framework;
+  background: #e0e0e0;
+  color: #fff;
+  */
+  text-align: center;
+}
+.widget_woothemes_testimonials.sidebarBox blockquote {
+  font-size: 1em;
+}
+/* Colors are only needed when running without Options Framework;
+section.testimonials .meta, section.testimonials a {
+  color: #fff;
+}
+*/
+.widget_woothemes_testimonials .quote {
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.widget_woothemes_testimonials .quote {
+  border-bottom: 1px solid rgba(0, 0, 0, .05);
+  text-align: center;
+}
+.widget_woothemes_testimonials .quote.last {
+  margin: 0;
+  border: none;
+}
+.widget_woothemes_testimonials img {
+  margin-bottom: 15px;
+  -webkit-border-radius: 60px;
+     -moz-border-radius: 60px;
+          border-radius: 60px;
+}
+.widget_woothemes_testimonials cite span {
+  display:block;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-style: normal;
+  font-size: .7em;
+}
+.widget_woothemes_testimonials cite span.title,
+.widget_woothemes_testimonials cite span.url {
+  opacity: .3;
+}
+.widget_woothemes_testimonials cite span.url {
+  font-size: .6em;
+}
+
+/**
+ * Responsive settings for testimonials
+ */
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 480px) {
+
+  .widget_woothemes_testimonials .quote {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+  .widget_woothemes_testimonials img {
+    margin-bottom: 5px;
+  }
+}

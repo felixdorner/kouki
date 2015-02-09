@@ -1,0 +1,74 @@
+/* --------------------------------------------------------------
+Buttons
+-------------------------------------------------------------- */
+
+/**
+ * General attributes
+ */
+.btn,
+.pagination a,
+input[type=submit],
+#infinite-handle span {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 2px;
+  background: none;
+  text-decoration: none;
+  font-weight: 300;
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+      -ms-transition: all .2s linear;
+       -o-transition: all .2s linear;
+          transition: all .2s linear;
+}
+
+/**
+ * Button Color: Only needed when running without Options Framework;
+
+/**
+ * Neutral button-color
+
+a.btn-neutral,
+.pagination a,
+#infinite-handle span {
+  border: 1px solid #151515;
+  color: #151515;
+}
+
+/**
+ * Positive button-color
+
+a.btn-positive,
+input[type=submit] {
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
+}
+
+/**
+ * Negative button-color
+
+a.btn-negative {
+  border: 1px solid #ff4136;
+  color: #ff4136;
+}
+
+/**
+ * Extra button-color
+
+a.btn-extra {
+  border: 1px solid #0d8eff;
+  color: #0d8eff;
+}
+
+*/
+
+/**
+ * Behaviour for button-hover state
+ */
+.btn:hover,
+.pagination a:hover,
+input[type=submit]:hover,
+#infinite-handle span:hover {
+  opacity: .4;
+  cursor: pointer;
+}

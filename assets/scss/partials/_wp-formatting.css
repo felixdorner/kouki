@@ -1,0 +1,209 @@
+/* --------------------------------------------------------------
+Wordpress Formatting Styles
+-------------------------------------------------------------- */
+
+/**
+ * Pulls & Alignments
+ */
+.aligncenter {
+  text-align: center;
+}
+.alignleft {
+  text-align: left;
+}
+.alignright {
+  text-align: right;
+}
+img.alignright {
+  float: right;
+  margin: 0 0 30px 30px;
+}
+.post > div.alignright {
+  float: right;
+  margin-left: 30px;
+}
+img.alignleft {
+  float: left;
+  margin: 0 30px 30px 0;
+}
+.post > div.alignleft {
+  float: left;
+  margin-right: 30px;
+}
+.pull-wider {
+  margin-right:-30px;
+  margin-left: -30px;
+  max-width: 1200px;
+  /* Width & margins need to be set according to the overall width of the layout-wrapper */
+  width: 1200px;
+}
+.sticky {
+}
+.bypostauthor {
+}
+
+ /**
+ * Image Captions
+ */
+.wp-caption {
+  margin-bottom: 30px;
+  max-width: 100%;
+  height: auto;
+}
+.wp-caption-text {
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: .8em;
+}
+
+/**
+ * Password protected posts
+ */
+
+.post-password-form {
+  padding: 30px;
+  background: #f5f5f5;
+}
+
+/**
+ * WP Gallery
+ */
+.gallery {
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto 30px;
+}
+.gallery .gallery-item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0 0 1%;
+  list-style: none;
+  text-align: center;
+}
+.gallery .gallery-item img {
+  max-width: 98%;
+  height: auto;;
+}
+.gallery dt.gallery-icon {
+  position: relative;
+}
+.gallery figcaption.gallery-caption {
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  background: rgba(255, 255, 255, .9);
+  color: #151515;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transition: all .5s ease-out;
+     -moz-transition: all .5s ease-out;
+      -ms-transition: all .5s ease-out;
+       -o-transition: all .5s ease-out;
+          transition: all .5s ease-out;
+  pointer-events: none;
+}
+.gallery .gallery-item:hover figcaption.gallery-caption {
+  bottom: 0;
+  opacity: 1;
+}
+/* Image sizes depending on the number of columns */
+.gallery-columns-0 .gallery-item,
+.gallery-columns-1 .gallery-item {
+  width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+  width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+  width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+  width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+  width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+  width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+  width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+  width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+  width: 11.11%;
+}
+
+/**
+ * Responsive settings for WordPress formattings
+ */
+@media only screen and (max-width: 1200px) {
+
+  /* Pulls */
+  .pull-wider {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+
+  /* Gallery */
+  .gallery-columns-0 .gallery-item,
+  .gallery-columns-1 .gallery-item {
+    width: 100%;
+  }
+  .gallery-columns-2 .gallery-item,
+  .gallery-columns-3 .gallery-item {
+    width: 50%;
+  }
+  .gallery-columns-4 .gallery-item,
+  .gallery-columns-5 .gallery-item,
+  .gallery-columns-6 .gallery-item,
+  .gallery-columns-7 .gallery-item,
+  .gallery-columns-8 .gallery-item,
+  .gallery-columns-9 .gallery-item {
+    width: 33.3333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  /* Alignements */
+  img.alignright,
+  .post > div.alignright,
+  img.alignleft,
+  .post > div.alignleft {
+    float: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  /* Post passwords */
+  .post-password-form {
+    padding: 15px;
+  }
+
+  /* Gallery */
+  .gallery-columns-2 .gallery-item,
+  .gallery-columns-3 .gallery-item {
+    width: 100%;
+  }
+  .gallery-columns-4 .gallery-item,
+  .gallery-columns-5 .gallery-item,
+  .gallery-columns-6 .gallery-item,
+  .gallery-columns-7 .gallery-item,
+  .gallery-columns-8 .gallery-item,
+  .gallery-columns-9 .gallery-item {
+    width: 50%;
+  }
+}
