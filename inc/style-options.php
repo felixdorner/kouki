@@ -8,35 +8,21 @@
 
 function kouki_theme_styles() { ?>
 
-  <style type="text/css" media="screen">
-
-    <?php $testimonials_bg = of_get_option('kouki_testimonials_bg'); ?>
-    <?php if ($testimonials_bg) : ?>
-      section.testimonials {
-        background: <?php echo $testimonials_bg; ?>;
-      }
-    <?php endif; ?>
+  <style type="text/css" media="screen">    
 
     <?php $cta_bg = of_get_option('kouki_cta_bg'); ?>
     <?php if ($cta_bg) : ?>
       .call-to-action {
         background: <?php echo $cta_bg; ?>;
       }
-    <?php endif; ?>
-
-    <?php $footer_bg = of_get_option('kouki_footer_bg'); ?>
-    <?php if ($footer_bg) : ?>
-      footer {
-        background: <?php echo $footer_bg; ?>;
-      }
-    <?php endif; ?>
+    <?php endif; ?>    
 
     /**
      * Text Colors
      */
     <?php $text_color = of_get_option('kouki_text_color'); ?>
     <?php if ($text_color) : ?>
-      body, .tb-logo h1, .projects .meta {
+      body {
         color: <?php echo $text_color; ?>;
       }
     <?php endif; ?>
@@ -44,8 +30,7 @@ function kouki_theme_styles() { ?>
     <?php $headline_color = of_get_option('kouki_headline_color'); ?>
     <?php if ($headline_color) : ?>
       h1, h2, h3, h4, h5, h6, .widgetitle
-      h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
-      .projects .meta {
+      h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
         color: <?php echo $headline_color; ?>;
       }
     <?php endif; ?>
@@ -94,19 +79,10 @@ function kouki_theme_styles() { ?>
 
     <?php $meta_color = of_get_option('kouki_meta_color'); ?>
     <?php if ($meta_color) : ?>
-      .meta, .wp-caption-text {
+      .meta, .wp-caption-text, .sticky-tag {
         color: <?php echo $meta_color; ?>;
       }
-    <?php endif; ?>
-
-    <?php $testimonials_color = of_get_option('kouki_testimonials_color'); ?>
-    <?php if ($testimonials_color) : ?>
-      section.testimonials,
-      section.testimonials .meta,
-      section.testimonials a {
-        color: <?php echo $testimonials_color; ?>;
-      }
-    <?php endif; ?>
+    <?php endif; ?>    
 
     <?php $cta_color = of_get_option('kouki_cta_color'); ?>
     <?php if ($cta_color) : ?>
@@ -119,23 +95,9 @@ function kouki_theme_styles() { ?>
       }
     <?php endif; ?>
 
-    <?php $footer_color = of_get_option('kouki_footer_color'); ?>
-    <?php if ($footer_color) : ?>
-      footer, footer a, footer .meta {
-        color: <?php echo $footer_color; ?>;
-      }
-    <?php endif; ?>
-
     /**
      * Fonts
      */
-    <?php $logo_font = of_get_option('kouki_logo_font'); ?>
-    <?php if ($logo_font) : ?>
-      .tb-logo h1 {
-        font-family: '<?php echo $logo_font; ?>';
-      }
-    <?php endif; ?>
-
     <?php $primary_font = of_get_option('kouki_primary_font'); ?>
     <?php if ($primary_font) : ?>
       body, h2.meta  {

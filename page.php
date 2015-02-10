@@ -1,42 +1,33 @@
 <?php
 /**
-* The default template to display pages.
-*
-* @package kouki
-*/
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
+ *
+ * @package kouki
+ */
 
 get_header(); ?>
+  
+  <main id="main" class="site-main" role="main">
 
-<main role="main">
+    <?php while ( have_posts() ) : the_post(); ?>
 
-  <?php while ( have_posts() ) : the_post(); ?>
+      <?php get_template_part( 'content', 'page' ); ?>
 
-    <article>
+      <?php
+        // If comments are open or we have at least one comment, load up the comment template
+        if ( comments_open() || get_comments_number() ) :
+          comments_template();
+        endif;
+      ?>
 
-      <?php if ( has_post_thumbnail() && of_get_option('kouki_post_show_featured_image') ) : ?>
-        <div class="aligncenter">
-          <?php echo get_the_post_thumbnail( $post->ID, 'kouki_thumb_large' ) ?>
-        </div>
-      <?php endif; ?>
+    <?php endwhile; // end of the loop. ?>
 
-      <header class="pad-2-1-1 aligncenter">
-        <h1><?php the_title(); ?></h1>
-      </header>
-
-      <div class="post col-12 pad-1">
-        <?php the_content(); ?>
-      </div>
-
-      <?php if ( comments_open() || '0' != get_comments_number() ) : ?>
-        <div id="comments" class="col-12 pad-0-1-2">
-          <?php comments_template(); ?>
-        </div>
-      <?php endif; ?>
-
-    </article>
-
-  <?php endwhile; ?>
-
-</main>
+  </main><!-- #main -->
+  
 
 <?php get_footer(); ?>

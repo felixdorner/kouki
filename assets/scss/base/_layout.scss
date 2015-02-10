@@ -18,24 +18,74 @@ Layout
 /**
  * Set the frame
  */
-.boxed header, .boxed .wrapper {
+header, .wrapper {
   margin-right: auto;
-  margin-left: auto;
-  /* Should be the same width as content_width in functions.php */
+  margin-left: auto;  
   max-width: 1200px;
   width: 100%;
 }
-.full header, .full .wrapper {
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+
+.wrapper {
+  border-radius: 2px;
 }
-.page.full article,
-.single.full article,
-.inline-holder {
+
+.hentry-masonry {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+
+  @include media($medium-screen) {
+    padding: 30px;
+    width: 50%;
+    &:nth-child(odd) {
+      padding-right: 15px;
+    }
+    &:nth-child(even) {
+      padding-left: 15px;
+    }
+  }
+}
+
+.hentry__inside {
+  max-width: 800px;
   margin: 0 auto;
-  /* Should be the same width as content_width in functions.php */
-  max-width: 1200px;
+}
+
+.pagination,
+.comment-navigation {
+  @include row();
+
+  div {
+    @include span-columns(6);
+  }
+
+  .nav-next {
+    text-align: right;
+    float: right;
+  }
+  .nav-previous {
+    text-align: left;
+    float: left;
+  }
+}
+
+.footer-links { 
+  @include clearfix;
+  max-width: 90%;
+  margin: 0 auto;
+  @include media($medium-screen) {
+    max-width: 80%;
+  }
+}
+
+aside {
+  @include span-columns(12 of 12);
+
+  @include media($medium-screen) {
+    @include span-columns(3 of 12);
+    @include omega(4n);
+    @include clearfix;
+  }
 }
 
 /**
@@ -142,17 +192,14 @@ Layout
   /* Should have the same height as the fixed top-bar */
   margin-top: 130px;
 }
-.boxed .m-top-bar {
+.m-top-bar {
   /* Should have the same height as the fixed top-bar */
   margin-top: 129px;
 }
 
 /* Global margins */
-p, pre {
+p, pre, address {
   margin-bottom: 30px;
-}
-address {
-  margin-bottom: 1.4em;
 }
 
 /**
@@ -253,10 +300,7 @@ address {
   }
 
   /* Margins */
-  .full .m-top-bar {
-    margin-top: 100px;
-  }
-  .boxed .m-top-bar {
+  .m-top-bar {
     margin-top: 99px;
   }
   p, pre {

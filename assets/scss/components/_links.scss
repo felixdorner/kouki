@@ -3,7 +3,7 @@ Links
 -------------------------------------------------------------- */
 
 a {
-  color: inherit;
+  color: #c0c0c0;
   text-decoration: none;
   -webkit-transition: all .2s linear;
      -moz-transition: all .2s linear;
@@ -27,5 +27,5 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: inherit;
+  color: $base-font-color;
 }

@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: kouki\n"
-"POT-Creation-Date: 2014-09-29 13:12+0100\n"
-"PO-Revision-Date: 2014-09-29 13:13+0100\n"
+"Project-Id-Version: Kouki\n"
+"POT-Creation-Date: 2015-02-10 21:50+0100\n"
+"PO-Revision-Date: 2015-02-10 21:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
@@ -17,39 +17,157 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: inc/class-tgm-plugin-activation.php:196 functions.php:211
+#: archive.php:26 kouki/archive.php:26
+#, php-format
+msgid "#%s"
+msgstr ""
+
+#: archive.php:39 kouki/archive.php:39
+msgid "Author: "
+msgstr ""
+
+#: archive.php:42 kouki/archive.php:42
+msgid "Archive"
+msgstr ""
+
+#: comments.php:21 kouki/comments.php:21
+#, php-format
+msgid "One thought"
+msgid_plural "%1$s thoughts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:39 kouki/comments.php:39
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:40 kouki/comments.php:40
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:41 kouki/comments.php:41
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:46 kouki/comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:57 kouki/comments.php:57
+msgid "Name"
+msgstr ""
+
+#: comments.php:60 kouki/comments.php:60
+msgid "Email"
+msgstr ""
+
+#: comments.php:63 kouki/comments.php:63
+msgid "Website"
+msgstr ""
+
+#: comments.php:66 kouki/comments.php:66
+msgid "Comment"
+msgstr ""
+
+#: content-masonry.php:23 kouki/content-masonry.php:23
+msgid "Sticky"
+msgstr ""
+
+#: content-masonry.php:35 content-page.php:28 content-single.php:29
+#: kouki/content-masonry.php:35 kouki/content-page.php:28
+#: kouki/content-single.php:29
+msgid "Pages:"
+msgstr ""
+
+#: content-none.php:15 kouki/content-none.php:15
+msgid "Nothing here"
+msgstr ""
+
+#: content-none.php:19 kouki/content-none.php:19
+msgid "Sorry, but what you're looking for could not be found."
+msgstr ""
+
+#: content-post-meta.php:18 kouki/content-post-meta.php:18
+msgid "Posted "
+msgstr ""
+
+#: content-post-meta.php:19 kouki/content-post-meta.php:19
+msgid "by "
+msgstr ""
+
+#: content-post-meta.php:19 kouki/content-post-meta.php:19
+msgid " "
+msgstr ""
+
+#: content-post-meta.php:20 kouki/content-post-meta.php:20
+msgid "on"
+msgstr ""
+
+#: content-post-meta.php:21 kouki/content-post-meta.php:21
+msgid "in"
+msgstr ""
+
+#: content-post-meta.php:24 kouki/content-post-meta.php:24
+msgid "No Comments"
+msgstr ""
+
+#: content-post-meta.php:24 kouki/content-post-meta.php:24
+msgid "One Comment"
+msgstr ""
+
+#: content-post-meta.php:24 kouki/content-post-meta.php:24
+msgid "% Comments"
+msgstr ""
+
+#: footer.php:109 kouki/footer.php:109
+msgid "All Rights Reserved."
+msgstr ""
+
+#: functions.php:99 kouki/functions.php:99 kouki/options.php:187
+#: options.php:187
+msgid "Footer"
+msgstr ""
+
+#: functions.php:229 inc/class-tgm-plugin-activation.php:161
+#: kouki/functions.php:229 kouki/inc/class-tgm-plugin-activation.php:161
 msgid "Install Required Plugins"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:197 functions.php:212
+#: functions.php:230 inc/class-tgm-plugin-activation.php:162
+#: kouki/functions.php:230 kouki/inc/class-tgm-plugin-activation.php:162
 msgid "Install Plugins"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:198 functions.php:213
+#: functions.php:231 inc/class-tgm-plugin-activation.php:163
+#: kouki/functions.php:231 kouki/inc/class-tgm-plugin-activation.php:163
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:199
-msgid "Something went wrong."
+#: functions.php:232 kouki/functions.php:232
+msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:200 functions.php:215
+#: functions.php:233 inc/class-tgm-plugin-activation.php:165
+#: kouki/functions.php:233 kouki/inc/class-tgm-plugin-activation.php:165
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:201 functions.php:216
+#: functions.php:234 inc/class-tgm-plugin-activation.php:166
+#: kouki/functions.php:234 kouki/inc/class-tgm-plugin-activation.php:166
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
 msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:202 functions.php:217
+#: functions.php:235 inc/class-tgm-plugin-activation.php:167
+#: kouki/functions.php:235 kouki/inc/class-tgm-plugin-activation.php:167
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to install the %s plugin. "
@@ -62,21 +180,24 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:203 functions.php:218
+#: functions.php:236 inc/class-tgm-plugin-activation.php:168
+#: kouki/functions.php:236 kouki/inc/class-tgm-plugin-activation.php:168
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:204 functions.php:219
+#: functions.php:237 inc/class-tgm-plugin-activation.php:169
+#: kouki/functions.php:237 kouki/inc/class-tgm-plugin-activation.php:169
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:205 functions.php:220
+#: functions.php:238 inc/class-tgm-plugin-activation.php:170
+#: kouki/functions.php:238 kouki/inc/class-tgm-plugin-activation.php:170
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to activate the %s "
@@ -89,7 +210,8 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:206 functions.php:221
+#: functions.php:239 inc/class-tgm-plugin-activation.php:171
+#: kouki/functions.php:239 kouki/inc/class-tgm-plugin-activation.php:171
 #, php-format
 msgid ""
 "The following plugin needs to be updated to its latest version to ensure "
@@ -100,7 +222,8 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:207 functions.php:222
+#: functions.php:240 inc/class-tgm-plugin-activation.php:172
+#: kouki/functions.php:240 kouki/inc/class-tgm-plugin-activation.php:172
 #, php-format
 msgid ""
 "Sorry, but you do not have the correct permissions to update the %s plugin. "
@@ -113,941 +236,663 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:208 functions.php:223
+#: functions.php:241 inc/class-tgm-plugin-activation.php:173
+#: kouki/functions.php:241 kouki/inc/class-tgm-plugin-activation.php:173
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:209 functions.php:224
+#: functions.php:242 inc/class-tgm-plugin-activation.php:174
+#: kouki/functions.php:242 kouki/inc/class-tgm-plugin-activation.php:174
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:210 functions.php:225
+#: functions.php:243 inc/class-tgm-plugin-activation.php:175
+#: kouki/functions.php:243 kouki/inc/class-tgm-plugin-activation.php:175
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:211
-msgid "Return to the dashboard"
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:212
-#: inc/class-tgm-plugin-activation.php:1965 functions.php:226
+#: functions.php:244 inc/class-tgm-plugin-activation.php:177
+#: inc/class-tgm-plugin-activation.php:1939 kouki/functions.php:244
+#: kouki/inc/class-tgm-plugin-activation.php:177
+#: kouki/inc/class-tgm-plugin-activation.php:1939
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:213
-#: inc/class-tgm-plugin-activation.php:1652
+#: functions.php:245 kouki/functions.php:245
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:164
+#: kouki/inc/class-tgm-plugin-activation.php:164
+msgid "Something went wrong."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:176
+#: kouki/inc/class-tgm-plugin-activation.php:176
+msgid "Return to the dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:178
+#: inc/class-tgm-plugin-activation.php:1630
+#: kouki/inc/class-tgm-plugin-activation.php:178
+#: kouki/inc/class-tgm-plugin-activation.php:1630
 msgid "The following plugin was activated successfully:"
 msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/class-tgm-plugin-activation.php:214
+#: inc/class-tgm-plugin-activation.php:179
+#: kouki/inc/class-tgm-plugin-activation.php:179
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:215
+#: inc/class-tgm-plugin-activation.php:180
+#: kouki/inc/class-tgm-plugin-activation.php:180
 msgid "Dismiss this notice"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:556
-#: inc/class-tgm-plugin-activation.php:2182
+#: inc/class-tgm-plugin-activation.php:531
+#: inc/class-tgm-plugin-activation.php:2156
+#: kouki/inc/class-tgm-plugin-activation.php:531
+#: kouki/inc/class-tgm-plugin-activation.php:2156
 msgid "Return to the Dashboard"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1186
+#: inc/class-tgm-plugin-activation.php:1166
+#: kouki/inc/class-tgm-plugin-activation.php:1166
 msgid "Private Repository"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1189
+#: inc/class-tgm-plugin-activation.php:1169
+#: kouki/inc/class-tgm-plugin-activation.php:1169
 msgid "Pre-Packaged"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1194
+#: inc/class-tgm-plugin-activation.php:1174
+#: kouki/inc/class-tgm-plugin-activation.php:1174
 msgid "WordPress Repository"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1197
+#: inc/class-tgm-plugin-activation.php:1177
+#: kouki/inc/class-tgm-plugin-activation.php:1177
 msgid "Required"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1197
+#: inc/class-tgm-plugin-activation.php:1177
+#: kouki/inc/class-tgm-plugin-activation.php:1177
 msgid "Recommended"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1200
+#: inc/class-tgm-plugin-activation.php:1180
+#: kouki/inc/class-tgm-plugin-activation.php:1180
 msgid "Not Installed"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1202
+#: inc/class-tgm-plugin-activation.php:1182
+#: kouki/inc/class-tgm-plugin-activation.php:1182
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1304
-#: inc/class-tgm-plugin-activation.php:1412
+#: inc/class-tgm-plugin-activation.php:1287
+#: inc/class-tgm-plugin-activation.php:1395
+#: kouki/inc/class-tgm-plugin-activation.php:1287
+#: kouki/inc/class-tgm-plugin-activation.php:1395
 msgid "Install"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1326
-#: inc/class-tgm-plugin-activation.php:1413
+#: inc/class-tgm-plugin-activation.php:1309
+#: inc/class-tgm-plugin-activation.php:1396
+#: kouki/inc/class-tgm-plugin-activation.php:1309
+#: kouki/inc/class-tgm-plugin-activation.php:1396
 msgid "Activate"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1375
+#: inc/class-tgm-plugin-activation.php:1358
+#: kouki/inc/class-tgm-plugin-activation.php:1358
 #, php-format
 msgid ""
 "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
 "Dashboard\">Return to the Dashboard</a>"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1391
+#: inc/class-tgm-plugin-activation.php:1374
+#: kouki/inc/class-tgm-plugin-activation.php:1374
 msgid "Plugin"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1392
+#: inc/class-tgm-plugin-activation.php:1375
+#: kouki/inc/class-tgm-plugin-activation.php:1375
 msgid "Source"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1393
+#: inc/class-tgm-plugin-activation.php:1376
+#: kouki/inc/class-tgm-plugin-activation.php:1376
 msgid "Type"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1394
+#: inc/class-tgm-plugin-activation.php:1377
+#: kouki/inc/class-tgm-plugin-activation.php:1377
 msgid "Status"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1522
-msgid "No plugins are available to be installed at this time."
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:1630
-msgid "No plugins are available to be activated at this time."
-msgstr ""
-
-#: inc/class-tgm-plugin-activation.php:1948
+#: inc/class-tgm-plugin-activation.php:1922
+#: kouki/inc/class-tgm-plugin-activation.php:1922
 msgid "Install package not available."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1949
+#: inc/class-tgm-plugin-activation.php:1923
+#: kouki/inc/class-tgm-plugin-activation.php:1923
 #, php-format
 msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1950
+#: inc/class-tgm-plugin-activation.php:1924
+#: kouki/inc/class-tgm-plugin-activation.php:1924
 msgid "Unpacking the package&#8230;"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1951
+#: inc/class-tgm-plugin-activation.php:1925
+#: kouki/inc/class-tgm-plugin-activation.php:1925
 msgid "Installing the plugin&#8230;"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1952
+#: inc/class-tgm-plugin-activation.php:1926
+#: kouki/inc/class-tgm-plugin-activation.php:1926
 msgid "Plugin install failed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1953
+#: inc/class-tgm-plugin-activation.php:1927
+#: kouki/inc/class-tgm-plugin-activation.php:1927
 msgid "Plugin installed successfully."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:1964
+#: inc/class-tgm-plugin-activation.php:1938
+#: kouki/inc/class-tgm-plugin-activation.php:1938
 msgid "Plugin activation failed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2078
+#: inc/class-tgm-plugin-activation.php:2052
+#: kouki/inc/class-tgm-plugin-activation.php:2052
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2079
+#: inc/class-tgm-plugin-activation.php:2053
+#: kouki/inc/class-tgm-plugin-activation.php:2053
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2079
-#: inc/class-tgm-plugin-activation.php:2088
+#: inc/class-tgm-plugin-activation.php:2053
+#: inc/class-tgm-plugin-activation.php:2062
+#: kouki/inc/class-tgm-plugin-activation.php:2053
+#: kouki/inc/class-tgm-plugin-activation.php:2062
 msgid "Show Details"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2079
-#: inc/class-tgm-plugin-activation.php:2088
+#: inc/class-tgm-plugin-activation.php:2053
+#: inc/class-tgm-plugin-activation.php:2062
+#: kouki/inc/class-tgm-plugin-activation.php:2053
+#: kouki/inc/class-tgm-plugin-activation.php:2062
 msgid "Hide Details"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2080
+#: inc/class-tgm-plugin-activation.php:2054
+#: kouki/inc/class-tgm-plugin-activation.php:2054
 msgid "All installations and activations have been completed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2081
+#: inc/class-tgm-plugin-activation.php:2055
+#: kouki/inc/class-tgm-plugin-activation.php:2055
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2085
+#: inc/class-tgm-plugin-activation.php:2059
+#: kouki/inc/class-tgm-plugin-activation.php:2059
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2086
+#: inc/class-tgm-plugin-activation.php:2060
+#: kouki/inc/class-tgm-plugin-activation.php:2060
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2087
+#: inc/class-tgm-plugin-activation.php:2061
+#: kouki/inc/class-tgm-plugin-activation.php:2061
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2088
+#: inc/class-tgm-plugin-activation.php:2062
+#: kouki/inc/class-tgm-plugin-activation.php:2062
 #, php-format
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2089
+#: inc/class-tgm-plugin-activation.php:2063
+#: kouki/inc/class-tgm-plugin-activation.php:2063
 msgid "All installations have been completed."
 msgstr ""
 
-#: inc/class-tgm-plugin-activation.php:2090
+#: inc/class-tgm-plugin-activation.php:2064
+#: kouki/inc/class-tgm-plugin-activation.php:2064
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: inc/kouki-comments-output.php:18
+#: inc/comments-output.php:18 kouki/inc/comments-output.php:18
 #, php-format
 msgid "<h4 class=\"comment-cite\">%s</h4>"
 msgstr ""
 
-#: inc/kouki-comments-output.php:19
+#: inc/comments-output.php:19 kouki/inc/comments-output.php:19
 #, php-format
 msgid "%1$s"
 msgstr ""
 
-#: inc/kouki-comments-output.php:30
+#: inc/comments-output.php:30 kouki/inc/comments-output.php:30
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
-#: inc/kouki-helper-classes.php:91 inc/kouki-helper-classes.php:99
-msgid "Older Projects"
+#: inc/extras.php:52 kouki/inc/extras.php:52
+#, php-format
+msgid "Page %s"
 msgstr ""
 
-#: inc/kouki-helper-classes.php:93
-#: inc/kouki-helper-classes.php:101
+#: inc/helper-classes.php:22 kouki/inc/helper-classes.php:22
 msgid "Older Posts"
 msgstr ""
 
-#: inc/kouki-helper-classes.php:109
-#: inc/kouki-helper-classes.php:111
-#: inc/kouki-helper-classes.php:117
-#: inc/kouki-helper-classes.php:119
+#: inc/helper-classes.php:28 kouki/inc/helper-classes.php:28
 msgid "Newer posts"
 msgstr ""
 
-#: inc/kouki-jetpack-functions.php:48
+#: inc/jetpack-functions.php:48 kouki/inc/jetpack-functions.php:48
 msgid "More Projects"
 msgstr ""
 
-#: inc/kouki-jetpack-functions.php:51
+#: inc/jetpack-functions.php:51 kouki/inc/jetpack-functions.php:51
 msgid "More Posts"
 msgstr ""
 
-#: archive-jetpack-portfolio.php:13
-msgid "Portfolio "
-msgstr ""
-
-#: archive.php:26 taxonomy-jetpack-portfolio-tag.php:13
-#, php-format
-msgid "#%s"
-msgstr ""
-
-#: archive.php:39
-msgid "Author: "
-msgstr ""
-
-#: archive.php:42
-msgid "Archive"
-msgstr ""
-
-#: comments.php:21
-#, php-format
-msgid "One thought"
-msgid_plural "%1$s thoughts"
-msgstr[0] ""
-msgstr[1] ""
-
-#: comments.php:39
-msgid "Comment navigation"
-msgstr ""
-
-#: comments.php:40
-msgid "&larr; Older Comments"
-msgstr ""
-
-#: comments.php:41
-msgid "Newer Comments &rarr;"
-msgstr ""
-
-#: comments.php:46
-msgid "Comments are closed."
-msgstr ""
-
-#: comments.php:57
-msgid "Name"
-msgstr ""
-
-#: comments.php:60
-msgid "Email"
-msgstr ""
-
-#: comments.php:63
-msgid "Website"
-msgstr ""
-
-#: comments.php:66
-msgid "Comment"
-msgstr ""
-
-#: content-none.php:11
-msgid "Nothing here"
-msgstr ""
-
-#: content-none.php:12
-msgid "Sorry, but what you're looking for could not be found."
-msgstr ""
-
-#: content-post-meta.php:18
-msgid "Posted "
-msgstr ""
-
-#: content-post-meta.php:19
-msgid "by "
-msgstr ""
-
-#: content-post-meta.php:19
-msgid " "
-msgstr ""
-
-#: content-post-meta.php:20
-msgid "on"
-msgstr ""
-
-#: content-post-meta.php:21
-msgid "in"
-msgstr ""
-
-#: content-post-meta.php:24
-msgid "No Comments"
-msgstr ""
-
-#: content-post-meta.php:24
-msgid "One Comment"
-msgstr ""
-
-#: content-post-meta.php:24
-msgid "% Comments"
-msgstr ""
-
-#: footer.php:99
-msgid "All Rights Reserved."
-msgstr ""
-
-#: functions.php:82
-msgid ""
-"This is the default widget area for the sidebar. This will be displayed if "
-"the other sidebars have not been populated with widgets."
-msgstr ""
-
-#: functions.php:92
-msgid ""
-"This is the a widget area for the sidebar. It will be displayed on pages."
-msgstr ""
-
-#: functions.php:214
-msgid "Something went wrong with the plugin API."
-msgstr ""
-
-#: functions.php:227
-#, php-format
-msgid "All plugins installed and activated successfully. %s"
-msgstr ""
-
-#: functions.php:264
-msgctxt "post archive url slug"
-msgid "testimonials-archive"
-msgstr ""
-
-#: options.php:39
+#: kouki/options.php:39 options.php:39
 msgid "Two"
 msgstr ""
 
-#: options.php:40
+#: kouki/options.php:40 options.php:40
 msgid "Three"
 msgstr ""
 
-#: options.php:45
+#: kouki/options.php:45 options.php:45
 msgid "Neutral"
 msgstr ""
 
-#: options.php:46
+#: kouki/options.php:46 options.php:46
 msgid "Positive"
 msgstr ""
 
-#: options.php:47
+#: kouki/options.php:47 options.php:47
 msgid "Negative"
 msgstr ""
 
-#: options.php:48
+#: kouki/options.php:48 options.php:48
 msgid "Extra"
 msgstr ""
 
-#: options.php:53
-msgid "Boxed"
-msgstr ""
-
-#: options.php:54
-msgid "Full-Width"
-msgstr ""
-
-#: options.php:62
+#: kouki/options.php:56 options.php:56
 msgid "General"
 msgstr ""
 
-#: options.php:65
-msgid "Overall Layout"
-msgstr ""
-
-#: options.php:66
-msgid "Choose between a boxed or full-width layout."
-msgstr ""
-
-#: options.php:72
+#: kouki/options.php:59 options.php:59
 msgid "Logo"
 msgstr ""
 
-#: options.php:73
+#: kouki/options.php:60 options.php:60
 msgid "Upload a custom logo."
 msgstr ""
 
-#: options.php:77
-msgid "Favicon"
+#: kouki/options.php:64 options.php:64
+msgid "Hide Description"
 msgstr ""
 
-#: options.php:78
-msgid "Upload a custom favicon."
+#: kouki/options.php:65 options.php:65
+msgid "Do you like to hide the blog description?"
 msgstr ""
 
-#: options.php:82 options.php:489
+#: kouki/options.php:70 kouki/options.php:343 options.php:70 options.php:343
 msgid "Colors"
 msgstr ""
 
-#: options.php:85 options.php:499
+#: kouki/options.php:73 kouki/options.php:353 options.php:73 options.php:353
 msgid "Text Color"
 msgstr ""
 
-#: options.php:86
+#: kouki/options.php:74 options.php:74
 msgid "Select a text-color for your theme."
 msgstr ""
 
-#: options.php:91 options.php:511
+#: kouki/options.php:79 kouki/options.php:365 options.php:79 options.php:365
 msgid "Headline Color"
 msgstr ""
 
-#: options.php:92
+#: kouki/options.php:80 options.php:80
 msgid "Select a color for your headlines."
 msgstr ""
 
-#: options.php:97 options.php:523
+#: kouki/options.php:85 kouki/options.php:377 options.php:85 options.php:377
 msgid "Link Color"
 msgstr ""
 
-#: options.php:98
+#: kouki/options.php:86 options.php:86
 msgid "Select a color for your links."
 msgstr ""
 
-#: options.php:103 options.php:535
+#: kouki/options.php:91 kouki/options.php:389 options.php:91 options.php:389
 msgid "Positive Buttons"
 msgstr ""
 
-#: options.php:104
+#: kouki/options.php:92 options.php:92
 msgid "Select a color for positive buttons."
 msgstr ""
 
-#: options.php:109 options.php:547
+#: kouki/options.php:97 kouki/options.php:401 options.php:97 options.php:401
 msgid "Negative Buttons"
 msgstr ""
 
-#: options.php:110
+#: kouki/options.php:98 options.php:98
 msgid "Select a color for negative buttons."
 msgstr ""
 
-#: options.php:115 options.php:559
+#: kouki/options.php:103 kouki/options.php:413 options.php:103 options.php:413
 msgid "Extra Buttons"
 msgstr ""
 
-#: options.php:116
+#: kouki/options.php:104 options.php:104
 msgid "Select a color for extra buttons."
 msgstr ""
 
-#: options.php:121 options.php:571
+#: kouki/options.php:109 kouki/options.php:425 options.php:109 options.php:425
 msgid "Meta Text"
 msgstr ""
 
-#: options.php:122
+#: kouki/options.php:110 options.php:110
 msgid "Select a color for meta texts, section dividers and other small texts."
 msgstr ""
 
-#: options.php:127 options.php:595
-msgid "Module: Testimonials Background"
-msgstr ""
-
-#: options.php:128
-msgid "Select a background-color for the testimonials module if activated."
-msgstr ""
-
-#: options.php:133 options.php:583
-msgid "Module: Testimonials Text"
-msgstr ""
-
-#: options.php:134
-msgid "Select a text-color for the testimonials module if activated."
-msgstr ""
-
-#: options.php:139 options.php:619
+#: kouki/options.php:115 kouki/options.php:449 options.php:115 options.php:449
 msgid "Module: CTA Background"
 msgstr ""
 
-#: options.php:140
+#: kouki/options.php:116 options.php:116
 msgid "Select a background-color for the call-to-action module if activated."
 msgstr ""
 
-#: options.php:145 options.php:607
+#: kouki/options.php:121 kouki/options.php:437 options.php:121 options.php:437
 msgid "Module: CTA Text"
 msgstr ""
 
-#: options.php:146
+#: kouki/options.php:122 options.php:122
 msgid "Select a text-color for the call-to-action module if activated."
 msgstr ""
 
-#: options.php:151 options.php:643
-msgid "Footer Background"
-msgstr ""
-
-#: options.php:152
-msgid "Select a background-color for the footer."
-msgstr ""
-
-#: options.php:157 options.php:631
-msgid "Footer Text"
-msgstr ""
-
-#: options.php:158
-msgid "Select a text-color for the footer."
-msgstr ""
-
-#: options.php:163 options.php:441
+#: kouki/options.php:127 kouki/options.php:308 options.php:127 options.php:308
 msgid "Fonts"
 msgstr ""
 
-#: options.php:166 options.php:451
+#: kouki/options.php:130 kouki/options.php:318 options.php:130 options.php:318
 msgid "Primary Font"
 msgstr ""
 
-#: options.php:167 options.php:484
+#: kouki/options.php:131 kouki/options.php:338 options.php:131 options.php:338
 msgid ""
 "Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
 "\"_blank\">Google Web Font</a> you want to use for texts."
 msgstr ""
 
-#: options.php:172 options.php:464
+#: kouki/options.php:136 kouki/options.php:331 options.php:136 options.php:331
 msgid "Secondary Font"
 msgstr ""
 
-#: options.php:173
+#: kouki/options.php:137 options.php:137
 msgid ""
 "Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
 "\"_blank\">Google Web Font</a> you want to use for headings. Hint: Leave "
 "blank if you do not want to load this style."
 msgstr ""
 
-#: options.php:178 options.php:477
-msgid "Logo Font"
-msgstr ""
-
-#: options.php:179
-msgid ""
-"Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
-"\"_blank\">Google Web Font</a> you want to use for the logo. Hint: Leave "
-"blank if you do not want to load this style."
-msgstr ""
-
-#: options.php:184
-msgid "Front Page"
-msgstr ""
-
-#: options.php:187
-msgid "Show Revolution Slider"
-msgstr ""
-
-#: options.php:188
-msgid ""
-"Check this box to show the slider if activated. You have to name your "
-"prefered slideshow \"main\"!"
-msgstr ""
-
-#: options.php:193
-msgid "Hero Message"
-msgstr ""
-
-#: options.php:194
-msgid ""
-"Here you can include a bold statement to introduce your site. If nothing is "
-"typed, the section will not be displayed."
-msgstr ""
-
-#: options.php:199
-msgid "Project Count"
-msgstr ""
-
-#: options.php:200
-msgid ""
-"How many projects do you like to display? This theme uses the portolio post-"
-"type of the Jetpack plugin. Hint: This section only displays projects, which "
-"are tagged as \"featured\"! If zero is typed, the section will not be "
-"displayed."
-msgstr ""
-
-#: options.php:205
-msgid "Section Title: Recent-News"
-msgstr ""
-
-#: options.php:206
-msgid ""
-"Set a title for the recent-news section. If nothing is typed, the title will "
-"not be displayed."
-msgstr ""
-
-#: options.php:211
-msgid "Post Count"
-msgstr ""
-
-#: options.php:212
-msgid ""
-"How many articles do you like to show on the front-page? If zero is typed, "
-"the whole section including the title set above will not be displayed."
-msgstr ""
-
-#: options.php:217 options.php:257
-msgid "Show Featured Image"
-msgstr ""
-
-#: options.php:218
-msgid "Check this box to show the featured image for posts on the front-page."
-msgstr ""
-
-#: options.php:223
-msgid "Show Testimonial"
-msgstr ""
-
-#: options.php:224
-msgid ""
-"If you check this box a random testimonial of the WooThemes plugin will be "
-"displayed on the front-page"
-msgstr ""
-
-#: options.php:229
-msgid "Section Title: Testimonials"
-msgstr ""
-
-#: options.php:230
-msgid "Type a headline to describe this section."
-msgstr ""
-
-#: options.php:235
-msgid "Portfolio"
-msgstr ""
-
-#: options.php:238
-msgid "Project Columns"
-msgstr ""
-
-#: options.php:239
-msgid ""
-"Select the number of columns in which to display your projects on home- & "
-"archive-pages."
-msgstr ""
-
-#: options.php:245
-msgid "Show Project-Type"
-msgstr ""
-
-#: options.php:246
-msgid "Check this box if you like to display the project-type."
-msgstr ""
-
-#: options.php:251
-msgid "Show Portfolio-Tags"
-msgstr ""
-
-#: options.php:252
-msgid ""
-"Check this box to show the portfolio-tags below the content of single "
-"portfolio items."
-msgstr ""
-
-#: options.php:258
-msgid "Check this box to show the featured image on single portfolio items."
-msgstr ""
-
-#: options.php:263
+#: kouki/options.php:142 options.php:142
 msgid "Posts"
 msgstr ""
 
-#: options.php:266
-msgid "Enable Full-Width"
+#: kouki/options.php:145 options.php:145
+msgid "Show Excerpts"
 msgstr ""
 
-#: options.php:267
+#: kouki/options.php:146 options.php:146
 msgid ""
-"Check this box to make your posts span the width of the page. The sidebar "
-"will disappear."
+"Check this box to show the excerpt on index and archive pages instead or the "
+"full content."
 msgstr ""
 
-#: options.php:278
-msgid "Show Full Posts"
-msgstr ""
-
-#: options.php:279
-msgid ""
-"Check this box to show the full post on index and archive pages instead of "
-"the excerpt."
-msgstr ""
-
-#: options.php:284
+#: kouki/options.php:151 options.php:151
 msgid "Show Author"
 msgstr ""
 
-#: options.php:285
+#: kouki/options.php:152 options.php:152
 msgid "Check this box to show the author."
 msgstr ""
 
-#: options.php:290
+#: kouki/options.php:157 options.php:157
 msgid "Show Date"
 msgstr ""
 
-#: options.php:291
+#: kouki/options.php:158 options.php:158
 msgid "Check this box to show the publish date."
 msgstr ""
 
-#: options.php:296
+#: kouki/options.php:163 options.php:163
 msgid "Show Category"
 msgstr ""
 
-#: options.php:297
+#: kouki/options.php:164 options.php:164
 msgid "Check this box to show the category."
 msgstr ""
 
-#: options.php:302
+#: kouki/options.php:169 options.php:169
 msgid "Show Comment-Count"
 msgstr ""
 
-#: options.php:303
+#: kouki/options.php:170 options.php:170
 msgid "Check this box to show the comment count."
 msgstr ""
 
-#: options.php:308
+#: kouki/options.php:175 options.php:175
 msgid "Show Tags"
 msgstr ""
 
-#: options.php:309
+#: kouki/options.php:176 options.php:176
 msgid "Check this box to show tags on single articles below the content."
 msgstr ""
 
-#: options.php:314
+#: kouki/options.php:181 options.php:181
 msgid "Show Featured-Image"
 msgstr ""
 
-#: options.php:315
+#: kouki/options.php:182 options.php:182
 msgid "Check this box to show the featured image on single posts."
 msgstr ""
 
-#: options.php:320
-msgid "Footer"
-msgstr ""
-
-#: options.php:323
+#: kouki/options.php:190 options.php:190
 msgid "Module CTA: Your promotion text"
 msgstr ""
 
-#: options.php:324
+#: kouki/options.php:191 options.php:191
 msgid ""
 "Type a little text to advertise your call-to-action button. If nothing is "
 "typed, this section will not be displayed."
 msgstr ""
 
-#: options.php:329
+#: kouki/options.php:196 options.php:196
 msgid "Module CTA: Button-label"
 msgstr ""
 
-#: options.php:330
+#: kouki/options.php:197 options.php:197
 msgid "Enter a name for your call-to-action button."
 msgstr ""
 
-#: options.php:335
+#: kouki/options.php:202 options.php:202
 msgid "Module CTA: Button-link"
 msgstr ""
 
-#: options.php:336
+#: kouki/options.php:203 options.php:203
 msgid "Enter a link for the button."
 msgstr ""
 
-#: options.php:341
+#: kouki/options.php:208 options.php:208
 msgid "Module CTA: Button-Style"
 msgstr ""
 
-#: options.php:342
+#: kouki/options.php:209 options.php:209
 msgid "Select a style for your Button."
 msgstr ""
 
-#: options.php:348
+#: kouki/options.php:215 options.php:215
 msgid "Mail Icon"
 msgstr ""
 
-#: options.php:349
+#: kouki/options.php:216 options.php:216
 msgid ""
 "Enter your Email Address if you like to display the icon at the bottom of "
 "the footer."
 msgstr ""
 
-#: options.php:354
+#: kouki/options.php:221 options.php:221
 msgid "RSS Feed Icon"
 msgstr ""
 
-#: options.php:355
+#: kouki/options.php:222 options.php:222
 msgid ""
 "Enter the link to your RSS Feed if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:360
+#: kouki/options.php:227 options.php:227
 msgid "Social: Behance Icon"
 msgstr ""
 
-#: options.php:361
+#: kouki/options.php:228 options.php:228
 msgid ""
 "Enter the link to your Behance page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:366
+#: kouki/options.php:233 options.php:233
 msgid "Social: Dribbble Icon"
 msgstr ""
 
-#: options.php:367
+#: kouki/options.php:234 options.php:234
 msgid ""
 "Enter the link to your Dribbble page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:372
+#: kouki/options.php:239 options.php:239
 msgid "Social: Facebook Icon"
 msgstr ""
 
-#: options.php:373
+#: kouki/options.php:240 options.php:240
 msgid ""
 "Enter the link to your Facebook page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:378
+#: kouki/options.php:245 options.php:245
 msgid "Social: Instagram Icon"
 msgstr ""
 
-#: options.php:379
+#: kouki/options.php:246 options.php:246
 msgid ""
 "Enter the link to your Instagram page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:384
+#: kouki/options.php:251 options.php:251
 msgid "Social: LinkedIn Icon"
 msgstr ""
 
-#: options.php:385
+#: kouki/options.php:252 options.php:252
 msgid ""
 "Enter the link to your LinkedIn page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:390
+#: kouki/options.php:257 options.php:257
 msgid "Social: Pinterest Icon"
 msgstr ""
 
-#: options.php:391
+#: kouki/options.php:258 options.php:258
 msgid ""
 "Enter the link to your Pinterest page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:396
+#: kouki/options.php:263 options.php:263
 msgid "Social: SoundCloud Icon"
 msgstr ""
 
-#: options.php:397
+#: kouki/options.php:264 options.php:264
 msgid ""
 "Enter the link to your SoundCloud page if you like to display the icon at "
 "the bottom of the footer."
 msgstr ""
 
-#: options.php:402
+#: kouki/options.php:269 options.php:269
 msgid "Social: Tumblr Icon"
 msgstr ""
 
-#: options.php:403
+#: kouki/options.php:270 options.php:270
 msgid ""
 "Enter the link to your Tumblr page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:408
+#: kouki/options.php:275 options.php:275
 msgid "Social: Twitter Icon"
 msgstr ""
 
-#: options.php:409
+#: kouki/options.php:276 options.php:276
 msgid ""
 "Enter the link to your Twitter page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:414
+#: kouki/options.php:281 options.php:281
 msgid "Footer-credits"
 msgstr ""
 
-#: options.php:415
+#: kouki/options.php:282 options.php:282
 msgid "The text will appear below the footer."
 msgstr ""
 
-#: options.php:649
+#: kouki/options.php:455 options.php:455
 msgid "Change theme colors."
 msgstr ""
 
-#: search.php:11
+#: kouki/search.php:11 search.php:11
 msgid "Search Results"
 msgstr ""
 
-#: searchform.php:8
+#: kouki/searchform.php:8 searchform.php:8
 msgid "Type and press enter to search."
-msgstr ""
-
-#: single-jetpack-portfolio.php:22
-msgctxt ""
-msgid ", "
-msgstr ""
-
-#: single-jetpack-portfolio.php:30
-msgctxt ""
-msgid " #"
 msgstr ""

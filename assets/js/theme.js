@@ -6,9 +6,8 @@ jQuery( document ).ready( function( $ ) {
 
 	"use strict";
 
-	/**
-	 * Init top-bar height effect
-	 */
+	/************** Tob-bar Height **************/
+
 	$( window ).bind( "scroll", function() {
 		if ( $ ( this ).scrollTop() > 10 ) {
 			$( ".top-bar" ).removeClass( "tb-large" ).addClass( "tb-small" );
@@ -17,9 +16,8 @@ jQuery( document ).ready( function( $ ) {
 		}
 	});
 
-	/**
-	 * Init the menu-effect
-	 */
+	/************** Menu Effect **************/
+
 	var theToggle = document.getElementById('toggle');
 
 	// based on Todd Motto functions
@@ -60,13 +58,12 @@ jQuery( document ).ready( function( $ ) {
 
 	theToggle.onclick = function() {
 	   toggleClass(this, 'on');
-	   $( "#menu" ).slideToggle();
+	   $( "#menu" ).slideToggle('fast');
 	   return false;
 	}
 
-	/**
-	 * Load masonry
-	 */
+	/************** Init Masonry **************/
+
 	var $blocks = $( ".js-masonry" );
 
 	$blocks.imagesLoaded( function(){
@@ -98,14 +95,38 @@ jQuery( document ).ready( function( $ ) {
 
 	});
 
-	/**
-	 * This script is used to align inline-elements
-	 * without any floats. The script gets rid of white-space.
-	 * Ressource: http://stackoverflow.com/a/16225780
-	 */
-	$('[data-bikeshedding="nospace"]').each (function () {
-      var node = $(this);
-      node.html (node.find ('> *').detach ());
-    });
+	/************** Gallery Masonry Init **************/
+
+	var galleries = document.querySelectorAll('.gallery');
+	for ( var i=0, len = galleries.length; i < len; i++ ) {
+	  var gallery = galleries[i];
+	  initMasonry( gallery );
+	}
+	function initMasonry( container ) {
+	  var imgLoad = imagesLoaded( container, function() {
+	    new Masonry( container, {
+	      itemSelector: '.gallery-item',
+	      columnWidth: '.gallery-item'
+	    });
+	  });
+	}
+
+	/************** Image Lightbox Init **************/
+
+	$(".entry-content a").attr('data-imagelightbox', '');
+
+	// Overlay
+	var overlayOn = function() {
+		$( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
+	},
+	overlayOff = function() {
+		$( '#imagelightbox-overlay' ).remove(); 
+	}
+
+	// Init with Overlay
+	$( 'a[data-imagelightbox]' ).imageLightbox({
+		onStart: 	 function() { overlayOn(); },
+		onEnd:	 	 function() { overlayOff(); }		
+	});
 
 });

@@ -24,9 +24,6 @@ function kouki_gallery_masonry_js() {
   global $post;
 
   if( has_shortcode( $post->post_content, 'gallery') ) {
-
-    wp_register_script('masonryInit', get_stylesheet_directory_uri() . '/assets/js/gallery_masonry_init.js', array('masonry'), '2.1.6', true);
-    wp_enqueue_script('masonryInit');
-
+    wp_enqueue_script('initMasonry');
   }
 }

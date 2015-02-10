@@ -68,11 +68,6 @@ Navigation Toggle
   position: absolute;
   z-index: 99999;
   display: none;
-}
-.full #menu {
-  right: 0;
-}
-.boxed #menu {
   right: -30px;
 }
 #menu ul, #menu li, #menu li a {
@@ -84,8 +79,9 @@ Navigation Toggle
 #menu > ul {
   padding: 15px 30px;
   min-width: 200px;
-  background: rgba(0,0,0, .85);
+  background: #151515;
   text-align: right;
+  border-radius: 4px;
 }
 #menu li a {
   padding: 10px 0;
@@ -97,7 +93,7 @@ Navigation Toggle
           transition: all .2s;
 }
 #menu > ul > li > a {
-  border-bottom: 1px solid rgba( 255, 255, 255, .1);
+  //border-bottom: 1px solid rgba( 255, 255, 255, .1);
 }
 #menu > ul > li.menu-item-has-children > a {
   border: none;
@@ -119,11 +115,11 @@ Navigation Toggle
 }
 #menu ul ul {
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba( 255, 255, 255, .1);
+  //border-bottom: 1px solid rgba( 255, 255, 255, .1);
 }
 #menu ul ul ul {
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba( 255, 255, 255, .1);
+  //border-bottom: 1px solid rgba( 255, 255, 255, .1);
   font-size: .8em;
 }
 #menu ul ul li a,
@@ -138,7 +134,7 @@ Navigation Toggle
 @media only screen and (max-width: 1200px) {
 
   /* menu appearance*/
-  .boxed #menu {
+  #menu {
     right: 0;
   }
 }

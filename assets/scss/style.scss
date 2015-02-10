@@ -1,18 +1,29 @@
 /*
 Theme Name: Kouki
-Version: 1.0
+Version: 1.2
 Author: Felix Dorner
 Author URI: http://felixdorner.com
 Theme URI: http://demo.felixdorner.com/kouki/
-Description: A beautiful & responsive Jetpack portfolio theme for creatives, agencies & photographers.
+Description: A beautiful and minimal theme for food bloggers
 License: GNU GENERAL PUBLIC LICENSE, Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: kouki
-Tags: gray, white, light, one-column, two-columns, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
+Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
 */
 
 // Reset
 @import "base/reset";
+
+// Bourbon - http://bourbon.io
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+
+// Settings
+@import "settings/variables";
+@import "settings/grid"; // Must be imported before Neat
+//@import "settings/mixins";
+
+// Neat - http://neat.bourbon.io
+@import "../../bower_components/neat/app/assets/stylesheets/neat";
 
 // Globals
 @import "base/elements";
@@ -20,6 +31,7 @@ Tags: gray, white, light, one-column, two-columns, responsive-layout, custom-col
 @import "base/colors";
 
 // Components
+@import "components/accessibility";
 @import "components/typo";
 @import "components/links";
 @import "components/buttons";
@@ -27,7 +39,6 @@ Tags: gray, white, light, one-column, two-columns, responsive-layout, custom-col
 // Partials
 @import "partials/header";
 @import "partials/navigation-toggle";
-@import "partials/portfolio-thumbs";
 @import "partials/footer";
 @import "partials/wp-formatting";
 @import "partials/wp-comments";

@@ -50,9 +50,7 @@ if( is_archive() && have_posts() ) : ?>
 
 <?php endif; ?>
 
-
-
-<?php kouki_layout_before(); ?>
+<main role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -73,8 +71,6 @@ if( is_archive() && have_posts() ) : ?>
 
 		endif; ?>
 
-<?php kouki_layout_after(); ?>
-
-
+</main>
 
 <?php get_footer(); ?>

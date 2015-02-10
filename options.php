@@ -59,12 +59,13 @@ function optionsframework_options() {
 	$options[] = array( "name" => __('Logo','kouki'),
 						"desc" => __('Upload a custom logo.','kouki'),
 						"id" => "kouki_logo",
-						"type" => "upload");
+						"type" => "upload");	
 
-	$options[] = array( "name" => __('Favicon','kouki'),
-						"desc" => __('Upload a custom favicon.','kouki'),
-						"id" => "kouki_favicon",
-						"type" => "upload");
+	$options[] = array( "name" => __('Hide Description','kouki'),
+						"desc" => __('Do you like to hide the blog description?','kouki'),
+						"id" => "kouki_blog_description",
+						"std" => "0",
+						"type" => "checkbox");
 
 	$options[] = array( "name" => __('Colors','kouki'),
 						"type" => "heading");
@@ -123,18 +124,6 @@ function optionsframework_options() {
 						"std" => "#c0c0c0",
 						"type" => "color");
 
-	$options[] = array( "name" => __('Footer Background','kouki'),
-						"desc" => __('Select a background-color for the footer.','kouki'),
-						"id" => "kouki_footer_bg",
-						"std" => "#f5f5f5",
-						"type" => "color");
-
-	$options[] = array( "name" => __('Footer Text','kouki'),
-						"desc" => __('Select a text-color for the footer.','kouki'),
-						"id" => "kouki_footer_color",
-						"std" => "#c0c0c0",
-						"type" => "color");
-
 	$options[] = array( "name" => __('Fonts','kouki'),
 						"type" => "heading");
 
@@ -150,91 +139,12 @@ function optionsframework_options() {
 						"std" => "Julius Sans One",
 						"type" => "text");
 
-	$options[] = array( "name" => __('Logo Font','kouki'),
-						"desc" => __('Enter the name of the <a href="http://www.google.com/webfonts" target="_blank">Google Web Font</a> you want to use for the logo. Hint: Leave blank if you do not want to load this style.','kouki'),
-						"id" => "kouki_logo_font",
-						"std" => "",
-						"type" => "text");
-
-	$options[] = array( "name" => __('Front Page','kouki'),
-						"type" => "heading");
-
-	$options[] = array( "name" => __('Hero Message','kouki'),
-						"desc" => __('Here you can include a bold statement to introduce your site. If nothing is typed, the section will not be displayed.','kouki'),
-						"id" => "kouki_message",
-						"std" => "",
-						"type" => "textarea");
-
-	$options[] = array( "name" => __('Project Count','kouki'),
-						"desc" => __('How many projects do you like to display? This theme uses the portolio post-type of the Jetpack plugin. Hint: This section only displays projects, which are tagged as "featured"! If zero is typed, the section will not be displayed.','kouki'),
-						"id" => "kouki_home_project_count",
-						"std" => "6",
-						"type" => "text");
-
-	$options[] = array( "name" => __('Section Title: Recent-News','kouki'),
-						"desc" => __('Set a title for the recent-news section. If nothing is typed, the title will not be displayed.','kouki'),
-						"id" => "kouki_home_blog_title",
-						"std" => "Recent News",
-						"type" => "text");
-
-	$options[] = array( "name" => __('Post Count','kouki'),
-						"desc" => __('How many articles do you like to show on the front-page? If zero is typed, the whole section including the title set above will not be displayed.','kouki'),
-						"id" => "kouki_home_post_count",
-						"std" => "4",
-						"type" => "text");
-
-	$options[] = array( "name" => __('Show Featured Image','kouki'),
-						"desc" => __('Check this box to show the featured image for posts on the front-page.','kouki'),
-						"id" => "kouki_home_post_show_featured_image",
-						"std" => "0",
-						"type" => "checkbox");
-
-	$options[] = array( "name" => __('Portfolio','kouki'),
-						"type" => "heading");
-
-	$options[] = array( "name" => __('Project Columns','kouki'),
-						"desc" => __('Select the number of columns in which to display your projects on home- & archive-pages.','kouki'),
-						"id" => "kouki_project_columns",
-						"std" => "two",
-						"type" => "radio",
-						"options" => $numbers );
-
-	$options[] = array( "name" => __('Show Project-Type','kouki'),
-						"desc" => __('Check this box if you like to display the project-type.','kouki'),
-						"id" => "kouki_portfolio_show_type",
-						"std" => "1",
-						"type" => "checkbox");
-
-	$options[] = array( "name" => __('Show Portfolio-Tags','kouki'),
-						"desc" => __('Check this box to show the portfolio-tags below the content of single portfolio items.','kouki'),
-						"id" => "kouki_portfolio_show_tags",
-						"std" => "1",
-						"type" => "checkbox");
-
-	$options[] = array( "name" => __('Show Featured Image','kouki'),
-						"desc" => __('Check this box to show the featured image on single portfolio items.','kouki'),
-						"id" => "kouki_portfolio_show_featured_image",
-						"std" => "1",
-						"type" => "checkbox");
-
 	$options[] = array( "name" => __('Posts','kouki'),
 						"type" => "heading");
 
-	$options[] = array( "name" => __('Enable Full-Width','kouki'),
-						"desc" => __('Check this box to make your posts span the width of the page. The sidebar will disappear.','kouki'),
-						"id" => "kouki_full_width",
-						"std" => "1",
-						"type" => "checkbox");
-
-	$options[] = array( "name" => "On which page you are displaying the blog?",
-						"desc" => "This is used to show the right title at the top of your blog-page.",
-						"id" => "kouki_blog_page",
-						"type" => "select",
-						"options" => $options_pages);
-
-	$options[] = array( "name" => __('Show Full Posts','kouki'),
-						"desc" => __('Check this box to show the full post on index and archive pages instead of the excerpt.','kouki'),
-						"id" => "kouki_show_full_post",
+	$options[] = array( "name" => __('Show Excerpts','kouki'),
+						"desc" => __('Check this box to show the excerpt on index and archive pages instead or the full content.','kouki'),
+						"id" => "kouki_show_excerpt",
 						"std" => "0",
 						"type" => "checkbox");
 
@@ -425,19 +335,6 @@ function kouki_customizer_register($wp_customize) {
 			'priority' => 2
 		) );
 
-	$wp_customize->add_setting( 'kouki[kouki_logo_font]', array(
-		'default' => $options['kouki_logo_font']['std'],
-		'type' => 'option'
-	) );
-
-	$wp_customize->add_control( 'kouki_logo_font', array(
-			'label' => __( 'Logo Font', 'kouki' ),
-			'section' => 'kouki_fonts',
-			'settings' => 'kouki[kouki_logo_font]',
-			'type' => $options['kouki_logo_font']['type'],
-			'priority' => 3
-		) );
-
 	$wp_customize->get_section( 'kouki_fonts' )->description = __( 'Enter the name of the <a href="http://www.google.com/webfonts" target="_blank">Google Web Font</a> you want to use for texts.', 'kouki' );
 
 	/* Colors */
@@ -553,30 +450,6 @@ function kouki_customizer_register($wp_customize) {
 			'section' => 'kouki_colors',
 			'settings'   => 'kouki[kouki_cta_bg]',
 			'priority' => 11
-		) ) );
-
-	$wp_customize->add_setting( 'kouki[kouki_footer_color]', array(
-		'default' => $options['kouki_footer_color']['std'],
-		'type' => 'option'
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_color', array(
-			'label'   => __( 'Footer Text', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_footer_color]',
-			'priority' => 12
-		) ) );
-
-	$wp_customize->add_setting( 'kouki[kouki_footer_bg]', array(
-		'default' => $options['kouki_footer_bg']['std'],
-		'type' => 'option'
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'footer_bg', array(
-			'label'   => __( 'Footer Background', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_footer_bg]',
-			'priority' => 13
 		) ) );
 
 	$wp_customize->get_section( 'kouki_colors' )->description = __( 'Change theme colors.', 'kouki' );

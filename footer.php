@@ -28,7 +28,17 @@
 
 	<?php endif; ?>
 
+	<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
+	  <div class="footer-links" data-sr>	  	
+	  	<?php	dynamic_sidebar( 'footer-1' ); ?>
+	  </div>
+	<?php } ?>
+
 	<div class="social pad-2-1-0">
+		
+		<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
+			<hr>
+		<?php } ?>
 
 		<?php
 		$footer_credits = of_get_option('kouki_footer_credits');

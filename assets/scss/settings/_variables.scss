@@ -1,0 +1,79 @@
+// Typography
+$base-font-family: "Open Sans", Helvetica, Arial, sans-serif;
+$headings-font-family: "Julius Sans One", Helvetica, Arial, sans-serif;
+$pre-font-family: "Courier 10 Pitch", Courier, monospace;
+$code-font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+// Font Sizes
+$base-font-size: 16px;
+$small-font-size: .8em;
+$big-font-size: 1.4em;
+$h1-font-size: $base-font-size * 3.25;
+$h2-font-size: $base-font-size * 3.00;
+$h3-font-size: $base-font-size * 1.75;
+$h4-font-size: $base-font-size * 2.5;
+$h5-font-size: $base-font-size * 2.25;
+$h6-font-size: $base-font-size;
+
+// Line height
+$base-line-height: 1.6;
+$headings-line-height: 1.4;
+
+// Colors
+$black: #151515;
+$light-gray: #F4F4F4;
+$medium-gray: #EEEEEE;
+$gray: #C0C0C0;
+
+// Background Color
+$base-bg-color: $light-gray;
+$wrapper-bg-color: white;
+$ins-bg-color: $light-gray;
+
+// Font Colors
+$base-font-color: $black;
+$base-accent-color: $black;
+
+// Link Colors
+$base-link-color: $base-accent-color;
+$hover-link-color: darken($base-accent-color, 15);
+
+// Button Colors
+$base-button-color: $base-link-color;
+$hover-button-color: $hover-link-color;
+
+// Spacings
+$base-spacing: $base-line-height * 1em;
+$spacing-xs: 15px;
+$spacing-s: 30px;
+$spacing-m: 60px;
+$spacing-l: 90px;
+$spacing-xl: 120px;
+
+// Other Values
+$base-border-radius: 2px;
+
+// z-index
+$z-below-content: 1;
+$z-content: 2;
+$z-above-content: 3;
+$z-above-all: 99999;
+
+// Borders
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-border-color: #eee;
+$form-border-color-hover: darken($base-border-color, 10);
+$form-border-color-focus: $base-accent-color;
+$form-border-radius: $base-border-radius;
+$form-box-shadow: inset 0 1px 3px rgba(black,0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$form-font-size: $base-font-size;
+$form-font-family: $base-font-family;
+
+// Comments
+$comment-bg-color: #1B1B1B;
+$comment-font-color: #989898;
+$respond-bg-color: #272727;

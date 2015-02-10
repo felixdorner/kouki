@@ -6,10 +6,20 @@
  */
 ?>
 
-<article class="pad-2-1 aligncenter">
+<section class="pad-2-1 aligncenter">
 
-	<h1 class="m-0-0-1"><?php _e( "Nothing here", 'kouki' ); ?></h1>
-  <p><?php _e( "Sorry, but what you're looking for could not be found.", 'kouki' ); ?></p>
+	<div class="hentry__inside">
+		
+		<?php if ( ! is_search() ) { ?>	
+		<header class="pad-2-1-1 aligncenter">		
+			<h1><?php _e( "Nothing here", 'kouki' ); ?></h1>
+		</header>
+		<?php } ?>
 
-</article>
+	  <p><?php _e( "Sorry, but what you're looking for could not be found.", 'kouki' ); ?></p>
+	  <p><?php get_search_form(); ?></p>
+
+  </div>
+
+</section>
 

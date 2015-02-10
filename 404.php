@@ -5,14 +5,10 @@
  * @package kouki
  */
 
-get_header();
+get_header(); ?>
 
-  wunderbar_layout_before();
+  <main role="main">
+    <?php get_template_part( 'content', 'none' ); ?>
+  </main>
 
-    get_template_part( 'content', 'none' );
-
-  wunderbar_layout_after();
-
-get_footer();
-
-?>
+<?php get_footer(); ?>

@@ -2,7 +2,7 @@
 /**
  * The template to display search-results.
  *
- * @package Kouki
+ * @package kouki
  */
 
 get_header(); ?>
@@ -11,9 +11,9 @@ get_header(); ?>
 	<?php _e( 'Search Results', 'kouki' ); ?>
 </h1>
 
-<?php kouki_layout_before();
+<main role="main">
 
-		if ( have_posts() ) : ?>
+		<?php if ( have_posts() ) : ?>
 
 			<div id="content" class="js-masonry">
 				<?php while ( have_posts() ) : the_post();
@@ -30,8 +30,8 @@ get_header(); ?>
 			 */
 			get_template_part( 'content', 'none' );
 
-		endif;
+		endif; ?>
 
-kouki_layout_after();
+</main>
 
-get_footer(); ?>
+<?php get_footer(); ?>

@@ -6,38 +6,31 @@ Colors
  * Globals
  */
 body {
-  color: #151515;
-}
-body.boxed {
-  background: #f5f5f5;
-}
-body.full {
-  background: #fff;
+  color: $base-font-color;
+  background: $base-bg-color;
 }
 
 /**
  * Grid
  */
-.boxed .wrapper {
-  background: #fff;
+.wrapper {
+  background: $wrapper-bg-color;
 }
 
 /**
  * Content
  */
 .meta, .wp-caption-text {
-  color: #c0c0c0;
-}
-.projects .meta {
-  color: #151515;
+  color: $gray;
 }
 
 /**
  * Footer
  */
 footer {
-  color: #c0c0c0;
+  color: $gray;
+  background: $base-bg-color; 
 }
 .call-to-action {
-  background: #eee;
+  background: $medium-gray;
 }

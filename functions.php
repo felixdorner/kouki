@@ -9,8 +9,14 @@
  * Set the content width based on the theme's design and stylesheet
  */
 if ( ! isset( $content_width ) ) {
-  $content_width = 1200; /* pixels */
+  $content_width = 740; /* pixels */
 }
+
+/************************************************************/
+/*                                                          */
+/*   THEME SETUP
+/*                                                          */
+/************************************************************/
 
 if ( ! function_exists( 'kouki_setup' ) ) :
 /**
@@ -38,6 +44,14 @@ function kouki_setup() {
    * Add default posts and comments RSS feed links to head
    */
   add_theme_support( 'automatic-feed-links' );
+
+  /*
+   * Let WordPress manage the document title.
+   * By adding theme support, we declare that this theme does not use a
+   * hard-coded <title> tag in the document head, and expect WordPress to
+   * provide it for us.
+   */
+  add_theme_support( 'title-tag' );
 
   /*
    * Enable support for Post Thumbnails on posts and pages
@@ -69,59 +83,42 @@ function kouki_setup() {
 } endif;
 add_action( 'after_setup_theme', 'kouki_setup' );
 
+/************************************************************/
+/*                                                          */
+/*   WIDGETS                                                */
+/*                                                          */
+/************************************************************/
+
 /**
  * Register widget area
  *
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function kouki_widgets_init() {
-
   register_sidebar( array(
-    'name' => 'Sidebar',
-    'id' => 'sidebar',
-    'description' => __( 'This is the default widget area for the sidebar. This will be displayed if the other sidebars have not been populated with widgets.', 'kouki' ),
-    'before_widget' => '<div id="%1$s" class="%2$s sidebarBox widgetBox">',
-    'after_widget' => '</div>',
-    'before_title' => '<span class="widgetTitle">',
-    'after_title' => '</span>'
-  ));
-
-  register_sidebar( array(
-    'name' => 'Page Sidebar',
-    'id' => 'sidebar-page',
-    'description' => __( 'This is the a widget area for the sidebar. It will be displayed on pages.', 'kouki' ),
-    'before_widget' => '<div id="%1$s" class="%2$s sidebarBox widgetBox">',
-    'after_widget' => '</div>',
-    'before_title' => '<span class="widgetTitle">',
-    'after_title' => '</span>'
-  ));
-
+    'name'          => __( 'Footer', 'kouki' ),
+    'id'            => 'footer-1',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ) );
 }
 add_action( 'widgets_init', 'kouki_widgets_init' );
 
-/**
- * Enqueue scripts & styles
- */
+/************************************************************/
+/*                                                          */
+/*   SCRIPTS & STYLES                                        */
+/*                                                          */
+/************************************************************/
+
 function kouki_scripts() {
 
-  /**
-   * Main Stylesheet
-   */
-  wp_enqueue_style( 'kouki-style', get_stylesheet_uri() );
-
-  /**
-   * FontAwesome Icons Stylesheet
-   */
   wp_enqueue_style( 'kouki-font-awesome-css', get_template_directory_uri() . "/assets/fonts/font-awesome/font-awesome.min.css", array(), '4.1.0', 'screen' );
-
-  /**
-   * Load kouki's scripts
-   */
+  wp_enqueue_style( 'kouki-style', get_stylesheet_uri() );
+  wp_enqueue_script( 'kouki-lightbox', get_template_directory_uri() . '/assets/js/imagelightbox.min.js', array('jquery'), '1', true );
   wp_enqueue_script( 'kouki-js', get_template_directory_uri().'/assets/js/theme.js', array( 'jquery', 'jquery-masonry' ), '20150209', true );
 
-  /**
-   * Load the comment reply script
-   */
   if ( is_singular() && comments_open() ) {
     wp_enqueue_script( 'comment-reply' );
   }
@@ -130,22 +127,78 @@ function kouki_scripts() {
 add_action( 'wp_enqueue_scripts', 'kouki_scripts' );
 
 /**
- * Load custom theme modules
+ * Implement Google Fonts
  */
+function kouki_fonts() {
+  $primary_font = of_get_option('kouki_primary_font');
+  $secondary_font = of_get_option('kouki_secondary_font');
+  $primary_name = urlencode($primary_font);
+  $secondary_name = urlencode($secondary_font);
+  $protocol = is_ssl() ? 'https' : 'http';
+  wp_enqueue_style( 'kouki-primary', "$protocol://fonts.googleapis.com/css?family=$primary_name:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100 rel='stylesheet' type='text/css" );
+  wp_enqueue_style( 'kouki-secondary', "$protocol://fonts.googleapis.com/css?family=$secondary_name::400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100 rel='stylesheet' type='text/css" );
+}
+
+function kouki_base_fonts() {
+  $protocol = is_ssl() ? 'https' : 'http';
+  wp_enqueue_style( 'kouki-open-sans', "$protocol://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css" );
+  wp_enqueue_style( 'kouki-julius-sans-one', "$protocol://fonts.googleapis.com/css?family=Julius+Sans+One:400' rel='stylesheet' type='text/css" );
+}
+
+if ( (of_get_option('kouki_primary_font')) xor (of_get_option('kouki_secondary_font')) ) :
+  add_action( 'wp_enqueue_scripts', 'kouki_fonts' );
+else :
+  add_action( 'wp_enqueue_scripts', 'kouki_base_fonts' );
+endif;
+
+/************************************************************/
+/*                                                          */
+/*   INCLUDES & FUNCTIONS                                   */
+/*                                                          */
+/************************************************************/
+
 require get_template_directory() . '/inc/style-options.php';
 require get_template_directory() . '/inc/helper-classes.php';
 require get_template_directory() . '/inc/comments-output.php';
 require get_template_directory() . '/inc/gallery-output.php';
 require get_template_directory() . '/inc/jetpack-functions.php';
+require get_template_directory() . '/inc/extras.php';
 
 /**
  * Replaces the excerpt ellipsis with a Read More link
  */
 function kouki_new_excerpt_more( $more ) {
   global $post;
-  return ' &hellip; <p class="meta aligncenter"><a class="more-link" href="'. get_permalink( $post->ID ) . '">Read More &rarr;</a></p>';
+  return ' &hellip; <p class="aligncenter"><a class="more-link" href="'. get_permalink( $post->ID ) . '">Read More &rarr;</a></p>';
 }
 add_filter( 'excerpt_more', 'kouki_new_excerpt_more' );
+
+function kouki_new_content_more( $more ) {
+  global $post;
+  return '<p class="meta aligncenter"><a class="more-link" href="'. get_permalink( $post->ID ) . '">Read More &rarr;</a></p>';
+}
+add_filter( 'the_content_more_link', 'kouki_new_content_more' );
+
+/**
+ * Adds caption for featured images
+ * Usage - kouki_post_thumbnail_caption();
+ */
+function kouki_post_thumbnail_caption() {
+  global $post;
+
+  $thumbnail_id    = get_post_thumbnail_id($post->ID);
+  $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
+
+  if ($thumbnail_image && isset($thumbnail_image[0])) {
+    echo '<span class="featured-caption">'.$thumbnail_image[0]->post_excerpt.'</span>';
+  }
+}
+
+/************************************************************/
+/*                                                          */
+/*   PLUGINS                                                */
+/*                                                          */
+/************************************************************/
 
 /**
  * Plugin Activation
@@ -160,13 +213,7 @@ function kouki_register_required_plugins() {
       'slug'      => 'options-framework',
       'required'  => true,
       'force_activation' => true,
-    ),
-
-    array(
-      'name'      => 'Jetpack by WordPress.com',
-      'slug'      => 'jetpack',
-      'required'  => false,
-    )
+    )    
 
   );
 
@@ -226,14 +273,3 @@ if ( !function_exists( 'of_get_option' ) ) {
     }
   }
 }
-
-/**
- * Reset all queries in the footer
- */
-function kouki_footer() {
-  wp_reset_query();
-  global $wp_query;
-  global $post;
-}
-add_action( 'wp_footer','kouki_footer' );
-

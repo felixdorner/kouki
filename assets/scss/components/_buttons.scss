@@ -23,11 +23,8 @@ input[type=submit],
 }
 
 /**
- * Button Color: Only needed when running without Options Framework;
-
-/**
  * Neutral button-color
-
+ */
 a.btn-neutral,
 .pagination a,
 #infinite-handle span {
@@ -37,7 +34,7 @@ a.btn-neutral,
 
 /**
  * Positive button-color
-
+ */
 a.btn-positive,
 input[type=submit] {
   border: 1px solid #2ecc71;
@@ -46,7 +43,7 @@ input[type=submit] {
 
 /**
  * Negative button-color
-
+ */
 a.btn-negative {
   border: 1px solid #ff4136;
   color: #ff4136;
@@ -54,13 +51,11 @@ a.btn-negative {
 
 /**
  * Extra button-color
-
+ */
 a.btn-extra {
   border: 1px solid #0d8eff;
   color: #0d8eff;
 }
-
-*/
 
 /**
  * Behaviour for button-hover state

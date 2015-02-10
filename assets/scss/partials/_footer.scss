@@ -2,32 +2,74 @@
 Footer
 -------------------------------------------------------------- */
 
+.footer-links {    
+  padding: $spacing-m 0 0;
+  text-align: left;
+  font-size: .8em;
+  font-weight: 300;
+
+  aside {
+    margin-bottom: $spacing-s;
+    @include media($medium-screen) {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  .sub-menu li {
+    margin-bottom: 0;
+    a:before {
+      content: '— ';
+    }
+  }
+
+  a {
+    color: $gray;
+    width: 100%;
+  }
+
+  .widget-title {
+    color: $base-font-color;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+}
+
 /**
  * Social Icons
  */
 .social {
-  font-size: 2em;
+  hr {
+    border-color: #DFDFDF;
+    border-width: 2px;
+    margin: 0 auto 15px;
+    width: 4em;
+  }
 }
 .social i {
   display: inline-block;
-  padding: 15px;
+  font-size: 1.6em;
+  padding: 15px 10px;
 }
+
+footer .meta {
+    font-size: .7em;
+  }
 
 /**
  * Responsive settings for the footer
  */
 @media only screen and (max-width: 768px) {
-
-  /* Social Icons */
-  .social {
-    font-size: 1.8em;
-  }
 }
 @media only screen and (max-width: 480px) {
-
-  /* Social Icons */
-  .social i {
-    display: inline-block;
-    padding: 15px 5px;
-  }
 }

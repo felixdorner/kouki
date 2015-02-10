@@ -18,7 +18,7 @@ img.alignright {
   float: right;
   margin: 0 0 30px 30px;
 }
-.post > div.alignright {
+.entry-content > div.alignright {
   float: right;
   margin-left: 30px;
 }
@@ -26,7 +26,7 @@ img.alignleft {
   float: left;
   margin: 0 30px 30px 0;
 }
-.post > div.alignleft {
+.entry-content > div.alignleft {
   float: left;
   margin-right: 30px;
 }
@@ -37,23 +37,78 @@ img.alignleft {
   /* Width & margins need to be set according to the overall width of the layout-wrapper */
   width: 1200px;
 }
+
+/** 
+ * Posts 
+ */
 .sticky {
+  content: '';
 }
 .bypostauthor {
+  content: '';
 }
-.post:after {
+.entry-content:after {
   clear: both;
   display: table;
   content: '';
 }
+.wp-post-image {
+  border-radius: 2px;
+}
+.page-links {
+  text-align: center;
+  font-size: .8em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border-top: 1px solid $medium-gray;
+  border-bottom: 1px solid $medium-gray;
+  padding: 15px 0;
+}
+.sticky-tag {
+  color: $gray;
+  text-align: center;
+  font-size: .6em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 1px solid $gray;
+  border-radius: 2px;
+  padding: .4em .8em;
+  display: inline-block;
+  margin-bottom: 15px;
+}
 
- /**
- * Image Captions
+/**
+ * Password protected posts
  */
+.post-password-form {
+  padding: 30px;
+  background: #f5f5f5;
+  input[type=password] {
+    background: #fff;
+  }
+}
+
+/**
+ * Searchform
+ */
+.search input#s {
+  width: 50%;
+}
+
+/**
+* Image Captions
+*/
+.featured-caption {
+  font-size: .6em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-top: 10px;
+  display: block;
+}
 .wp-caption {
-  margin-bottom: 30px;
   max-width: 100%;
   height: auto;
+  margin: 0 auto 30px;
 }
 .wp-caption-text {
   margin-top: 15px;
@@ -62,13 +117,36 @@ img.alignleft {
   font-size: .8em;
 }
 
-/**
- * Password protected posts
+/** 
+ * Lightbox 
  */
+#imagelightbox {
+  position: fixed;
+  z-index: 9999;
 
-.post-password-form {
-  padding: 30px;
-  background: #f5f5f5;
+  -ms-touch-action: none;
+  touch-action: none;
+  cursor: pointer;
+
+  -webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
+  box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
+}
+
+#imagelightbox-loading, 
+#imagelightbox-overlay {
+  -webkit-animation: fade-in .25s linear;
+  animation: fade-in .25s linear;
+}
+
+#imagelightbox-overlay {
+  background-color: #000;
+  background-color: rgba( 0, 0, 0, .8 );
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 /**
@@ -183,11 +261,11 @@ img.alignleft {
 
 @media only screen and (max-width: 480px) {
 
-  /* Alignements */
+  /* Alignments */
   img.alignright,
-  .post > div.alignright,
+  .entry-content > div.alignright,
   img.alignleft,
-  .post > div.alignleft {
+  .entry-content > div.alignleft {
     float: none;
     margin: 0;
     text-align: center;

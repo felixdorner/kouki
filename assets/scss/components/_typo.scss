@@ -20,17 +20,17 @@ button,
 input,
 select,
 textarea {
-  font-size: 16px;
-  font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
-  line-height: 1.6em;
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
 
   text-rendering: optimizeLegibility;
 }
 small {
-  font-size: .8em;
+  font-size: $small-font-size;
 }
 big {
-  font-size: 1.4em;
+  font-size: $big-font-size;
 }
 b, strong {
   font-weight: bold;
@@ -43,10 +43,10 @@ pre {
   padding: 30px;
   max-width: 100%;
   background: #f5f5f5;
-  font-family: 'Courier', monospace;
+  font-family: $pre-font-family;
 }
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+  font-family: $code-font-family;
 }
 abbr, acronym {
   border-bottom: 1px dotted #666;
@@ -80,10 +80,12 @@ h4,
 h5,
 h6,
 blockquote,
+q,
 .widgetTitle {
   clear: both;
-  font-family: 'Julius Sans One', Open Sans, Helvetica, Arial, sans-serif;
-  line-height: 1.4em;
+  font-family: $headings-font-family;
+  line-height: $headings-line-height;
+  word-wrap: break-word;
 }
 h1 {
   font-size: 3.8em;
@@ -92,8 +94,8 @@ h2 {
   font-size: 2.4em;
   line-height: 1.2em;
 }
-.col-8 h2 {
-  font-size: 2em;
+h2.meta {
+  font-family: $base-font-family;
 }
 h3 {
   font-size: 2em;
@@ -107,7 +109,7 @@ h5 {
 h6 {
   font-size: 1.2em;
 }
-blockquote {
+blockquote, q {
   font-size: 2em;
 }
 
@@ -120,13 +122,23 @@ blockquote {
   font-weight: 300;
   font-size: .8em;
 }
-.post h1,
-.post h2,
-.post h3,
-.post h4,
-.post h5,
-.post h6 {
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.comment-content h1,
+.comment-content h2,
+.comment-content h3,
+.comment-content h4,
+.comment-content h5,
+.comment-content h6, {
   margin-bottom: 30px;
+}
+.entry-content header h1,
+.entry-content header h2 {
+  margin-bottom: 8px;
 }
 
 /**
@@ -153,7 +165,7 @@ blockquote {
   h6 {
     font-size: 1.2em;
   }
-  blockquote {
+  blockquote, q {
     font-size: 1.6em;
   }
 }
@@ -183,7 +195,7 @@ blockquote {
   h6 {
     font-size: 1em;
   }
-  blockquote {
+  blockquote, q {
     font-size: 1.2em;
   }
 

@@ -14,36 +14,24 @@
  */
 get_header(); ?>
 
-
-
-<?php
+<?php 
 /**
- * Check theme-options to find the page which outputs posts.
- * Then we apply the right title to the page.
+ * Show blog description
  */
-$blog_page_id = of_get_option( 'kouki_blog_page' );
-if ( $blog_page_id ) {
-
-	$blog_page = get_page( $blog_page_id ); ?>
-
-	<h1 class="pad-2-1 aligncenter">
-		<?php echo $blog_page->post_title; ?>
-	</h1>
-
+if ( ! of_get_option('kouki_blog_description') ) { ?> 
+  <h1 class="pad-2-1 aligncenter">
+    <?php bloginfo( 'description' ); ?>
+  </h1>
 <?php } ?>
 
-
-
-<?php kouki_layout_before(); ?>
+<main role="main">
 
 	<?php if ( have_posts() ) : ?>
 
 		<div id="content" class="js-masonry">
-
 			<?php while ( have_posts() ) : the_post();
 				get_template_part( 'content', 'masonry' );
 			endwhile; ?>
-
 		</div>
 
 		<?php kouki_paging_nav();
@@ -57,8 +45,6 @@ if ( $blog_page_id ) {
 
 	endif; ?>
 
-<?php kouki_layout_after(); ?>
-
-
+</main>
 
 <?php get_footer(); ?>

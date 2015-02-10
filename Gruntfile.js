@@ -61,7 +61,7 @@ module.exports = function(grunt) {
         copy: {
           build: {
             expand: true, 
-            src: ['**/*', '!**/node_modules/**', '!**/scss/**', '!Gruntfile.js', '!package.json', '!style.compiled.css'], 
+            src: ['**/*', '!**/node_modules/**', '!**/bower_components/**', '!**/.sass-cache/**', '!**/.git/**', '!**/scss/**', '!Gruntfile.js', '!package.json', '!bower.json', '!style.compiled.css', '!.gitignore'], 
             dest: 'kouki/'     
           },
         },
