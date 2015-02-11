@@ -1,15 +1,17 @@
 === Kouki WordPress Theme ===
-Theme Name: Kouki
-Version: 1.2
-Author: Felix Dorner
-Author URI: http://felixdorner.com
-Theme URI: http://demo.felixdorner.com/kouki/
-Description: A beautiful and minimal theme for food bloggers
-License: GNU GENERAL PUBLIC LICENSE, Version 2
+Contributers: Felix Dorner
+Donate link: http://felixdorner.com
+License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
 Requires at least: 3.8
-Tested up to: 4.0
+Tested up to: 4.1
+
+A beautiful and minimal theme for food bloggers.
+
+== Description ==
+
+A beautiful and minimal theme for food bloggers.
 
 == Installation ==
 1. Sign into your WordPress dashboard, go to Appearance > Themes, and click Add New.

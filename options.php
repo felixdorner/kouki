@@ -294,7 +294,7 @@ return $options;
  * WordPress 3.4 Required
  */
 add_action( 'customize_register', 'kouki_customizer_register' );
-function kouki_customizer_register($wp_customize) {
+function kouki_customizer_register( $wp_customize ) {
 	/**
 	 * This is optional, but if you want to reuse some of the defaults
 	 * or values you already have built in the options panel, you
@@ -311,7 +311,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_primary_font]', array(
 		'default' => $options['kouki_primary_font']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_text_field'
 	) );
 
 	$wp_customize->add_control( 'kouki_primary_font', array(
@@ -324,7 +325,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_secondary_font]', array(
 		'default' => $options['kouki_secondary_font']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_text_field'
 	) );
 
 	$wp_customize->add_control( 'kouki_secondary_font', array(
@@ -346,7 +348,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_text_color]', array(
 		'default' => $options['kouki_text_color']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'text_color', array(
@@ -358,7 +361,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_headline_color]', array(
 		'default' => $options['kouki_headline_color']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'headline_color', array(
@@ -370,7 +374,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_link_color]', array(
 		'default' => $options['kouki_link_color']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
@@ -382,7 +387,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_btn_positive]', array(
 		'default' => $options['kouki_btn_positive']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'btn_positive', array(
@@ -394,7 +400,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_btn_negative]', array(
 		'default' => $options['kouki_btn_negative']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'btn_negative', array(
@@ -406,7 +413,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_btn_extra]', array(
 		'default' => $options['kouki_btn_extra']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'btn_extra', array(
@@ -418,7 +426,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_meta_color]', array(
 		'default' => $options['kouki_meta_color']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'meta_color', array(
@@ -430,7 +439,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_cta_color]', array(
 		'default' => $options['kouki_cta_color']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'cta_color', array(
@@ -442,7 +452,8 @@ function kouki_customizer_register($wp_customize) {
 
 	$wp_customize->add_setting( 'kouki[kouki_cta_bg]', array(
 		'default' => $options['kouki_cta_bg']['std'],
-		'type' => 'option'
+		'type' => 'option',
+		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'cta_bg', array(

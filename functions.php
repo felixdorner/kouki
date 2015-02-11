@@ -145,7 +145,7 @@ function kouki_base_fonts() {
   wp_enqueue_style( 'kouki-julius-sans-one', "$protocol://fonts.googleapis.com/css?family=Julius+Sans+One:400' rel='stylesheet' type='text/css" );
 }
 
-if ( (of_get_option('kouki_primary_font')) xor (of_get_option('kouki_secondary_font')) ) :
+if ( function_exists( 'of_get_option' ) ) :
   add_action( 'wp_enqueue_scripts', 'kouki_fonts' );
 else :
   add_action( 'wp_enqueue_scripts', 'kouki_base_fonts' );
