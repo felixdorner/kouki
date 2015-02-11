@@ -12,7 +12,7 @@ Text Domain: kouki
 Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
 */
 /* --------------------------------------------------------------
-Layout
+Reset
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
@@ -1330,51 +1330,8 @@ footer .meta {
  * Responsive settings for the footer
  */
 /* --------------------------------------------------------------
-Wordpress Formatting Styles
+Post & Pages
 -------------------------------------------------------------- */
-/**
- * Pulls & Alignments
- */
-.aligncenter {
-  text-align: center;
-}
-
-.alignleft {
-  text-align: left;
-}
-
-.alignright {
-  text-align: right;
-}
-
-img.alignright {
-  float: right;
-  margin: 0 0 30px 30px;
-}
-
-.entry-content > div.alignright {
-  float: right;
-  margin-left: 30px;
-}
-
-img.alignleft {
-  float: left;
-  margin: 0 30px 30px 0;
-}
-
-.entry-content > div.alignleft {
-  float: left;
-  margin-right: 30px;
-}
-
-.pull-wider {
-  margin-right: -30px;
-  margin-left: -30px;
-  max-width: 1200px;
-  /* Width & margins need to be set according to the overall width of the layout-wrapper */
-  width: 1200px;
-}
-
 /** 
  * Posts 
  */
@@ -1435,6 +1392,49 @@ img.alignleft {
  */
 .search input#s {
   width: 50%;
+}
+
+/**
+ * Pulls & Alignments
+ */
+.aligncenter {
+  text-align: center;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.alignright {
+  text-align: right;
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 30px 30px;
+}
+
+.entry-content > div.alignright {
+  float: right;
+  margin-left: 30px;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 30px 30px 0;
+}
+
+.entry-content > div.alignleft {
+  float: left;
+  margin-right: 30px;
+}
+
+.pull-wider {
+  margin-right: -30px;
+  margin-left: -30px;
+  max-width: 1200px;
+  /* Width & margins need to be set according to the overall width of the layout-wrapper */
+  width: 1200px;
 }
 
 /**

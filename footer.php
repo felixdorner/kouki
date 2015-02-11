@@ -29,7 +29,7 @@
 	<?php endif; ?>
 
 	<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
-	  <div class="footer-links" data-sr>	  	
+	  <div class="footer-links">	  	
 	  	<?php	dynamic_sidebar( 'footer-1' ); ?>
 	  </div>
 	<?php } ?>
