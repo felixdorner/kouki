@@ -63,12 +63,46 @@ Navigation Toggle
   display: block;
 }*/
 
+/* */
+
+#menu:after {
+  bottom: 100%;
+  right: 16px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(21, 21, 21, 0);
+  border-bottom-color: #151515;
+  border-width: 10px;
+  margin-left: -10px;
+  
+  @include media($medium-screen) {
+    right: 26px;
+  }
+
+  @include media($large-screen) {
+    right: 26px;
+  }
+}
+
 /* menu appearance*/
 #menu {
   position: absolute;
   z-index: 99999;
   display: none;
-  right: -30px;
+  right: -10px;
+  
+  @include media($medium-screen) {
+    right: -20px;
+  }
+
+   @include media($large-screen) {
+    right: -20px;
+  }
+
 }
 #menu ul, #menu li, #menu li a {
   display: block;
@@ -126,19 +160,4 @@ Navigation Toggle
 #menu ul ul ul li a {
   padding: 2px 0;
   font-size: .8em;
-}
-
-/**
- * Responsive settings for the toggle navigation
- */
-@media only screen and (max-width: 1200px) {
-
-  /* menu appearance*/
-  #menu {
-    right: 0;
-  }
-}
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 480px) {
 }

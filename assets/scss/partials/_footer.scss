@@ -1,10 +1,16 @@
 /* --------------------------------------------------------------
 Footer
 -------------------------------------------------------------- */
+footer hr {
+  border-color: #DFDFDF;
+  border-width: 1px;
+  margin: 30px auto 15px;
+  width: 4em;
+}
 
 .footer-links {    
   padding: $spacing-m 0 0;
-  text-align: left;
+  text-align: center;
   font-size: .8em;
   font-weight: 300;
 
@@ -48,14 +54,6 @@ Footer
 /**
  * Social Icons
  */
-.social {
-  hr {
-    border-color: #DFDFDF;
-    border-width: 2px;
-    margin: 0 auto 15px;
-    width: 4em;
-  }
-}
 .social i {
   display: inline-block;
   font-size: 1.6em;

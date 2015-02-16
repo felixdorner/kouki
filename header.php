@@ -45,6 +45,7 @@
 		<div class="navigation-toggle-wrapper">
 			<a href="#menu" id="toggle"><span></span></a>
 			<nav id="menu" class="t-lightweight" role="navigation">
+				<span class="menu-detail"></span>
 				<ul>
 					<?php wp_nav_menu( array( 'container' => '', 'items_wrap' => '%3$s' ) ); ?>
 				</ul>

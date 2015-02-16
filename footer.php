@@ -8,27 +8,8 @@
 
 <footer class="col-12 aligncenter">
 
-	<?php
-	$bottom_text = of_get_option( 'kouki_cta_text' );
-	$bottom_button_label = of_get_option( 'kouki_cta_button_label' );
-	$bottom_button_link = of_get_option( 'kouki_cta_button_link' );
-	$bottom_button_style = of_get_option( 'kouki_cta_button_style' );
-	if( $bottom_text ) : ?>
-
-	  <div class="call-to-action pad-2-1-1">
-	    <p class="meta">
-	      <?php echo $bottom_text; ?>
-	    </p>
-	    <p>
-	      <a href="<?php echo $bottom_button_link; ?>" class="btn <?php echo $bottom_button_style; ?>">
-	        <?php echo $bottom_button_label; ?>
-	      </a>
-	    </p>
-	  </div>
-
-	<?php endif; ?>
-
 	<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
+		<hr>
 	  <div class="footer-links">	  	
 	  	<?php	dynamic_sidebar( 'footer-1' ); ?>
 	  </div>
@@ -36,9 +17,7 @@
 
 	<div class="social pad-2-1-0">
 		
-		<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
-			<hr>
-		<?php } ?>
+		<hr>
 
 		<?php
 		$footer_credits = of_get_option('kouki_footer_credits');

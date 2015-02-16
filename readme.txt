@@ -7,11 +7,11 @@ Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-m
 Requires at least: 3.8
 Tested up to: 4.1
 
-A beautiful and minimal theme for food bloggers.
+A beautiful and minimal theme for bloggers.
 
 == Description ==
 
-A beautiful and minimal theme for food bloggers.
+A beautiful and minimal theme for bloggers.
 
 == Installation ==
 1. Sign into your WordPress dashboard, go to Appearance > Themes, and click Add New.

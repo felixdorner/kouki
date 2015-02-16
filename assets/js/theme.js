@@ -58,7 +58,7 @@ jQuery( document ).ready( function( $ ) {
 
 	theToggle.onclick = function() {
 	   toggleClass(this, 'on');
-	   $( "#menu" ).slideToggle('fast');
+	   $( "#menu" ).fadeToggle('fast');
 	   return false;
 	}
 

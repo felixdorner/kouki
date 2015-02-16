@@ -82,8 +82,8 @@ aside {
   @include span-columns(12 of 12);
 
   @include media($medium-screen) {
-    @include span-columns(3 of 12);
-    @include omega(4n);
+    @include span-columns(4 of 12);
+    @include omega(3n);
     @include clearfix;
   }
 }
@@ -137,6 +137,9 @@ aside {
 }
 .pad-0-1-2 {
   padding: 0 30px 60px;
+}
+.pad-0-1 {
+  padding: 0 30px;
 }
 .pad-1 {
   padding: 30px;
@@ -261,6 +264,9 @@ p, pre, address {
   }
   .pad-0-1-2 {
     padding: 0 15px 30px;
+  }
+  .pad-0-1 {
+    padding: 0 15px;
   }
   .pad-1 {
     padding: 15px;

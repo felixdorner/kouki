@@ -112,18 +112,6 @@ function optionsframework_options() {
 						"std" => "#c0c0c0",
 						"type" => "color");	
 
-	$options[] = array( "name" => __('Module: CTA Background','kouki'),
-						"desc" => __('Select a background-color for the call-to-action module if activated.','kouki'),
-						"id" => "kouki_cta_bg",
-						"std" => "#eeeeee",
-						"type" => "color");
-
-	$options[] = array( "name" => __('Module: CTA Text','kouki'),
-						"desc" => __('Select a text-color for the call-to-action module if activated.','kouki'),
-						"id" => "kouki_cta_color",
-						"std" => "#c0c0c0",
-						"type" => "color");
-
 	$options[] = array( "name" => __('Fonts','kouki'),
 						"type" => "heading");
 
@@ -186,31 +174,6 @@ function optionsframework_options() {
 
 	$options[] = array( "name" => __('Footer','kouki'),
 						"type" => "heading");
-
-	$options[] = array( "name" => __('Module CTA: Your promotion text','kouki'),
-						"desc" => __('Type a little text to advertise your call-to-action button. If nothing is typed, this section will not be displayed.','kouki'),
-						"id" => "kouki_cta_text",
-						"std" => "",
-						"type" => "text");
-
-	$options[] = array( "name" => __('Module CTA: Button-label','kouki'),
-						"desc" => __('Enter a name for your call-to-action button.','kouki'),
-						"id" => "kouki_cta_button_label",
-						"std" => "",
-						"type" => "text");
-
-	$options[] = array( "name" => __('Module CTA: Button-link','kouki'),
-						"desc" => __('Enter a link for the button.','kouki'),
-						"id" => "kouki_cta_button_link",
-						"std" => "",
-						"type" => "text");
-
-	$options[] = array( "name" => __('Module CTA: Button-Style','kouki'),
-						"desc" => __('Select a style for your Button.','kouki'),
-						"id" => "kouki_cta_button_style",
-						"std" => "btn-positive",
-						"type" => "radio",
-						"options" => $buttons );
 
 	$options[] = array( "name" => __('Mail Icon','kouki'),
 						"desc" => __('Enter your Email Address if you like to display the icon at the bottom of the footer.','kouki'),
@@ -435,32 +398,6 @@ function kouki_customizer_register( $wp_customize ) {
 			'section' => 'kouki_colors',
 			'settings'   => 'kouki[kouki_meta_color]',
 			'priority' => 7
-		) ) );
-
-	$wp_customize->add_setting( 'kouki[kouki_cta_color]', array(
-		'default' => $options['kouki_cta_color']['std'],
-		'type' => 'option',
-		'sanitize_callback' => 'sanitize_hex_color'
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'cta_color', array(
-			'label'   => __( 'Module: CTA Text', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_cta_color]',
-			'priority' => 10
-		) ) );
-
-	$wp_customize->add_setting( 'kouki[kouki_cta_bg]', array(
-		'default' => $options['kouki_cta_bg']['std'],
-		'type' => 'option',
-		'sanitize_callback' => 'sanitize_hex_color'
-	) );
-
-	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'cta_bg', array(
-			'label'   => __( 'Module: CTA Background', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_cta_bg]',
-			'priority' => 11
 		) ) );
 
 	$wp_customize->get_section( 'kouki_colors' )->description = __( 'Change theme colors.', 'kouki' );

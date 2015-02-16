@@ -19,7 +19,7 @@ get_header(); ?>
  * Show blog description
  */
 if ( ! of_get_option('kouki_blog_description') ) { ?> 
-  <h1 class="pad-2-1 aligncenter">
+  <h1 class="pad-1-1-2 aligncenter">
     <?php bloginfo( 'description' ); ?>
   </h1>
 <?php } ?>

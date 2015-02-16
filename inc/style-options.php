@@ -8,14 +8,7 @@
 
 function kouki_theme_styles() { ?>
 
-  <style type="text/css" media="screen">    
-
-    <?php $cta_bg = of_get_option('kouki_cta_bg'); ?>
-    <?php if ($cta_bg) : ?>
-      .call-to-action {
-        background: <?php echo $cta_bg; ?>;
-      }
-    <?php endif; ?>    
+  <style type="text/css" media="screen">   
 
     /**
      * Text Colors
@@ -82,18 +75,7 @@ function kouki_theme_styles() { ?>
       .meta, .wp-caption-text, .sticky-tag {
         color: <?php echo $meta_color; ?>;
       }
-    <?php endif; ?>    
-
-    <?php $cta_color = of_get_option('kouki_cta_color'); ?>
-    <?php if ($cta_color) : ?>
-      .call-to-action .meta,
-      .call-to-action a.btn-neutral {
-        color: <?php echo $cta_color; ?>;
-      }
-      .call-to-action a.btn-neutral {
-        border: 1px solid <?php echo $cta_color; ?>;
-      }
-    <?php endif; ?>
+    <?php endif; ?> 
 
     /**
      * Fonts
