@@ -59,9 +59,7 @@ function kouki_setup() {
    * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
    */
   add_theme_support( 'post-thumbnails' );
-  add_image_size( 'kouki_thumb_big', 1200 );
-  add_image_size( 'kouki_thumb_medium', 800 );
-  add_image_size( 'kouki_thumb_medium_cropped', 800, 533, true );
+  add_image_size( 'kouki_thumb_large', 1200 );
   add_image_size( 'kouki_thumb_regular', 600 );
 
   /**
@@ -211,8 +209,8 @@ function kouki_register_required_plugins() {
     array(
       'name'      => 'Options Framework',
       'slug'      => 'options-framework',
-      'required'  => true,
-      'force_activation' => true,
+      'required'  => false,
+      'force_activation' => false,
     )    
 
   );
@@ -258,18 +256,22 @@ add_action( 'tgmpa_register', 'kouki_register_required_plugins' );
  *
  * This code allows the theme to work without errors if the Options Framework plugin has been disabled.
  */
-if ( !function_exists( 'of_get_option' ) ) {
-  function of_get_option($name, $default = false) {
+if ( ! function_exists( 'of_get_option' ) ) {
+  
+  function of_get_option( $name, $default = false ) {
     $optionsframework_settings = get_option( 'optionsframework' );
     // Gets the unique option id
     $option_name = $optionsframework_settings['id'];
+    
     if ( get_option( $option_name ) ) {
       $options = get_option( $option_name );
     }
-    if ( isset($options[$name]) ) {
+    
+    if ( isset( $options[$name] ) ) {
       return $options[$name];
     } else {
       return $default;
     }
   }
+
 }

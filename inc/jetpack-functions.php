@@ -28,13 +28,10 @@ add_action( 'after_setup_theme', 'kouki_jetpack_setup' );
  */
 function kouki_render_infinite_posts() {
 
-  while ( have_posts() ) : the_post();
-    if ( 'jetpack-portfolio' == is_post_type_archive() ) {
-      get_template_part( 'content', 'portfolio-thumbs' );
-    } else {
-      get_template_part( 'content', 'masonry' );
-    }
-  endwhile;
+  while ( have_posts() ) {
+    the_post();
+    get_template_part( 'content', 'masonry' );    
+  }
 
 }
 
@@ -44,13 +41,7 @@ function kouki_render_infinite_posts() {
  */
 function kouki_infinite_scroll_button_text( $js_settings ) {
 
-  if ( is_post_type_archive( 'jetpack-portfolio' ) || is_tax( array( 'jetpack-portfolio-type', 'jetpack-portfolio-tag' ) ) ) {
-    $js_settings['text'] = esc_js( __( 'More Projects', 'kouki' ) );
-
-  } else {
-    $js_settings['text'] = esc_js( __( 'More Posts', 'kouki' ) );
-  }
-
+  $js_settings['text'] = esc_js( __( 'More', 'kouki' ) );
   return $js_settings;
 
 }

@@ -77,7 +77,7 @@ jQuery( document ).ready( function( $ ) {
 		$blocks.masonry();
 	});
 
-	// Init infinite scroll compatibility
+	// Init infinite scroll compatibility - Buggy! Not quite ready for prime-time yet
 	var $infinite_count = 0;
 
 	$( document.body ).on( "post-load", function () {

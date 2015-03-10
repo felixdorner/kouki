@@ -18,12 +18,12 @@ function kouki_gallery_atts( $out, $pairs, $atts ) {
 }
 
 // Gallery Masonry TODO: Kill path to js file? Debug?
-add_action( 'wp_enqueue_scripts', 'kouki_gallery_masonry_js');
-function kouki_gallery_masonry_js() {
+// add_action( 'wp_enqueue_scripts', 'kouki_gallery_masonry_js');
+// function kouki_gallery_masonry_js() {
 
-  global $post;
+//   global $post;
 
-  if( has_shortcode( $post->post_content, 'gallery') ) {
-    wp_enqueue_script('initMasonry');
-  }
-}
+//   if( has_shortcode( $post->post_content, 'gallery') ) {
+//     wp_enqueue_script('initMasonry');
+//   }
+// }

@@ -1,10 +1,11 @@
-/* --------------------------------------------------------------
-Footer
--------------------------------------------------------------- */
+/******************** 
+ * 3.3 Footer
+ */
+
 footer hr {
   border-color: #DFDFDF;
   border-width: 1px;
-  margin: 30px auto 15px;
+  margin: 0 auto 15px;
   width: 4em;
 }
 
@@ -13,12 +14,10 @@ footer hr {
   text-align: center;
   font-size: .8em;
   font-weight: 300;
+  color: black;
 
   aside {
-    margin-bottom: $spacing-s;
-    @include media($medium-screen) {
-      margin-bottom: 0;
-    }
+    margin-bottom: $spacing-m;    
   }
 
   ul {

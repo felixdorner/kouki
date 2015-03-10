@@ -35,47 +35,47 @@
 		?>
 
 		<?php if( $behance ) { ?>
-			<a href="<?php echo $behance ?>"><i class="fa fa-behance"></i></a>
+			<a href="<?php echo esc_url($behance); ?>"><i class="fa fa-behance"></i></a>
 		<?php } ?>
 
 		<?php if( $dribbble ) { ?>
-			<a href="<?php echo $dribbble ?>"><i class="fa fa-dribbble"></i></a>
+			<a href="<?php echo esc_url($dribbble); ?>"><i class="fa fa-dribbble"></i></a>
 		<?php } ?>
 
 		<?php if( $facebook ) { ?>
-			<a href="<?php echo $facebook ?>"><i class="fa fa-facebook"></i></a>
+			<a href="<?php echo esc_url($facebook); ?>"><i class="fa fa-facebook"></i></a>
 		<?php } ?>
 
 		<?php if( $instagram ) { ?>
-			<a href="<?php echo $instagram ?>"><i class="fa fa-instagram"></i></a>
+			<a href="<?php echo esc_url($instagram); ?>"><i class="fa fa-instagram"></i></a>
 		<?php } ?>
 
 		<?php if( $linkedin ) { ?>
-			<a href="<?php echo $linkedin ?>"><i class="fa fa-linkedin"></i></a>
+			<a href="<?php echo esc_url($linkedin); ?>"><i class="fa fa-linkedin"></i></a>
 		<?php } ?>
 
 		<?php if( $mail ) { ?>
-			<a href="mailto:<?php echo $mail ?>"><i class="fa fa-envelope-o"></i></a>
+			<a href="mailto:<?php echo esc_url($mail); ?>"><i class="fa fa-envelope-o"></i></a>
 		<?php } ?>
 
 		<?php if( $pinterest ) { ?>
-			<a href="<?php echo $pinterest ?>"><i class="fa fa-pinterest"></i></a>
+			<a href="<?php echo esc_url($pinterest); ?>"><i class="fa fa-pinterest"></i></a>
 		<?php } ?>
 
 		<?php if( $rss ) { ?>
-			<a href="<?php echo $rss ?>"><i class="fa fa-rss"></i></a>
+			<a href="<?php echo esc_url($rss); ?>"><i class="fa fa-rss"></i></a>
 		<?php } ?>
 
 		<?php if( $soundcloud ) { ?>
-			<a href="<?php echo $soundcloud ?>"><i class="fa fa-soundcloud"></i></a>
+			<a href="<?php echo esc_url($soundcloud); ?>"><i class="fa fa-soundcloud"></i></a>
 		<?php } ?>
 
 		<?php if( $tumblr ) { ?>
-			<a href="<?php echo $tumblr ?>"><i class="fa fa-tumblr"></i></a>
+			<a href="<?php echo esc_url($tumblr); ?>"><i class="fa fa-tumblr"></i></a>
 		<?php } ?>
 
 		<?php if( $twitter ) { ?>
-			<a href="<?php echo $twitter ?>"><i class="fa fa-twitter"></i></a>
+			<a href="<?php echo esc_url($twitter); ?>"><i class="fa fa-twitter"></i></a>
 		<?php } ?>
 
 	</div>
@@ -83,7 +83,7 @@
 	<div class="meta pad-0-1-2">
 
 		<?php if( $footer_credits ) {
-			echo( $footer_credits );
+			echo esc_html( $footer_credits );
 		} else { ?>
 			&copy; <?php echo date( 'Y' );?> <a href="<?php echo home_url(); ?>"><strong><?php bloginfo( 'name' ); ?></strong></a> - <?php _e( 'All Rights Reserved.', 'kouki' ); ?>
 		<?php } ?>

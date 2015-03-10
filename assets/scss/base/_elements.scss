@@ -1,6 +1,6 @@
-/* --------------------------------------------------------------
-Elements
--------------------------------------------------------------- */
+/********************
+ * 1.2 Elements 
+ */
 
 /**
  * Lists
@@ -80,6 +80,10 @@ textarea {
   background: #f5f5f5;
 }
 
+select { 
+  max-width:100%; 
+}
+
 /**
  * Media
  */
@@ -87,6 +91,10 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: bottom;
+}
+
+iframe, embed { 
+  max-width:100%; 
 }
 
 /**

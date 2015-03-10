@@ -1,6 +1,6 @@
-/* --------------------------------------------------------------
-Navigation Toggle
--------------------------------------------------------------- */
+/******************** 
+ * 3.2 Navigation Toggle
+ */
 
 /* Important styles */
 #toggle {
@@ -116,6 +116,8 @@ Navigation Toggle
   background: #151515;
   text-align: right;
   border-radius: 4px;
+  overflow-y: scroll;
+  max-height: 80vh;
 }
 #menu li a {
   padding: 10px 0;

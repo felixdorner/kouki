@@ -1,17 +1,43 @@
 /*
 Theme Name: Kouki
-Version: 1.3
+Version: 1.4
 Author: Felix Dorner
-Author URI: http://felixdorner.com
+Author URI: http://themes.felixdorner.com
 Theme URI: http://demo.felixdorner.com/kouki/
-Description: A beautiful and minimal theme for bloggers.
+Description: A beautiful and minimal theme for personal blogs. Kouki is meant for publishers who like to display their content in a delightful and minimal way. Ideal for food blogs, photographers, minimalists, tumble logs and everyone else who likes an unobstrusive WordPress theme. Non-mandatory theme options help you to individualize the theme. Change colors, choose fonts from the Google libary and add social icons. The theme is responsive and looks good on small devices.
 License: GNU GENERAL PUBLIC LICENSE, Version 2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: kouki
 Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
 */
 
-// Reset
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Basics
+ * 	1.1 - Reset
+ * 	1.2 - Elements
+ * 	1.3 - Layout
+ * 	1.4 - Colors
+ * 2.0 - Components
+ * 	2.1 - Accessibility
+ * 	2.2 - Typo
+ * 	2.3 - Links
+ * 	2.4 - Buttons
+ * 3.0 - Partials
+ * 	3.1 - Header
+ * 	3.2 - Navigation Toggle
+ * 	3.3 - Footer
+ * 	3.4 - WP Formatting
+ * 	3.5 - WP Comments
+ * 	3.6 - WP Widgets
+ * 4.0 - Plugins
+ * 	4.1 - Jetpack
+ */
+
+/* --------------------------------------------------------------
+01 Basics
+-------------------------------------------------------------- */
 @import "base/reset";
 
 // Bourbon - http://bourbon.io
@@ -30,13 +56,19 @@ Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-m
 @import "base/layout";
 @import "base/colors";
 
-// Components
+
+/* --------------------------------------------------------------
+02 Components
+-------------------------------------------------------------- */
 @import "components/accessibility";
 @import "components/typo";
 @import "components/links";
 @import "components/buttons";
 
-// Partials
+
+/* --------------------------------------------------------------
+03 Partials
+-------------------------------------------------------------- */
 @import "partials/header";
 @import "partials/navigation-toggle";
 @import "partials/footer";
@@ -44,5 +76,8 @@ Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-m
 @import "partials/wp-comments";
 @import "partials/wp-widgets";
 
-// Plugins
+
+/* --------------------------------------------------------------
+04 Plugins
+-------------------------------------------------------------- */
 @import "plugins/jetpack";

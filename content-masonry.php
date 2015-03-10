@@ -11,7 +11,7 @@
   <?php if ( has_post_thumbnail() ) : ?>
     <div class="m-0-0-1 aligncenter">
       <a href="<?php the_permalink(); ?>">
-      	<?php the_post_thumbnail( $post->ID, 'kouki_thumb_medium' ); ?>        
+      	<?php the_post_thumbnail( 'kouki_thumb_regular' ); ?>        
       </a>
       <?php echo wpautop( kouki_post_thumbnail_caption() ); ?>
     </div>
@@ -20,7 +20,7 @@
 	<header class="aligncenter">
     <?php if (is_sticky()) { ?>
     <span class="sticky-tag">
-      <?php echo _e('Sticky', 'kouki'); ?>
+      <?php echo _e('Featured', 'kouki'); ?>
     </span>
     <?php } ?>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -32,7 +32,7 @@
   else :
     the_content();     
     wp_link_pages( array(
-      'before' => '<div class="page-links">' . __( 'Pages:', 'kealani' ),
+      'before' => '<div class="page-links">' . __( 'Pages:', 'kouki' ),
       'after'  => '</div>',
     ) );
   endif; ?>
