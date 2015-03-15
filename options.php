@@ -1,55 +1,24 @@
 <?php
 /**
- * A unique identifier is defined to store the options in the database and reference them from the theme.
- * By default it uses the theme name, in lowercase and without spaces, but this can be changed if needed.
- * If the identifier changes, it'll appear as if the options have been reset.
+ * The theme option name is set as 'kouki' here.
  *
+ * This option name will be used later when we set up the options
+ * for the front end theme customizer.
  */
-
 function optionsframework_option_name() {
-
-	// This gets the theme name from the stylesheet (lowercase and without spaces)
-	$theme = wp_get_theme();
-	$themename = $theme->Name;
-	$themename = preg_replace("/\W/", "", strtolower($themename) );
-
+	
 	$optionsframework_settings = get_option('optionsframework');
-	$optionsframework_settings['id'] = $themename;
+	
+	$optionsframework_settings['id'] = 'kouki';
 	update_option('optionsframework', $optionsframework_settings);
+
 }
 
 /**
  * Defines an array of options that will be used to generate the settings page and be saved in the database.
  * When creating the "id" fields, make sure to use all lowercase and no spaces.
- *
  */
-
 function optionsframework_options() {
-
-	// Pull all the pages into an array
-	$options_pages = array();
-	$options_pages_obj = get_pages('sort_column=post_parent,menu_order');
-	$options_pages[''] = 'Select a page:';
-	foreach ($options_pages_obj as $page) {
-    	$options_pages[$page->ID] = $page->post_title;
-	}
-
-	// Array for numbers
-	$numbers = array(
-		'two' => __('Two', 'kouki'),
-		'three' => __('Three', 'kouki')
-	);
-
-	// Array for Buttons
-	$buttons = array(
-		'btn-neutral' => __('Neutral', 'kouki'),
-		'btn-positive' => __('Positive', 'kouki'),
-		'btn-negative' => __('Negative', 'kouki'),
-		'btn-extra' => __('Extra', 'kouki')
-	);
-
-	// If using image radio buttons, define a directory path
-	$imagepath =  get_stylesheet_directory_uri() . '/images/';
 
 	$options = array();
 
@@ -178,73 +147,73 @@ function optionsframework_options() {
 	$options[] = array( "name" => __('Mail Icon','kouki'),
 						"desc" => __('Enter your Email Address if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_mail",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('RSS Feed Icon','kouki'),
 						"desc" => __('Enter the link to your RSS Feed if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_rss",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Behance Icon','kouki'),
 						"desc" => __('Enter the link to your Behance page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_behance",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Dribbble Icon','kouki'),
 						"desc" => __('Enter the link to your Dribbble page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_dribbble",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Facebook Icon','kouki'),
 						"desc" => __('Enter the link to your Facebook page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_facebook",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Instagram Icon','kouki'),
 						"desc" => __('Enter the link to your Instagram page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_instagram",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: LinkedIn Icon','kouki'),
 						"desc" => __('Enter the link to your LinkedIn page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_linkedin",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Pinterest Icon','kouki'),
 						"desc" => __('Enter the link to your Pinterest page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_pinterest",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: SoundCloud Icon','kouki'),
 						"desc" => __('Enter the link to your SoundCloud page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_soundcloud",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Tumblr Icon','kouki'),
 						"desc" => __('Enter the link to your Tumblr page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_tumblr",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Twitter Icon','kouki'),
 						"desc" => __('Enter the link to your Twitter page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_twitter",
-						"std" => "",
+						"std" => "Test",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Footer-credits','kouki'),
 						"desc" => __('The text will appear below the footer.','kouki'),
 						"id" => "kouki_footer_credits",
-						"std" => "",
+						"std" => "Test",
 						"type" => "textarea");
 
 return $options;
@@ -258,152 +227,145 @@ return $options;
  */
 add_action( 'customize_register', 'kouki_customizer_register' );
 function kouki_customizer_register( $wp_customize ) {
-	/**
-	 * This is optional, but if you want to reuse some of the defaults
-	 * or values you already have built in the options panel, you
-	 * can load them into $options for easy reference
-	 */
-	$options = optionsframework_options();
 
-	/* Fonts */
+	// Fonts
 
-	$wp_customize->add_section( 'kouki_fonts', array(
+	$wp_customize->add_section( 'kouki_customizer_fonts', array(
 		'title' => __( 'Fonts', 'kouki' ),
 		'priority' => 20
 	) );
 
 	$wp_customize->add_setting( 'kouki[kouki_primary_font]', array(
-		'default' => $options['kouki_primary_font']['std'],
+		'default' => 'Open Sans',
 		'type' => 'option',
 		'sanitize_callback' => 'sanitize_text_field'
 	) );
 
 	$wp_customize->add_control( 'kouki_primary_font', array(
-			'label' => __( 'Primary Font', 'kouki' ),
-			'section' => 'kouki_fonts',
-			'settings' => 'kouki[kouki_primary_font]',
-			'type' => $options['kouki_primary_font']['type'],
-			'priority' => 1
-		) );
+		'label' => __( 'Primary Font', 'kouki' ),
+		'section' => 'kouki_customizer_fonts',
+		'settings' => 'kouki[kouki_primary_font]',
+		'type' => 'text',
+		'priority' => 1
+	) );
 
 	$wp_customize->add_setting( 'kouki[kouki_secondary_font]', array(
-		'default' => $options['kouki_secondary_font']['std'],
+		'default' => 'Julius Sans One',
 		'type' => 'option',
 		'sanitize_callback' => 'sanitize_text_field'
 	) );
 
 	$wp_customize->add_control( 'kouki_secondary_font', array(
-			'label' => __( 'Secondary Font', 'kouki' ),
-			'section' => 'kouki_fonts',
-			'settings' => 'kouki[kouki_secondary_font]',
-			'type' => $options['kouki_secondary_font']['type'],
-			'priority' => 2
-		) );
+		'label' => __( 'Secondary Font', 'kouki' ),
+		'section' => 'kouki_customizer_fonts',
+		'settings' => 'kouki[kouki_secondary_font]',
+		'type' => 'text',
+		'priority' => 2
+	) );
 
-	$wp_customize->get_section( 'kouki_fonts' )->description = __( 'Enter the name of the <a href="http://www.google.com/webfonts" target="_blank">Google Web Font</a> you want to use for texts.', 'kouki' );
+	$wp_customize->get_section( 'kouki_customizer_fonts' )->description = __( 'Enter the name of the <a href="http://www.google.com/webfonts" target="_blank">Google Web Font</a> you want to use for texts.', 'kouki' );
 
-	/* Colors */
+	// Colors
 
-	$wp_customize->add_section( 'kouki_colors', array(
+	$wp_customize->add_section( 'kouki_customizer_colors', array(
 		'title' => __( 'Colors', 'kouki' ),
 		'priority' => 30
 	) );
 
 	$wp_customize->add_setting( 'kouki[kouki_text_color]', array(
-		'default' => $options['kouki_text_color']['std'],
+		'default' => '#151515',
 		'type' => 'option',
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'text_color', array(
-			'label'   => __( 'Text Color', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_text_color]',
-			'priority' => 1
-		) ) );
+		'label'   => __( 'Text Color', 'kouki' ),
+		'section' => 'kouki_customizer_colors',
+		'settings'   => 'kouki[kouki_text_color]',
+		'priority' => 1
+	) ) );
 
 	$wp_customize->add_setting( 'kouki[kouki_headline_color]', array(
-		'default' => $options['kouki_headline_color']['std'],
+		'default' => '#151515',
 		'type' => 'option',
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'headline_color', array(
-			'label'   => __( 'Headline Color', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_headline_color]',
-			'priority' => 2
-		) ) );
+		'label'   => __( 'Headline Color', 'kouki' ),
+		'section' => 'kouki_customizer_colors',
+		'settings'   => 'kouki[kouki_headline_color]',
+		'priority' => 2
+	) ) );
 
 	$wp_customize->add_setting( 'kouki[kouki_link_color]', array(
-		'default' => $options['kouki_link_color']['std'],
+		'default' => '#C0C0C0',
 		'type' => 'option',
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
-			'label'   => __( 'Link Color', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_link_color]',
-			'priority' => 3
-		) ) );
+		'label'   => __( 'Link Color', 'kouki' ),
+		'section' => 'kouki_customizer_colors',
+		'settings'   => 'kouki[kouki_link_color]',
+		'priority' => 3
+	) ) );
 
 	$wp_customize->add_setting( 'kouki[kouki_btn_positive]', array(
-		'default' => $options['kouki_btn_positive']['std'],
+		'default' => '#2ECC71',
 		'type' => 'option',
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'btn_positive', array(
-			'label'   => __( 'Positive Buttons', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_btn_positive]',
-			'priority' => 4
-		) ) );
+		'label'   => __( 'Positive Buttons', 'kouki' ),
+		'section' => 'kouki_customizer_colors',
+		'settings'   => 'kouki[kouki_btn_positive]',
+		'priority' => 4
+	) ) );
 
 	$wp_customize->add_setting( 'kouki[kouki_btn_negative]', array(
-		'default' => $options['kouki_btn_negative']['std'],
+		'default' => '#FF4136',
 		'type' => 'option',
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'btn_negative', array(
-			'label'   => __( 'Negative Buttons', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_btn_negative]',
-			'priority' => 5
-		) ) );
+		'label'   => __( 'Negative Buttons', 'kouki' ),
+		'section' => 'kouki_customizer_colors',
+		'settings'   => 'kouki[kouki_btn_negative]',
+		'priority' => 5
+	) ) );
 
 	$wp_customize->add_setting( 'kouki[kouki_btn_extra]', array(
-		'default' => $options['kouki_btn_extra']['std'],
+		'default' => '#0D8EFF',
 		'type' => 'option',
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'btn_extra', array(
-			'label'   => __( 'Extra Buttons', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_btn_extra]',
-			'priority' => 6
-		) ) );
+		'label'   => __( 'Extra Buttons', 'kouki' ),
+		'section' => 'kouki_customizer_colors',
+		'settings'   => 'kouki[kouki_btn_extra]',
+		'priority' => 6
+	) ) );
 
 	$wp_customize->add_setting( 'kouki[kouki_meta_color]', array(
-		'default' => $options['kouki_meta_color']['std'],
+		'default' => '#C0C0C0',
 		'type' => 'option',
 		'sanitize_callback' => 'sanitize_hex_color'
 	) );
 
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'meta_color', array(
-			'label'   => __( 'Meta Text', 'kouki' ),
-			'section' => 'kouki_colors',
-			'settings'   => 'kouki[kouki_meta_color]',
-			'priority' => 7
-		) ) );
+		'label'   => __( 'Meta Text', 'kouki' ),
+		'section' => 'kouki_customizer_colors',
+		'settings'   => 'kouki[kouki_meta_color]',
+		'priority' => 7
+	) ) );
 
-	$wp_customize->get_section( 'kouki_colors' )->description = __( 'Change theme colors.', 'kouki' );
+	$wp_customize->get_section( 'kouki_customizer_colors' )->description = __( 'Change theme colors.', 'kouki' );
 
-	/* Remove */
-	$wp_customize->remove_section( 'title_tagline');
+	// Remove
 	$wp_customize->remove_section( 'colors');
 	$wp_customize->remove_section( 'background_image');
 

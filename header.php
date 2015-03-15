@@ -35,7 +35,7 @@
 			$logo = of_get_option( 'kouki_logo' );			
 			if( $logo ) : ?>
 				<a href="<?php echo home_url(); ?>" class="logo">
-					<img src="<?php echo $logo; ?>" alt="<?php bloginfo( 'name' ); ?>">
+					<img src="<?php echo esc_url($logo); ?>" alt="<?php bloginfo( 'name' ); ?>">
 				</a>				
 			<?php else : ?>
 				<h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>

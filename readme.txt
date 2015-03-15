@@ -53,6 +53,9 @@ Visit my support forum at support.felixdorner.com or ping me on Twitter (@felixd
 
 == Change Log ==
 
+= 1.5 =
+* Fixed php notices within options
+
 = 1.4 =
 * Options Framework is only recommended instead of required
 * Implemented non-minified vendor scripts/styles
