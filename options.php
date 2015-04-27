@@ -100,7 +100,7 @@ function optionsframework_options() {
 						"type" => "heading");
 
 	$options[] = array( "name" => __('Show Excerpts','kouki'),
-						"desc" => __('Check this box to show the excerpt on index and archive pages instead or the full content.','kouki'),
+						"desc" => __('Check this box to show the excerpt on index and archive pages instead of the full content.','kouki'),
 						"id" => "kouki_show_excerpt",
 						"std" => "0",
 						"type" => "checkbox");
@@ -147,73 +147,73 @@ function optionsframework_options() {
 	$options[] = array( "name" => __('Mail Icon','kouki'),
 						"desc" => __('Enter your Email Address if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_mail",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('RSS Feed Icon','kouki'),
 						"desc" => __('Enter the link to your RSS Feed if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_rss",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Behance Icon','kouki'),
 						"desc" => __('Enter the link to your Behance page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_behance",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Dribbble Icon','kouki'),
 						"desc" => __('Enter the link to your Dribbble page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_dribbble",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Facebook Icon','kouki'),
 						"desc" => __('Enter the link to your Facebook page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_facebook",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Instagram Icon','kouki'),
 						"desc" => __('Enter the link to your Instagram page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_instagram",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: LinkedIn Icon','kouki'),
 						"desc" => __('Enter the link to your LinkedIn page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_linkedin",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Pinterest Icon','kouki'),
 						"desc" => __('Enter the link to your Pinterest page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_pinterest",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: SoundCloud Icon','kouki'),
 						"desc" => __('Enter the link to your SoundCloud page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_soundcloud",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Tumblr Icon','kouki'),
 						"desc" => __('Enter the link to your Tumblr page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_tumblr",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Social: Twitter Icon','kouki'),
 						"desc" => __('Enter the link to your Twitter page if you like to display the icon at the bottom of the footer.','kouki'),
 						"id" => "kouki_twitter",
-						"std" => "Test",
+						"std" => "",
 						"type" => "text" );
 
 	$options[] = array( "name" => __('Footer-credits','kouki'),
 						"desc" => __('The text will appear below the footer.','kouki'),
 						"id" => "kouki_footer_credits",
-						"std" => "Test",
+						"std" => "",
 						"type" => "textarea");
 
 return $options;

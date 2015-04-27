@@ -167,13 +167,13 @@ require get_template_directory() . '/inc/extras.php';
  */
 function kouki_new_excerpt_more( $more ) {
   global $post;
-  return ' &hellip; <p class="aligncenter"><a class="more-link" href="'. get_permalink( $post->ID ) . '">Read More &rarr;</a></p>';
+  return ' &hellip; <p class="aligncenter"><a class="more-link" href="'. get_permalink( $post->ID ) .'">'. __( 'Read More &rarr;', 'kouki' ) .'</a></p>';
 }
 add_filter( 'excerpt_more', 'kouki_new_excerpt_more' );
 
 function kouki_new_content_more( $more ) {
   global $post;
-  return '<p class="meta aligncenter"><a class="more-link" href="'. get_permalink( $post->ID ) . '">Read More &rarr;</a></p>';
+  return '<p class="meta aligncenter"><a class="more-link" href="'. get_permalink( $post->ID ) .'">'. __( 'Read More &rarr;', 'kouki' ) .'</a></p>';
 }
 add_filter( 'the_content_more_link', 'kouki_new_content_more' );
 

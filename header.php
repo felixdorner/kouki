@@ -32,13 +32,13 @@
 			/**
 			 * Check if there is a uploaded logo
 			 */
-			$logo = of_get_option( 'kouki_logo' );			
-			if( $logo ) : ?>
-				<a href="<?php echo home_url(); ?>" class="logo">
-					<img src="<?php echo esc_url($logo); ?>" alt="<?php bloginfo( 'name' ); ?>">
+			$kouki_logo = of_get_option( 'kouki_logo' );			
+			if( $kouki_logo ) : ?>
+				<a href="<?php echo esc_url(home_url()); ?>" class="logo">
+					<img src="<?php echo esc_url($kouki_logo); ?>" alt="<?php bloginfo( 'name' ); ?>">
 				</a>				
 			<?php else : ?>
-				<h1><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php endif; ?>
 		</div>
 

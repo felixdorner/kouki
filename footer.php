@@ -85,7 +85,10 @@
 		<?php if( $footer_credits ) {
 			echo esc_html( $footer_credits );
 		} else { ?>
-			&copy; <?php echo date( 'Y' );?> <a href="<?php echo home_url(); ?>"><strong><?php bloginfo( 'name' ); ?></strong></a> - <?php _e( 'All Rights Reserved.', 'kouki' ); ?>
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kouki' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'kouki' ), 'WordPress' ); ?></a> |
+			<a href="<?php echo esc_url( __( 'http://drnr.co/', 'kouki' ) ); ?>">
+				<?php printf( __( 'Theme by %s', 'kouki' ), 'Felix Dorner' ); ?>
+			</a>
 		<?php } ?>
 
 	</div>

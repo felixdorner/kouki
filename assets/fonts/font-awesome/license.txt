@@ -1,0 +1,1 @@
+License: http://fortawesome.github.io/Font-Awesome/license/

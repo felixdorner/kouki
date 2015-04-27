@@ -72,7 +72,8 @@ module.exports = function(grunt) {
                 '!bower.json', 
                 '!style.compiled.css', 
                 '!.gitignore',
-                '!.DS_store'
+                '!.DS_store',
+                '!kouki.zip'
         ], 
         dest: 'kouki/'     
       },

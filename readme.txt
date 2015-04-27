@@ -1,11 +1,11 @@
 === Kouki WordPress Theme ===
 Contributers: Felix Dorner
-Donate link: http://themes.felixdorner.com
+Donate link: http://drnr.co
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
 Requires at least: 3.8
-Tested up to: 4.1
+Tested up to: 4.2
 
 A beautiful and minimal theme for personal blogs. Kouki is meant for publishers who like to display their content in a delightful and minimal way. Ideal for food blogs, photographers, minimalists, tumble logs and everyone else who likes an unobstrusive WordPress theme. Non-mandatory theme options help you to individualize the theme to your needs. Change colors, choose fonts from the Google libary and add social icons. The theme is responsive and looks good on small devices.
 
@@ -45,13 +45,20 @@ You can control which meta data to output if you activate the theme options - el
 
 = I need more help! What should I do? =
 
-Visit my support forum at support.felixdorner.com or ping me on Twitter (@felixdorner) and I'll try to help you.
+Ping me on Twitter (@felixdorner) and I'll try to help you.
 
 == Screenshots ==
 
 1. The theme home page filled with demo content.
 
 == Change Log ==
+
+= 1.6 =
+* Translate "Read More &rarr;" in functions.php
+* Add copyright statement
+* Escaped the CSS theme options (style-options.php) on output.
+* Escape all instances of home_url(); as esc_url( home_url(/) );
+* Minor bugfixes
 
 = 1.5 =
 * Fixed php notices within options
