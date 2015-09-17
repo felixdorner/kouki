@@ -18,7 +18,7 @@ $kouki = wp_get_theme( 'kouki' );
 		<p><?php echo sprintf( esc_html__( 'To get the most out of Kouki you should install and activate the following Plugin: %sOptions Framework%s', 'kouki' ), '<a href="https://wordpress.org/plugins/options-framework/">', '</a>' ); ?></p>
 		<h4><?php esc_html_e( 'Can I Contribute?', 'kouki' ); ?></h4>
 		<p><?php esc_html_e( 'Found a bug? Want to contribute a patch or create a new feature? GitHub is the place to go! Or would you like to translate Kouki in to your language? Get involved at Transifex.', 'kouki' ); ?></p>
-		<p><a href="http://github.com/felixdorner/kouki/" class="button"><?php esc_html_e( 'Kouki at GitHub', 'kouki' ); ?></a> <a href="https://www.transifex.com/projects/p/kouki/" class="button"><?php _e( 'Kouki at Transifex', 'kouki' ); ?></a></p>
+		<p><a href="https://github.com/felixdorner/kouki" class="button"><?php esc_html_e( 'Kouki at GitHub', 'kouki' ); ?></a> <a href="https://www.transifex.com/felix-dorner/kouki" class="button"><?php _e( 'Kouki at Transifex', 'kouki' ); ?></a></p>
 		<h4><?php esc_html_e( 'Are you enjoying Kouki?', 'kouki' ); ?></h4>
 		<p><?php echo sprintf( esc_html__( 'Why not leave a review on %sWordPress.org%s? I would really appreciate it! :-)', 'kouki' ), '<a href="https://wordpress.org/themes/kouki">', '</a>' ); ?></p>
 	</div>

@@ -8,7 +8,7 @@ Kouki is meant for publishers who like to display their content in a delightful 
 
 **Found a bug? Please report the issue [here](https://github.com/felixdorner/kouki/issues)!** Want to contribute a patch or create a new feature? Just send me a pull request and I will review it.
 
-Would you like to translate Kouki in to your language? Get involved at [Transifex](https://www.transifex.com/projects/p/kouki) and help to make this theme even more accessible.
+Would you like to translate Kouki in to your language? Get involved at [Transifex](https://www.transifex.com/felix-dorner/kouki/) and help to make this theme even more accessible.
 
 ## Author
 
