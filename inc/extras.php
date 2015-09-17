@@ -12,6 +12,7 @@
  *
  * @param array $classes Classes for the body element.
  * @return array
+ * @since 1.0.0
  */
 function kouki_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
@@ -23,49 +24,57 @@ function kouki_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'kouki_body_classes' );
 
-if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
-	/**
-	 * Filters wp_title to print a neat <title> tag based on what is being viewed.
-	 *
-	 * @param string $title Default title text for current view.
-	 * @param string $sep Optional separator.
-	 * @return string The filtered title.
-	 */
-	function kouki_wp_title( $title, $sep ) {
-		if ( is_feed() ) {
-			return $title;
-		}
+/**
+ * Replaces the excerpt ellipsis with a Read More link
+ * @since 1.0.0
+ */
+function kouki_new_excerpt_more( $more ) {
+  global $post;
+  return ' &hellip; <p class="aligncenter"><a class="more-link" href="'. get_permalink( $post->ID ) .'">'. __( 'Read More &rarr;', 'kouki' ) .'</a></p>';
+}
+add_filter( 'excerpt_more', 'kouki_new_excerpt_more' );
 
-		global $page, $paged;
+// function kouki_new_content_more( $more ) {
+//   global $post;
+//   return '<p class="meta aligncenter"><a class="more-link" href="'. get_permalink( $post->ID ) .'">'. __( 'Read More &rarr;', 'kouki' ) .'</a></p>';
+// }
+// add_filter( 'the_content_more_link', 'kouki_new_content_more' );
 
-		// Add the blog name
-		$title .= get_bloginfo( 'name', 'display' );
+/**
+ * Adds caption for featured images
+ * Usage - kouki_post_thumbnail_caption();
+ * @since 1.0.0
+ */
+function kouki_post_thumbnail_caption() {
+  global $post;
 
-		// Add the blog description for the home/front page.
-		$site_description = get_bloginfo( 'description', 'display' );
-		if ( $site_description && ( is_home() || is_front_page() ) ) {
-			$title .= " $sep $site_description";
-		}
+  $thumbnail_id    = get_post_thumbnail_id($post->ID);
+  $thumbnail_image = get_posts(array('p' => $thumbnail_id, 'post_type' => 'attachment'));
 
-		// Add a page number if necessary:
-		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-			$title .= " $sep " . sprintf( __( 'Page %s', 'kouki' ), max( $paged, $page ) );
-		}
+  if ($thumbnail_image && isset($thumbnail_image[0])) {
+    echo '<span class="featured-caption">'.$thumbnail_image[0]->post_excerpt.'</span>';
+  }
+}
 
-		return $title;
-	}
-	add_filter( 'wp_title', 'kouki_wp_title', 10, 2 );
+/**
+ * Remove WP Gallery Styles
+ * @since 1.0.0
+ */
+add_filter( 'use_default_gallery_style', '__return_false' );
 
-	/**
-	 * Title shim for sites older than WordPress 4.1.
-	 *
-	 * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
-	 * @todo Remove this function when WordPress 4.3 is released.
-	 */
-	function kouki_render_title() {
-		?>
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
-		<?php
-	}
-	add_action( 'wp_head', 'kouki_render_title' );
-endif;
+/**
+ * Adds gallery shortcode defaults of size="kouki_thumb_medium"
+ * @since 1.0.0
+ */
+function kouki_gallery_atts( $out, $pairs, $atts ) {
+
+  $atts = shortcode_atts( array(
+      'size' => 'kouki_thumb_medium',
+       ), $atts );
+
+  $out['size'] = $atts['size'];
+
+  return $out;
+
+}
+add_filter( 'shortcode_atts_gallery', 'kouki_gallery_atts', 10, 3 );

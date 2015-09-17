@@ -18,6 +18,9 @@
   /* Hardware accelerate transitions */
   -webkit-transform: translateZ(0);
 }
+.admin-bar .top-bar {
+  top: 32px;
+}
 .tb-large {
   padding: 30px;
   -webkit-transition: all .2s;
@@ -32,12 +35,12 @@
 .full .tb-large {
   border-bottom: 1px solid rgba(0,0,0,.05);
 }
-.home .top-bar,
-.home .tb-large {
-  /*border: none;*/
-}
+// .home .top-bar,
+// .home .tb-large {
+//   border: none;
+// }
 .tb-small {
-  padding: 0px 30px;
+  padding: 0px 30px 12px;
   background: rgba(255,255,255,.8);
   -webkit-transition: all .2s;
      -moz-transition: all .2s;
@@ -59,7 +62,7 @@
 .tb-logo h1 {
   float: left;
   clear: right;
-  margin-top: 18px;
+  margin-top: 12px;
   text-align: left;
   font-size: 1.6em;
 }
@@ -93,7 +96,7 @@
     padding: 15px;
   }
   .tb-small {
-    padding: 0 15px;
+    padding: 0 15px 12px;
   }
 
   /* Layout of branding in top-bar */
@@ -102,7 +105,7 @@
     max-height: 30px;
   }
   .tb-logo h1 {
-    margin-top: 19px;
+    margin-top: 12px;
     font-size: 1.4em;
   }
 }

@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'style.compiled.css': 'assets/scss/style.scss'
+          'style.compiled.css': 'assets/scss/style.scss'          
         }
       }
     },
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
           src : ['style.css', 'assets/js/*.js']
         },
         options: {
-          proxy: "kouki.dev",
+          proxy: "kouki.felixdorner.dev",
           watchTask: true
         }
       }
@@ -73,7 +73,8 @@ module.exports = function(grunt) {
                 '!style.compiled.css', 
                 '!.gitignore',
                 '!.DS_store',
-                '!kouki.zip'
+                '!kouki.zip',
+                '!README.md',
         ], 
         dest: 'kouki/'     
       },

@@ -8,7 +8,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <?php if ( has_post_thumbnail() && of_get_option('kouki_post_show_featured_image') ) : ?>
+  <?php if ( has_post_thumbnail() && of_get_option( 'kouki_post_show_featured_image' ) ) : ?>
     <div class="pad-0-1 aligncenter">
       <?php echo get_the_post_thumbnail( $post->ID, 'kouki_thumb_large' ) ?>
       <?php echo wpautop( kouki_post_thumbnail_caption() ); ?>
@@ -19,7 +19,7 @@
 
   <header class="pad-2-1-1 aligncenter">
     <h1><?php the_title(); ?></h1>
-    <?php get_template_part( 'content', 'post-meta' ); ?>
+    <?php kouki_post_meta(); ?>
   </header>
 
   <div class="entry-content col-12 pad-0-1-1">
@@ -32,7 +32,7 @@
     ?>
   </div>
 
-  <?php if ( get_the_tags() && of_get_option('kouki_post_show_tags') ) {
+  <?php if ( get_the_tags() && of_get_option( 'kouki_post_show_tags' ) ) {
     the_tags( '<p class="meta m-0 pad-0-1-1 aligncenter">#',' #','</p>' );
    } ?>
 

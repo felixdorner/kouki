@@ -1,42 +1,51 @@
 @charset "UTF-8";
-/*
-Theme Name: Kouki
-Version: 1.6
-Author: Felix Dorner
-Author URI: http://drnr.co
-Theme URI: http://drnr.co/portfolio/2015/01/05/kouki/
-Description: A beautiful and minimal theme for personal blogs. Kouki is meant for publishers who like to display their content in a delightful and minimal way. Ideal for food blogs, photographers, minimalists, tumble logs and everyone else who likes an unobstrusive WordPress theme. Non-mandatory theme options help you to individualize the theme. Change colors, choose fonts from the Google libary and add social icons. The theme is responsive and looks good on small devices.
-License: GNU GENERAL PUBLIC LICENSE, Version 2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: kouki
-Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
-*/
-/**
- * Table of Contents:
- *
- * 1.0 - Basics
- * 	1.1 - Reset
- * 	1.2 - Elements
- * 	1.3 - Layout
- * 	1.4 - Colors
- * 2.0 - Components
- * 	2.1 - Accessibility
- * 	2.2 - Typo
- * 	2.3 - Links
- * 	2.4 - Buttons
- * 3.0 - Partials
- * 	3.1 - Header
- * 	3.2 - Navigation Toggle
- * 	3.3 - Footer
- * 	3.4 - WP Formatting
- * 	3.5 - WP Comments
- * 	3.6 - WP Widgets
- * 4.0 - Plugins
- * 	4.1 - Jetpack
- */
-/* --------------------------------------------------------------
+/*---------------------------------------------------------------------------------
+
+	Theme Name: Kouki
+	Version: 1.7.0
+	Author: Felix Dorner
+	Author URI: http://felixdorner.com
+	Theme URI: http://kouki.felixdorner.com
+	Description: A beautiful and minimal theme for personal blogs. Kouki is meant for publishers who like to display their content in a delightful and minimal way. Ideal for food blogs, photographers, minimalists, tumble logs and everyone else who likes an unobstrusive WordPress theme. Non-mandatory theme options help you to individualize the theme. Change colors, choose fonts from the Google libary and add social icons. The theme is responsive and looks good on small devices.
+	License: GNU GENERAL PUBLIC LICENSE, Version 2
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Text Domain: kouki
+	Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
+
+	This theme, like WordPress, is licensed under the GPL. 
+	Use it to make something cool, have fun, and share what you've learned with others.
+
+	IMPORTANT NOTE:
+	Do not add any custom styles here. Please use a child theme so that your 
+	customizations aren't lost during updates.
+	http://codex.wordpress.org/Child_Themes
+
+-----------------------------------------------------------------------------------
+
+	# 1.0 - Basics
+ 		## 1.1 - Reset
+		## 1.2 - Elements
+		## 1.3 - Layout
+		## 1.4 - Colors
+	# 2.0 - Components
+		## 2.1 - Accessibility
+		## 2.2 - Typo
+		## 2.3 - Links
+		## 2.4 - Buttons
+	# 3.0 - Partials
+		## 3.1 - Header
+		## 3.2 - Navigation Toggle
+		## 3.3 - Footer
+		## 3.4 - WP Formatting
+		## 3.5 - WP Comments
+		## 3.6 - WP Widgets
+	# 4.0 - Plugins
+		## 4.1 - Jetpack
+
+----------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------------
 01 Basics
--------------------------------------------------------------- */
+----------------------------------------------------------------------------------- */
 /********************
  * 1.1 Reset 
  */
@@ -107,14 +116,10 @@ a img {
 }
 
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
+*, *::after, *::before {
   box-sizing: inherit;
 }
 
@@ -685,9 +690,9 @@ footer {
   background: #EEEEEE;
 }
 
-/* --------------------------------------------------------------
+/*---------------------------------------------------------------------------------
 02 Components
--------------------------------------------------------------- */
+----------------------------------------------------------------------------------- */
 /********************
  * 2.1 Accessibility
  */
@@ -1057,9 +1062,9 @@ input[type=submit]:hover,
   cursor: pointer;
 }
 
-/* --------------------------------------------------------------
+/*---------------------------------------------------------------------------------
 03 Partials
--------------------------------------------------------------- */
+----------------------------------------------------------------------------------- */
 /******************** 
  * 3.1 Header
  */
@@ -1080,6 +1085,10 @@ input[type=submit]:hover,
   -webkit-transform: translateZ(0);
 }
 
+.admin-bar .top-bar {
+  top: 32px;
+}
+
 .tb-large {
   padding: 30px;
   -webkit-transition: all .2s;
@@ -1096,13 +1105,8 @@ input[type=submit]:hover,
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.home .top-bar,
-.home .tb-large {
-  /*border: none;*/
-}
-
 .tb-small {
-  padding: 0px 30px;
+  padding: 0px 30px 12px;
   background: rgba(255, 255, 255, 0.8);
   -webkit-transition: all .2s;
   -moz-transition: all .2s;
@@ -1124,7 +1128,7 @@ input[type=submit]:hover,
 .tb-logo h1 {
   float: left;
   clear: right;
-  margin-top: 18px;
+  margin-top: 12px;
   text-align: left;
   font-size: 1.6em;
 }
@@ -1157,7 +1161,7 @@ input[type=submit]:hover,
   }
 
   .tb-small {
-    padding: 0 15px;
+    padding: 0 15px 12px;
   }
 
   /* Layout of branding in top-bar */
@@ -1167,108 +1171,92 @@ input[type=submit]:hover,
   }
 
   .tb-logo h1 {
-    margin-top: 19px;
+    margin-top: 12px;
     font-size: 1.4em;
   }
 }
 /******************** 
  * 3.2 Navigation Toggle
  */
-/* Important styles */
-#toggle {
-  display: inline-block;
-  margin: 32px 0 0;
-  width: 30px;
-  height: 30px;
-}
-
-#toggle span:after,
-#toggle span:before {
-  position: absolute;
-  top: -9px;
-  left: 0;
-  content: '';
-}
-
-#toggle span:after {
-  top: 9px;
-}
-
-#toggle span {
-  position: relative;
+/* Hamburger Menu Icon */
+.primary-nav-trigger {
   display: block;
-  backface-visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  height: 50px;
+  width: 50px;
+  z-index: 99999;
 }
-
-#toggle span,
-#toggle span:after,
-#toggle span:before {
-  width: 100%;
+.primary-nav-trigger .menu-icon {
+  /* this span is the central line of the menu icon */
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 25px;
   height: 2px;
   border-radius: 2px;
   background-color: #151515;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  /* these are the upper and lower lines in the menu icon */
 }
-
-/* on activation */
-#toggle.on span {
+.primary-nav-trigger .menu-icon::before, .primary-nav-trigger .menu-icon:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #151515;
+  right: 0;
+  -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+  -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+  transition: transform .3s, top .3s, background-color 0s;
+}
+.primary-nav-trigger .menu-icon::before {
+  top: -7px;
+}
+.primary-nav-trigger .menu-icon::after {
+  top: 7px;
+}
+.primary-nav-trigger .menu-icon.is-clicked {
   background-color: transparent;
 }
-
-#toggle.on span:before {
-  -webkit-transform: rotate(45deg) translate(5px, 5px);
-  -moz-transform: rotate(45deg) translate(5px, 5px);
-  -o-transform: rotate(45deg) translate(5px, 5px);
-  transform: rotate(45deg) translate(5px, 5px);
+.primary-nav-trigger .menu-icon.is-clicked::before, .primary-nav-trigger .menu-icon.is-clicked::after {
+  background-color: #151515;
+}
+.primary-nav-trigger .menu-icon.is-clicked::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.primary-nav-trigger .menu-icon.is-clicked::after {
+  top: 0;
+  -webkit-transform: rotate(225deg);
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -o-transform: rotate(225deg);
+  transform: rotate(225deg);
 }
 
-#toggle.on span:after {
-  -webkit-transform: rotate(-45deg) translate(7px, -8px);
-  -moz-transform: rotate(-45deg) translate(7px, -8px);
-  -o-transform: rotate(-45deg) translate(7px, -8px);
-  transform: rotate(-45deg) translate(7px, -8px);
-}
-
-/*
- * Needed when slide-toggle is deactivated
-#toggle.on + #menu {
-  display: block;
-}*/
-/* */
-#menu:after {
-  bottom: 100%;
-  right: 16px;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(21, 21, 21, 0);
-  border-bottom-color: #151515;
-  border-width: 10px;
-  margin-left: -10px;
-}
-@media screen and (min-width: 40em) {
-  #menu:after {
-    right: 26px;
-  }
-}
-@media screen and (min-width: 53.75em) {
-  #menu:after {
-    right: 26px;
-  }
-}
-
-/* menu appearance*/
+/* Menu Appearance*/
 #menu {
   position: absolute;
   z-index: 99999;
   display: none;
-  right: -10px;
+  right: 0;
+  top: 60px;
 }
 @media screen and (min-width: 40em) {
   #menu {
@@ -1342,6 +1330,32 @@ input[type=submit]:hover,
 #menu ul ul ul li a {
   padding: 2px 0;
   font-size: .8em;
+}
+
+/* Menu Detail - Triangle */
+#menu:after {
+  bottom: 100%;
+  right: 16px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(21, 21, 21, 0);
+  border-bottom-color: #151515;
+  border-width: 10px;
+  margin-left: -10px;
+}
+@media screen and (min-width: 40em) {
+  #menu:after {
+    right: 35px;
+  }
+}
+@media screen and (min-width: 53.75em) {
+  #menu:after {
+    right: 35px;
+  }
 }
 
 /******************** 
@@ -1928,9 +1942,9 @@ a.rsswidget img {
   font-size: .8em;
 }
 
-/* --------------------------------------------------------------
+/*---------------------------------------------------------------------------------
 04 Plugins
--------------------------------------------------------------- */
+----------------------------------------------------------------------------------- */
 /******************** 
  * 4.1 Jetpack
  */

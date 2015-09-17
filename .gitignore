@@ -2,4 +2,5 @@ kouki
 node_modules
 bower_components
 .sass-cache
+style.compiled.css
 kouki.zip

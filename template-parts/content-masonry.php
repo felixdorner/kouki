@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('js-item hentry-masonry'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'js-item hentry-masonry' ); ?>>
   
   <?php if ( has_post_thumbnail() ) : ?>
     <div class="m-0-0-1 aligncenter">
@@ -20,14 +20,14 @@
 	<header class="aligncenter">
     <?php if (is_sticky()) { ?>
     <span class="sticky-tag">
-      <?php echo _e('Featured', 'kouki'); ?>
+      <?php echo _e( 'Featured', 'kouki' ); ?>
     </span>
     <?php } ?>
 		<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		<?php get_template_part( 'content', 'post-meta' ); ?>
+		<?php kouki_post_meta(); ?>
 	</header>
 
-  <?php if ( of_get_option('kouki_show_excerpt') ) :
+  <?php if ( of_get_option( 'kouki_show_excerpt' ) ) :
 	  the_excerpt();
   else :
     the_content();     

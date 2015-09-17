@@ -20,18 +20,18 @@
 		<hr>
 
 		<?php
-		$footer_credits = of_get_option('kouki_footer_credits');
-		$behance = of_get_option('kouki_behance');
-		$dribbble = of_get_option('kouki_dribbble');
-		$facebook = of_get_option('kouki_facebook');
-		$instagram = of_get_option('kouki_instagram');
-		$linkedin = of_get_option('kouki_linkedin');
-		$mail = of_get_option('kouki_mail');
-		$pinterest = of_get_option('kouki_pinterest');
-		$rss = of_get_option('kouki_rss');
-		$soundcloud = of_get_option('kouki_soundcloud');
-		$tumblr = of_get_option('kouki_tumblr');
-		$twitter = of_get_option('kouki_twitter');
+		$footer_credits = of_get_option( 'kouki_footer_credits' );
+		$behance = of_get_option( 'kouki_behance' );
+		$dribbble = of_get_option( 'kouki_dribbble' );
+		$facebook = of_get_option( 'kouki_facebook' );
+		$instagram = of_get_option( 'kouki_instagram' );
+		$linkedin = of_get_option( 'kouki_linkedin' );
+		$mail = of_get_option( 'kouki_mail' );
+		$pinterest = of_get_option( 'kouki_pinterest' );
+		$rss = of_get_option( 'kouki_rss' );
+		$soundcloud = of_get_option( 'kouki_soundcloud' );
+		$tumblr = of_get_option( 'kouki_tumblr' );
+		$twitter = of_get_option( 'kouki_twitter' );
 		?>
 
 		<?php if( $behance ) { ?>
@@ -86,7 +86,7 @@
 			echo esc_html( $footer_credits );
 		} else { ?>
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kouki' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'kouki' ), 'WordPress' ); ?></a> |
-			<a href="<?php echo esc_url( __( 'http://drnr.co/', 'kouki' ) ); ?>">
+			<a href="<?php echo esc_url( __( 'http://felixdorner.com/', 'kouki' ) ); ?>">
 				<?php printf( __( 'Theme by %s', 'kouki' ), 'Felix Dorner' ); ?>
 			</a>
 		<?php } ?>

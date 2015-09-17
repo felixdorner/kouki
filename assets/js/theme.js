@@ -5,8 +5,10 @@
 jQuery( document ).ready( function( $ ) {
 
 	"use strict";
-
-	/************** Tob-bar Height **************/
+	
+	/*--------------------------------------------------------------
+	Top-bar Height
+	--------------------------------------------------------------*/
 
 	$( window ).bind( "scroll", function() {
 		if ( $ ( this ).scrollTop() > 10 ) {
@@ -16,53 +18,19 @@ jQuery( document ).ready( function( $ ) {
 		}
 	});
 
-	/************** Menu Effect **************/
+	/*--------------------------------------------------------------
+	Menu + Icon
+	--------------------------------------------------------------*/
 
-	var theToggle = document.getElementById('toggle');
+	//open/close primary navigation
+	$('.primary-nav-trigger').on('click', function(){
+		$('.menu-icon').toggleClass('is-clicked');		
+	  $( "#menu" ).fadeToggle('fast');	  
+	});
 
-	// based on Todd Motto functions
-	// http://toddmotto.com/labs/reusable-js/
-
-	// hasClass
-	function hasClass(elem, className) {
-		return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-	}
-	// addClass
-	function addClass(elem, className) {
-	    if (!hasClass(elem, className)) {
-	    	elem.className += ' ' + className;
-	    }
-	}
-	// removeClass
-	function removeClass(elem, className) {
-		var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
-		if (hasClass(elem, className)) {
-	        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
-	            newClass = newClass.replace(' ' + className + ' ', ' ');
-	        }
-	        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-	    }
-	}
-	// toggleClass
-	function toggleClass(elem, className) {
-		var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
-	    if (hasClass(elem, className)) {
-	        while (newClass.indexOf(" " + className + " ") >= 0 ) {
-	            newClass = newClass.replace( " " + className + " " , " " );
-	        }
-	        elem.className = newClass.replace(/^\s+|\s+$/g, '');
-	    } else {
-	        elem.className += ' ' + className;
-	    }
-	}
-
-	theToggle.onclick = function() {
-	   toggleClass(this, 'on');
-	   $( "#menu" ).fadeToggle('fast');
-	   return false;
-	}
-
-	/************** Init Masonry **************/
+	/*--------------------------------------------------------------
+	Init Masonry
+	--------------------------------------------------------------*/
 
 	var $blocks = $( ".js-masonry" );
 
@@ -95,7 +63,9 @@ jQuery( document ).ready( function( $ ) {
 
 	});
 
-	/************** Gallery Masonry Init **************/
+	/*--------------------------------------------------------------
+	Gallery Masonry Init
+	--------------------------------------------------------------*/
 
 	var galleries = document.querySelectorAll('.gallery');
 	for ( var i=0, len = galleries.length; i < len; i++ ) {
@@ -111,7 +81,9 @@ jQuery( document ).ready( function( $ ) {
 	  });
 	}
 
-	/************** Image Lightbox Init **************/
+	/*--------------------------------------------------------------
+	Image Lightbox Init
+	--------------------------------------------------------------*/
 
 	$(".entry-content a").attr('data-imagelightbox', '');
 

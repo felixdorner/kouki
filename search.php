@@ -17,7 +17,7 @@ get_header(); ?>
 
 			<div id="content" class="js-masonry">
 				<?php while ( have_posts() ) : the_post();
-					get_template_part( 'content', 'masonry' );
+					get_template_part( 'template-parts/content', 'masonry' );
 				endwhile; ?>
 			</div>
 
@@ -28,7 +28,7 @@ get_header(); ?>
 			/**
 			 * If no posts, include the "No posts found" template.
 			 */
-			get_template_part( 'content', 'none' );
+			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
 

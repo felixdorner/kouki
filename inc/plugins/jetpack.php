@@ -9,6 +9,7 @@
 /**
  * Add theme support for Infinite Scroll.
  * @link http://jetpack.me/support/infinite-scroll/
+ * @since 1.0.0
  */
 function kouki_jetpack_setup() {
 
@@ -25,6 +26,7 @@ add_action( 'after_setup_theme', 'kouki_jetpack_setup' );
 
 /**
  * Render infinite posts by using template parts
+ * @since 1.0.0
  */
 function kouki_render_infinite_posts() {
 
@@ -38,6 +40,7 @@ function kouki_render_infinite_posts() {
 /**
  * Changes the text of the "Older posts" button in infinite scroll
  * for portfolio related views.
+ * @since 1.0.0
  */
 function kouki_infinite_scroll_button_text( $js_settings ) {
 

@@ -1,13 +1,12 @@
 === Kouki WordPress Theme ===
 Contributers: Felix Dorner
-Donate link: http://drnr.co
+Requires at least: 3.8
+Tested up to: 4.3.1
+Version: 1.7
+Donate link: http://felixdorner.com
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
-Requires at least: 3.8
-Tested up to: 4.2
-
-A beautiful and minimal theme for personal blogs. Kouki is meant for publishers who like to display their content in a delightful and minimal way. Ideal for food blogs, photographers, minimalists, tumble logs and everyone else who likes an unobstrusive WordPress theme. Non-mandatory theme options help you to individualize the theme to your needs. Change colors, choose fonts from the Google libary and add social icons. The theme is responsive and looks good on small devices.
 
 == Description ==
 
@@ -50,37 +49,3 @@ Ping me on Twitter (@felixdorner) and I'll try to help you.
 == Screenshots ==
 
 1. The theme home page filled with demo content.
-
-== Change Log ==
-
-= 1.6 =
-* Translate "Read More &rarr;" in functions.php
-* Add copyright statement
-* Escaped the CSS theme options (style-options.php) on output.
-* Escape all instances of home_url(); as esc_url( home_url(/) );
-* Minor bugfixes
-
-= 1.5 =
-* Fixed php notices within options
-
-= 1.4 =
-* Options Framework is only recommended instead of required
-* Implemented non-minified vendor scripts/styles
-* Improved readme documentation
-* Minor style improvements
-* Bugfix: Double comment output on pages
-* Added escaping for dynamic output
-
-= 1.3 =
-* Fixed bug on theme activation
-* Added sanitization for customizer options
-* Changed screenshot
-
-= 1.2 =
-* Improved concept
-
-= 1.0 =
-* Initial release
-
-== Known issues ==
-* Jetpack Infinite Scroll causes problems with the masonry structure

@@ -8,7 +8,7 @@
 get_header(); ?>
 
   <main role="main">
-    <?php get_template_part( 'content', 'none' ); ?>
+    <?php get_template_part( 'template-parts/content', 'none' ); ?>
   </main>
 
 <?php get_footer(); ?>

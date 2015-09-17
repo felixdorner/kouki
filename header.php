@@ -35,15 +35,17 @@
 			$kouki_logo = of_get_option( 'kouki_logo' );			
 			if( $kouki_logo ) : ?>
 				<a href="<?php echo esc_url(home_url()); ?>" class="logo">
-					<img src="<?php echo esc_url($kouki_logo); ?>" alt="<?php bloginfo( 'name' ); ?>">
+					<img src="<?php echo esc_url( $kouki_logo ); ?>" alt="<?php bloginfo( 'name' ); ?>">
 				</a>				
 			<?php else : ?>
-				<h1><a href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1><a href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
 			<?php endif; ?>
 		</div>
 
-		<div class="navigation-toggle-wrapper">
-			<a href="#menu" id="toggle"><span></span></a>
+		<div class="navigation-toggle-wrapper">			
+			<a class="primary-nav-trigger" href="javascript:void(0)">
+				<span class="menu-icon"></span>
+			</a>	
 			<nav id="menu" class="t-lightweight" role="navigation">
 				<span class="menu-detail"></span>
 				<ul>
