@@ -49,7 +49,7 @@ if ( post_password_required() ) {
 <?php endif; ?>
 
 <?php $comments_args = array(
-  'title_reply'=>'Reply',
+  'title_reply'=>__( 'Reply', 'kouki' ),
   'comment_notes_before' => '',
   'comment_notes_after' => '',
   'fields' => apply_filters( 'comment_form_default_fields', array(
