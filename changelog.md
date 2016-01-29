@@ -1,5 +1,8 @@
 # Kouki Changelog
 
+### *20150928* - 1.8.1
+* **Dev** Solved conflict git conflict
+
 ### *20150928* - 1.8.0
 * **Fix** Fixed Footer-Link: Mail
 * **Fix** Fixed Jetpack Infinite Posts

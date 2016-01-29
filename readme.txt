@@ -3,7 +3,7 @@
 Contributers: Felix Dorner
 Requires at least: 3.8
 Tested up to: 4.4.1
-Version: 1.8.0
+Version: 1.8.1
 Donate link: http://felixdorner.de
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
