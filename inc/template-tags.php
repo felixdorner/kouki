@@ -14,7 +14,7 @@ if ( ! function_exists( 'kouki_paging_nav' ) ) {
    */
   function kouki_paging_nav() { ?>
 
-    <nav class="pagination" role="navigation">
+    <nav class="pagination">
     
       <?php if ( get_next_posts_link() ) : ?>
         <div class="nav-previous pad-1">      

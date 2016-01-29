@@ -1,0 +1,1043 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Kouki\n"
+"POT-Creation-Date: 2016-01-29 10:08+0100\n"
+"PO-Revision-Date: 2016-01-29 10:08+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: archive.php:26
+#, php-format
+msgid "#%s"
+msgstr ""
+
+#: archive.php:39
+msgid "Author: "
+msgstr ""
+
+#: archive.php:42
+msgid "Archive"
+msgstr ""
+
+#: comments.php:21
+#, php-format
+msgid "One thought"
+msgid_plural "%1$s thoughts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:39
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:40
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:41
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:52
+msgid "Reply"
+msgstr ""
+
+#: comments.php:57
+msgid "Name"
+msgstr ""
+
+#: comments.php:60
+msgid "Email"
+msgstr ""
+
+#: comments.php:63
+msgid "Website"
+msgstr ""
+
+#: comments.php:66
+msgid "Comment"
+msgstr ""
+
+#: footer.php:88
+msgid "https://wordpress.org/"
+msgstr ""
+
+#: footer.php:88
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:89
+msgid "http://felixdorner.com/"
+msgstr ""
+
+#: footer.php:90
+#, php-format
+msgid "Theme by %s"
+msgstr ""
+
+#: functions.php:93 options.php:144
+msgid "Footer"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:11
+msgid "Awesome! You've decided to use Kouki as your theme."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:15
+msgid "About this Theme"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:17
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:18
+#, php-format
+msgid ""
+"To get the most out of Kouki you should install and activate the following "
+"Plugin: %sOptions Framework%s"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:19
+msgid "Support"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:20
+msgid ""
+"As this is a free theme, support is limited to the basics. You can find me "
+"helping out in the designated support forum."
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:21
+msgid "Support Forum"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:22
+msgid "Can I Contribute?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:23
+msgid ""
+"Found a bug? Want to contribute a patch or create a new feature? GitHub is "
+"the place to go! Or would you like to translate Kouki in to your language?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:24
+msgid "GitHub"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:24
+msgid "Translate"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:25
+msgid "Are you enjoying Kouki?"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:26
+#, php-format
+msgid ""
+"Why not leave a review on %sWordPress.org%s? I would really appreciate "
+"it! :-)"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:35
+#, php-format
+msgid "Looking for more themes? Take a look at my website. %sWebsite%s"
+msgstr ""
+
+#: inc/admin/welcome-screen/sections/intro.php:38
+msgid "Made with &#10084; in Berlin."
+msgstr ""
+
+#: inc/admin/welcome-screen/welcome-screen.php:42
+#, php-format
+msgid "Thanks for choosing Kouki! Visit the %swelcome screen%s to get started."
+msgstr ""
+
+#: inc/admin/welcome-screen/welcome-screen.php:43
+msgid "Get started with Kouki"
+msgstr ""
+
+#: inc/back-compat.php:35
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/comments.php:21
+#, php-format
+msgid "<h4 class=\"comment-cite\">%s</h4>"
+msgstr ""
+
+#: inc/comments.php:22
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/comments.php:33
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: inc/extras.php:33
+msgid "Read More &rarr;"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:333
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:334
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:338
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:353
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:358
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:363
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:368
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:378
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:383
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:388
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:393
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:397
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:398
+msgid "Return to the dashboard"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:399
+#: inc/plugins/class-tgm-plugin-activation.php:3029
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:400
+#: inc/plugins/class-tgm-plugin-activation.php:2832
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:403
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:404
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:520
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:635
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:828
+#: inc/plugins/class-tgm-plugin-activation.php:3438
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:935
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:935
+#: inc/plugins/class-tgm-plugin-activation.php:938
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:938
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:1116
+#: inc/plugins/class-tgm-plugin-activation.php:2828
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:1881
+#, php-format
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2167
+msgid "Required"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2170
+msgid "Recommended"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2186
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2189
+msgid "External Source"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2192
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2209
+msgid "Not Installed"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2213
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2215
+msgid "Active"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2221
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2224
+msgid "Requires Update"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2227
+msgid "Update recommended"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2235
+#, php-format
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2280
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2283
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2286
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2289
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2371
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2379
+msgid "Installed version:"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2387
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2399
+msgid "Available version:"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2422
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2436
+msgid "Plugin"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2437
+msgid "Source"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2438
+msgid "Type"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2442
+msgid "Version"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2443
+msgid "Status"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2491
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2495
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2500
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2570
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2603
+msgid "Install"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2609
+msgid "Update"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2612
+msgid "Activate"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2643
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2645
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2681
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2683
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2788
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:2814
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3028
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3362
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3364
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3365
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3369
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3370
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3370
+#: inc/plugins/class-tgm-plugin-activation.php:3376
+msgid "Show Details"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3370
+#: inc/plugins/class-tgm-plugin-activation.php:3376
+msgid "Hide Details"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3371
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3372
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3375
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3376
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3377
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/plugins/class-tgm-plugin-activation.php:3378
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/plugins/jetpack.php:48
+msgid "More"
+msgstr ""
+
+#: inc/template-tags.php:21
+msgid "Older Posts"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:53
+msgid "Posted "
+msgstr ""
+
+#: inc/template-tags.php:54
+msgid "by "
+msgstr ""
+
+#: inc/template-tags.php:54
+msgid " "
+msgstr ""
+
+#: inc/template-tags.php:55
+msgid "on"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "in"
+msgstr ""
+
+#: inc/template-tags.php:59
+msgid "No Comments"
+msgstr ""
+
+#: inc/template-tags.php:59
+msgid "One Comment"
+msgstr ""
+
+#: inc/template-tags.php:59
+msgid "% Comments"
+msgstr ""
+
+#: options.php:25
+msgid "General"
+msgstr ""
+
+#: options.php:28
+msgid "Logo"
+msgstr ""
+
+#: options.php:29
+msgid "Upload a custom logo."
+msgstr ""
+
+#: options.php:33
+msgid "Hide Description"
+msgstr ""
+
+#: options.php:34
+msgid "Do you like to hide the blog description?"
+msgstr ""
+
+#: options.php:39 options.php:271
+msgid "Colors"
+msgstr ""
+
+#: options.php:42 options.php:282
+msgid "Text Color"
+msgstr ""
+
+#: options.php:43
+msgid "Select a text-color for your theme."
+msgstr ""
+
+#: options.php:48 options.php:295
+msgid "Headline Color"
+msgstr ""
+
+#: options.php:49
+msgid "Select a color for your headlines."
+msgstr ""
+
+#: options.php:54 options.php:308
+msgid "Link Color"
+msgstr ""
+
+#: options.php:55
+msgid "Select a color for your links."
+msgstr ""
+
+#: options.php:60 options.php:321
+msgid "Positive Buttons"
+msgstr ""
+
+#: options.php:61
+msgid "Select a color for positive buttons."
+msgstr ""
+
+#: options.php:66 options.php:334
+msgid "Negative Buttons"
+msgstr ""
+
+#: options.php:67
+msgid "Select a color for negative buttons."
+msgstr ""
+
+#: options.php:72 options.php:347
+msgid "Extra Buttons"
+msgstr ""
+
+#: options.php:73
+msgid "Select a color for extra buttons."
+msgstr ""
+
+#: options.php:78 options.php:360
+msgid "Meta Text"
+msgstr ""
+
+#: options.php:79
+msgid "Select a color for meta texts, section dividers and other small texts."
+msgstr ""
+
+#: options.php:84 options.php:234
+msgid "Fonts"
+msgstr ""
+
+#: options.php:87 options.php:245
+msgid "Primary Font"
+msgstr ""
+
+#: options.php:88 options.php:266
+msgid ""
+"Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
+"\"_blank\">Google Web Font</a> you want to use for texts."
+msgstr ""
+
+#: options.php:93 options.php:259
+msgid "Secondary Font"
+msgstr ""
+
+#: options.php:94
+msgid ""
+"Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
+"\"_blank\">Google Web Font</a> you want to use for headings. Hint: Leave "
+"blank if you do not want to load this style."
+msgstr ""
+
+#: options.php:99
+msgid "Posts"
+msgstr ""
+
+#: options.php:102
+msgid "Show Excerpts"
+msgstr ""
+
+#: options.php:103
+msgid ""
+"Check this box to show the excerpt on index and archive pages instead of the "
+"full content."
+msgstr ""
+
+#: options.php:108
+msgid "Show Author"
+msgstr ""
+
+#: options.php:109
+msgid "Check this box to show the author."
+msgstr ""
+
+#: options.php:114
+msgid "Show Date"
+msgstr ""
+
+#: options.php:115
+msgid "Check this box to show the publish date."
+msgstr ""
+
+#: options.php:120
+msgid "Show Category"
+msgstr ""
+
+#: options.php:121
+msgid "Check this box to show the category."
+msgstr ""
+
+#: options.php:126
+msgid "Show Comment-Count"
+msgstr ""
+
+#: options.php:127
+msgid "Check this box to show the comment count."
+msgstr ""
+
+#: options.php:132
+msgid "Show Tags"
+msgstr ""
+
+#: options.php:133
+msgid "Check this box to show tags on single articles below the content."
+msgstr ""
+
+#: options.php:138
+msgid "Show Featured-Image"
+msgstr ""
+
+#: options.php:139
+msgid "Check this box to show the featured image on single posts."
+msgstr ""
+
+#: options.php:147
+msgid "Mail Icon"
+msgstr ""
+
+#: options.php:148
+msgid ""
+"Enter your Email Address if you like to display the icon at the bottom of "
+"the footer."
+msgstr ""
+
+#: options.php:153
+msgid "RSS Feed Icon"
+msgstr ""
+
+#: options.php:154
+msgid ""
+"Enter the link to your RSS Feed if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:159
+msgid "Social: Behance Icon"
+msgstr ""
+
+#: options.php:160
+msgid ""
+"Enter the link to your Behance page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:165
+msgid "Social: Dribbble Icon"
+msgstr ""
+
+#: options.php:166
+msgid ""
+"Enter the link to your Dribbble page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:171
+msgid "Social: Facebook Icon"
+msgstr ""
+
+#: options.php:172
+msgid ""
+"Enter the link to your Facebook page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:177
+msgid "Social: Instagram Icon"
+msgstr ""
+
+#: options.php:178
+msgid ""
+"Enter the link to your Instagram page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:183
+msgid "Social: LinkedIn Icon"
+msgstr ""
+
+#: options.php:184
+msgid ""
+"Enter the link to your LinkedIn page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:189
+msgid "Social: Pinterest Icon"
+msgstr ""
+
+#: options.php:190
+msgid ""
+"Enter the link to your Pinterest page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:195
+msgid "Social: SoundCloud Icon"
+msgstr ""
+
+#: options.php:196
+msgid ""
+"Enter the link to your SoundCloud page if you like to display the icon at "
+"the bottom of the footer."
+msgstr ""
+
+#: options.php:201
+msgid "Social: Tumblr Icon"
+msgstr ""
+
+#: options.php:202
+msgid ""
+"Enter the link to your Tumblr page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:207
+msgid "Social: Twitter Icon"
+msgstr ""
+
+#: options.php:208
+msgid ""
+"Enter the link to your Twitter page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:213
+msgid "Footer-credits"
+msgstr ""
+
+#: options.php:214
+msgid "The text will appear below the footer."
+msgstr ""
+
+#: options.php:366
+msgid "Change theme colors."
+msgstr ""
+
+#: search.php:11
+msgid "Search Results"
+msgstr ""
+
+#: searchform.php:8
+msgid "Type and press enter to search."
+msgstr ""
+
+#: template-parts/content-masonry.php:23
+msgid "Featured"
+msgstr ""
+
+#: template-parts/content-masonry.php:35 template-parts/content-page.php:28
+#: template-parts/content-single.php:29
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:15
+msgid "Nothing here"
+msgstr ""
+
+#: template-parts/content-none.php:19
+msgid "Sorry, but what you are looking for could not be found."
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Kouki"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://kouki.felixdorner.de"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A beautiful and minimal theme for personal blogs. Kouki is meant for "
+"publishers who like to display their content in a delightful and minimal "
+"way. Ideal for food blogs, photographers, minimalists, tumble logs and "
+"everyone else who likes an unobstrusive WordPress theme. Non-mandatory theme "
+"options help you to individualize the theme. Change colors, choose fonts "
+"from the Google libary and add social icons. The theme is responsive and "
+"looks good on small devices."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Felix Dorner"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://felixdorner.de"
+msgstr ""

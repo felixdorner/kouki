@@ -24,7 +24,7 @@ if ( ! of_get_option('kouki_blog_description') ) { ?>
   </h1>
 <?php } ?>
 
-<main role="main">
+<main>
 
 	<?php if ( have_posts() ) : ?>
 

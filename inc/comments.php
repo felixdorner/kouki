@@ -1,6 +1,8 @@
 <?php
 /**
  * Custom comment output
+ *
+ * @package kouki
  * @since 1.0.0
  */
 function kouki_comment( $comment, $args, $depth ) {

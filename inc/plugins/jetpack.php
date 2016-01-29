@@ -14,11 +14,12 @@
 function kouki_jetpack_setup() {
 
   add_theme_support( 'infinite-scroll', array(
+    'type'      => 'click',
     'container' => 'content',
-    'footer'    => 'page',
     'render'    => 'kouki_render_infinite_posts',
-    'wrapper'   => 'new-infinite-posts',
-    'type'      => 'click'
+    'wrapper'   => false,
+    'footer'    => 'colophon',
+    'footer_widgets' => 'footer-1'
   ) );
 
 }
@@ -32,7 +33,7 @@ function kouki_render_infinite_posts() {
 
   while ( have_posts() ) {
     the_post();
-    get_template_part( 'content', 'masonry' );    
+    get_template_part( 'template-parts/content', 'masonry' );    
   }
 
 }

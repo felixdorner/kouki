@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-  <main role="main">
+  <main>
     <?php while ( have_posts() ) : the_post();
       get_template_part( 'template-parts/content', 'single' );
     endwhile; ?>

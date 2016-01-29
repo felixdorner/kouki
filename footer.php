@@ -6,7 +6,7 @@
 */
 ?>
 
-<footer class="col-12 aligncenter">
+<footer id="colophon" class="col-12 aligncenter">
 
 	<?php if ( is_active_sidebar( 'footer-1' ) ) { ?>
 		<hr>
@@ -55,7 +55,7 @@
 		<?php } ?>
 
 		<?php if( $mail ) { ?>
-			<a href="mailto:<?php echo esc_url($mail); ?>"><i class="fa fa-envelope-o"></i></a>
+			<a href="mailto:<?php echo esc_html($mail); ?>"><i class="fa fa-envelope-o"></i></a>
 		<?php } ?>
 
 		<?php if( $pinterest ) { ?>

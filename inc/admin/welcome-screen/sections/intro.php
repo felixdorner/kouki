@@ -16,9 +16,12 @@ $kouki = wp_get_theme( 'kouki' );
 		<p><?php echo esc_attr( $kouki['Description'] ); ?></p>
 		<h4><?php esc_html_e( 'Recommended Plugins', 'kouki' ); ?></h4>		
 		<p><?php echo sprintf( esc_html__( 'To get the most out of Kouki you should install and activate the following Plugin: %sOptions Framework%s', 'kouki' ), '<a href="https://wordpress.org/plugins/options-framework/">', '</a>' ); ?></p>
+		<h4><?php esc_html_e( 'Support', 'kouki' ); ?></h4>
+		<p><?php esc_html_e( 'As this is a free theme, support is limited to the basics. You can find me helping out in the designated support forum.', 'kouki' ); ?></p>
+		<p><a href="https://wordpress.org/support/theme/kouki" class="button"><?php esc_html_e( 'Support Forum', 'kouki' ); ?></a></p>
 		<h4><?php esc_html_e( 'Can I Contribute?', 'kouki' ); ?></h4>
-		<p><?php esc_html_e( 'Found a bug? Want to contribute a patch or create a new feature? GitHub is the place to go! Or would you like to translate Kouki in to your language? Get involved at Transifex.', 'kouki' ); ?></p>
-		<p><a href="https://github.com/felixdorner/kouki" class="button"><?php esc_html_e( 'Kouki at GitHub', 'kouki' ); ?></a> <a href="https://www.transifex.com/felix-dorner/kouki" class="button"><?php _e( 'Kouki at Transifex', 'kouki' ); ?></a></p>
+		<p><?php esc_html_e( 'Found a bug? Want to contribute a patch or create a new feature? GitHub is the place to go! Or would you like to translate Kouki in to your language?', 'kouki' ); ?></p>
+		<p><a href="https://github.com/felixdorner/kouki" class="button"><?php esc_html_e( 'GitHub', 'kouki' ); ?></a> <a href="https://translate.wordpress.org/projects/wp-themes/kouki" class="button"><?php _e( 'Translate', 'kouki' ); ?></a></p>
 		<h4><?php esc_html_e( 'Are you enjoying Kouki?', 'kouki' ); ?></h4>
 		<p><?php echo sprintf( esc_html__( 'Why not leave a review on %sWordPress.org%s? I would really appreciate it! :-)', 'kouki' ), '<a href="https://wordpress.org/themes/kouki">', '</a>' ); ?></p>
 	</div>
@@ -29,7 +32,7 @@ $kouki = wp_get_theme( 'kouki' );
 </div>
 
 <p style="font-size: 1.2em; padding: 1.618em 0; margin: 1.618em 0 2.618em 0; border-top: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1);">
-	<?php echo sprintf( esc_html__( 'Looking for more themes? Take a look at my collection. %sMore themes &rarr;%s', 'kouki' ), '<a href="http://felixdorner.com" class="button-primary" style="float: right;">', '</a>' ); ?>
+	<?php echo sprintf( esc_html__( 'Looking for more themes? Take a look at my website. %sWebsite%s', 'kouki' ), '<a href="http://felixdorner.de" class="button-primary" style="float: right;">', '</a>' ); ?>
 </p>
 
-<p>And don't forget to follow the bird: <a style="text-decoration:none;" href="https://twitter.com/felixdorner"><i class="dashicons dashicons-twitter" style="margin-left:0.6em;"></i></a></p>
+<p><?php esc_html_e( 'Made with &#10084; in Berlin.', 'kouki' ); ?></p>

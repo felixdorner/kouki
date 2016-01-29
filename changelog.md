@@ -1,5 +1,13 @@
 # Kouki Changelog
 
+### *20150928* - 1.8.0
+* **Fix** Fixed Footer-Link: Mail
+* **Fix** Fixed Jetpack Infinite Posts
+* **Fix** W3C validated HTML
+* **Fix** Added forgotten translation string in comments
+* **Dev** Updated POT Language file
+* **Dev** Organized and updated NPM and Bower dependencies
+
 ### *20150917* - 1.7.0
 * **New** Added a welcome screen
 * **Tweak** Better overall file structure and minor other tweaks
@@ -7,7 +15,7 @@
 * **Tweak** Cleaned theme's jQuery script
 * **Fix** Menu icon (Behaved strange in Chrome after Chrome update)
 * **Fix** The theme's top-bar is now adjusting to the WP admin-bar... finally.
-* **Upate** Updated TGM Activation Class to 2.5.2
+* **Upate** Updated TGM Activation Class to 2.5.2 (needed to edit line 641 - added add_theme_page)
 
 ### *20150427* - 1.6.0
 * **New** Added copyright statement

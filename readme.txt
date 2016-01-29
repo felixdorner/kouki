@@ -1,9 +1,10 @@
 === Kouki WordPress Theme ===
+
 Contributers: Felix Dorner
 Requires at least: 3.8
-Tested up to: 4.3.1
-Version: 1.7
-Donate link: http://felixdorner.com
+Tested up to: 4.4.1
+Version: 1.8.0
+Donate link: http://felixdorner.de
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
@@ -13,6 +14,7 @@ Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-m
 A beautiful and minimal theme for personal blogs. Kouki is meant for publishers who like to display their content in a delightful and minimal way. Ideal for food blogs, photographers, minimalists, tumble logs and everyone else who likes an unobstrusive WordPress theme. Non-mandatory theme options help you to individualize the theme to your needs. Change colors, choose fonts from the Google libary and add social icons. The theme is responsive and looks good on small devices.
 
 == Installation ==
+
 1. Sign into your WordPress dashboard, go to Appearance > Themes, and click Add New.
 2. Click Upload.
 3. Click Choose File and select the theme zip file.
@@ -32,6 +34,10 @@ You can control which meta data to output if you activate the theme options - el
 2. Install & activate the plugin.
 3. Find the options panel in your dashboard under 'Appearance' -> 'Theme Options'.
 
+= Can I set infinite scroll for posts? =
+
+Yes you can - but you'll need to install/activate the Jetpack Plugin.
+
 = How to show buttons? =
 
 1. Add a link in the editor.
@@ -44,8 +50,14 @@ You can control which meta data to output if you activate the theme options - el
 
 = I need more help! What should I do? =
 
-Ping me on Twitter (@felixdorner) and I'll try to help you.
+As this is a free theme, support is limited to the basics. You can find me helping out in the designated support forum: https://wordpress.org/support/theme/kouki
 
-== Screenshots ==
+== Credits & Licenses ==
 
-1. The theme home page filled with demo content.
+Photos in the the screenshot by freefoodphotos.com are licensed under CC BY 3.0.
+Google webfonts and FontAwesome are distributed under SIL Open Font License.
+ImageLightbox JS by Osvaldas Valutis is distributed for use under the MIT License.
+TGM Activation Plugin is distributed under the terms of the GNU GPL.
+
+Kouki WordPress Theme, Copyright (C) 2015-2016, Felix Dorner
+Kouki is distributed under the terms of the GNU GPL

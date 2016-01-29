@@ -106,10 +106,10 @@ add_action( 'widgets_init', 'kouki_widgets_init' );
 
 function kouki_scripts() {
 
-  wp_enqueue_style( 'kouki-font-awesome-css', get_template_directory_uri() . "/assets/fonts/font-awesome/font-awesome.min.css", array(), '4.1.0', 'screen' );
-  wp_enqueue_style( 'kouki-style', get_stylesheet_uri(), array(), '20150917' );
+  wp_enqueue_style( 'kouki-font-awesome', get_template_directory_uri() . "/assets/fonts/font-awesome/font-awesome.min.css", array(), '4.1.0', 'screen' );
+  wp_enqueue_style( 'kouki-style', get_stylesheet_uri(), array(), '20160128' );
   
-  wp_enqueue_script( 'kouki-lightbox', get_template_directory_uri() . '/assets/js/imagelightbox.min.js', array('jquery'), '1', true );
+  wp_enqueue_script( 'kouki-lightbox', get_template_directory_uri() . '/assets/js/imagelightbox.min.js', array('jquery'), '20160128', true );
   wp_enqueue_script( 'kouki-js', get_template_directory_uri().'/assets/js/theme.js', array( 'jquery', 'jquery-masonry' ), '20150209', true );
 
   if ( is_singular() && comments_open() ) {
@@ -129,8 +129,8 @@ function kouki_fonts() {
   $primary_name = urlencode( $primary_font );
   $secondary_name = urlencode( $secondary_font );
   $protocol = is_ssl() ? 'https' : 'http';
-  wp_enqueue_style( 'kouki-primary', "$protocol://fonts.googleapis.com/css?family=$primary_name:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100 rel='stylesheet' type='text/css" );
-  wp_enqueue_style( 'kouki-secondary', "$protocol://fonts.googleapis.com/css?family=$secondary_name::400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100 rel='stylesheet' type='text/css" );
+  wp_enqueue_style( 'kouki-primary-font', "$protocol://fonts.googleapis.com/css?family=$primary_name:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100 rel='stylesheet' type='text/css" );
+  wp_enqueue_style( 'kouki-secondary-font', "$protocol://fonts.googleapis.com/css?family=$secondary_name::400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100 rel='stylesheet' type='text/css" );
 }
 
 function kouki_base_fonts() {
@@ -161,6 +161,6 @@ require get_template_directory() . '/inc/plugins/jetpack.php';
 /**
  * IMPORTANT NOTE:
  * Do not add any custom code here. Please use a child theme so that your 
- * customizations aren't lost during updates.
+ * customizations aren't lost after updates.
  * http://codex.wordpress.org/Child_Themes
  */

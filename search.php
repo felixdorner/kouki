@@ -11,7 +11,7 @@ get_header(); ?>
 	<?php _e( 'Search Results', 'kouki' ); ?>
 </h1>
 
-<main role="main">
+<main>
 
 		<?php if ( have_posts() ) : ?>
 

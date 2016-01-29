@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-  <main role="main">
+  <main>
     <?php get_template_part( 'template-parts/content', 'none' ); ?>
   </main>
 

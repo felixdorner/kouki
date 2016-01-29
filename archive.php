@@ -50,7 +50,7 @@ if( is_archive() && have_posts() ) : ?>
 
 <?php endif; ?>
 
-<main role="main">
+<main>
 
 		<?php if ( have_posts() ) : ?>
 

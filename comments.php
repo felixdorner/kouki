@@ -49,7 +49,11 @@ if ( post_password_required() ) {
 <?php endif; ?>
 
 <?php $comments_args = array(
+<<<<<<< Updated upstream
   'title_reply'=>__( 'Reply', 'kouki' ),
+=======
+  'title_reply'=> __( 'Reply', 'kouki' ),
+>>>>>>> Stashed changes
   'comment_notes_before' => '',
   'comment_notes_after' => '',
   'fields' => apply_filters( 'comment_form_default_fields', array(

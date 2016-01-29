@@ -46,7 +46,7 @@
 			<a class="primary-nav-trigger" href="javascript:void(0)">
 				<span class="menu-icon"></span>
 			</a>	
-			<nav id="menu" class="t-lightweight" role="navigation">
+			<nav id="menu" class="t-lightweight">
 				<span class="menu-detail"></span>
 				<ul>
 					<?php wp_nav_menu( array( 'container' => '', 'items_wrap' => '%3$s' ) ); ?>

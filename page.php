@@ -12,7 +12,7 @@
 
 get_header(); ?>
   
-  <main id="main" class="site-main" role="main">
+  <main id="main" class="site-main">
 
     <?php while ( have_posts() ) : the_post(); ?>
       <?php get_template_part( 'template-parts/content', 'page' ); ?>     
