@@ -1,6 +1,6 @@
 {
   "name": "kouki",
-  "version": "1.9.2",
+  "version": "1.9.3",
   "dependencies": {
     "bourbon": "4.2.6",
     "neat": "1.7.2"
