@@ -1,6 +1,6 @@
 {
   "name": "kouki",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "devDependencies": {
     "grunt": "1.0.1",
     "grunt-autoprefixer": "3.0.4",

@@ -1,5 +1,8 @@
 # Kouki Changelog
 
+### *20160628* - 1.9.2
+* **Dev** Updated functions.php to assign new version for FontAwesome CSS
+
 ### *20160628* - 1.9.1
 * **Dev** Updated FontAwesome
 
