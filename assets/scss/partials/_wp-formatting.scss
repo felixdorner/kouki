@@ -1,9 +1,9 @@
-/******************** 
+/********************
  * 3.4 WP Formatting
  */
 
-/** 
- * Posts 
+/**
+ * Posts
  */
 .sticky {
   content: '';
@@ -115,38 +115,6 @@ img.alignleft {
   text-transform: uppercase;
   letter-spacing: .2em;
   font-size: .8em;
-}
-
-/** 
- * Lightbox 
- */
-#imagelightbox {
-  position: fixed;
-  z-index: 9999;
-
-  -ms-touch-action: none;
-  touch-action: none;
-  cursor: pointer;
-
-  -webkit-box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
-  box-shadow: 0 0 3.125em rgba( 0, 0, 0, .75 );
-}
-
-#imagelightbox-loading, 
-#imagelightbox-overlay {
-  -webkit-animation: fade-in .25s linear;
-  animation: fade-in .25s linear;
-}
-
-#imagelightbox-overlay {
-  background-color: #000;
-  background-color: rgba( 0, 0, 0, .8 );
-  position: fixed;
-  z-index: 9998;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 /**

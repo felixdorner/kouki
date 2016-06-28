@@ -5,7 +5,7 @@
 jQuery( document ).ready( function( $ ) {
 
 	"use strict";
-	
+
 	/*--------------------------------------------------------------
 	Top-bar Height
 	--------------------------------------------------------------*/
@@ -24,8 +24,8 @@ jQuery( document ).ready( function( $ ) {
 
 	//open/close primary navigation
 	$('.primary-nav-trigger').on('click', function(){
-		$('.menu-icon').toggleClass('is-clicked');		
-	  $( "#menu" ).fadeToggle('fast');	  
+		$('.menu-icon').toggleClass('is-clicked');
+	  $( "#menu" ).fadeToggle('fast');
 	});
 
 	/*--------------------------------------------------------------
@@ -80,25 +80,5 @@ jQuery( document ).ready( function( $ ) {
 	    });
 	  });
 	}
-
-	/*--------------------------------------------------------------
-	Image Lightbox Init
-	--------------------------------------------------------------*/
-
-	$(".entry-content a").attr('data-imagelightbox', '');
-
-	// Overlay
-	var overlayOn = function() {
-		$( '<div id="imagelightbox-overlay"></div>' ).appendTo( 'body' );
-	},
-	overlayOff = function() {
-		$( '#imagelightbox-overlay' ).remove(); 
-	}
-
-	// Init with Overlay
-	$( 'a[data-imagelightbox]' ).imageLightbox({
-		onStart: 	 function() { overlayOn(); },
-		onEnd:	 	 function() { overlayOff(); }		
-	});
 
 });

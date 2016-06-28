@@ -1,7 +1,15 @@
 # Kouki Changelog
 
+### *20160628* - 1.9.0
+* **New** Kouki's lightbox feature can be deactivated via theme options in case of conflicts
+* **Tweak** Added an activity indicator for the lightbox feature
+* **Tweak** Improved FAQs in readme.txt
+* **Tweak** Improved welcome screen
+* **Dev** Updated TGM Activation Script
+* **Dev** Updated NPM and Bower dependencies
+
 ### *20150928* - 1.8.1
-* **Dev** Solved conflict git conflict
+* **Dev** Solved a git conflict
 
 ### *20150928* - 1.8.0
 * **Fix** Fixed Footer-Link: Mail

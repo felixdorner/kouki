@@ -2,9 +2,9 @@
 
 Contributers: Felix Dorner
 Requires at least: 3.8
-Tested up to: 4.4.1
-Version: 1.8.1
-Donate link: http://felixdorner.de
+Tested up to: 4.5.3
+Version: 1.9.0
+Donate link: https://felixdorner.de
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
@@ -24,9 +24,9 @@ A beautiful and minimal theme for personal blogs. Kouki is meant for publishers 
 
 == Frequently Asked Questions ==
 
-= Where is the post meta like categories, tags & author?  =
+= How to assign a featured image above a post title?  =
 
-You can control which meta data to output if you activate the theme options - else post meta is hidden.
+A so-called featured image can be assigned via the controls on the right side when editing a page or post in WordPress.
 
 = How to activate the theme options? =
 
@@ -34,11 +34,15 @@ You can control which meta data to output if you activate the theme options - el
 2. Install & activate the plugin.
 3. Find the options panel in your dashboard under 'Appearance' -> 'Theme Options'.
 
+= How to display the post-meta like categories, tags & the author of posts?  =
+
+You can control which meta data to show if you activate the theme options plugin.
+
 = Can I set infinite scroll for posts? =
 
 Yes you can - but you'll need to install/activate the Jetpack Plugin.
 
-= How to show buttons? =
+= How to implement Kouki's custom buttons? =
 
 1. Add a link in the editor.
 2. Switch from visual to text mode.

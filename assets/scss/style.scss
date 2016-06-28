@@ -1,10 +1,10 @@
 /*---------------------------------------------------------------------------------
 
 	Theme Name: Kouki
-	Version: 1.8.1
+	Version: 1.9.0
 	Author: Felix Dorner
-	Author URI: http://felixdorner.de
-	Theme URI: http://kouki.felixdorner.de
+	Author URI: https://felixdorner.de
+	Theme URI: https://kouki.felixdorner.de
 	Description: A beautiful and minimal theme for personal blogs. Kouki is meant for publishers who like to display their content in a delightful and minimal way. Ideal for food blogs, photographers, minimalists, tumble logs and everyone else who likes an unobstrusive WordPress theme. Non-mandatory theme options help you to individualize the theme. Change colors, choose fonts from the Google libary and add social icons. The theme is responsive and looks good on small devices.
 	License: GNU GENERAL PUBLIC LICENSE, Version 2
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,7 +15,7 @@
 	Kouki is distributed under the terms of the GNU GPL
 
 	IMPORTANT NOTE:
-	Do not add any custom styles here. Please use a child theme so that your 
+	Do not add any custom styles here. Please use a child theme so that your
 	customizations aren't lost after updates.
 	http://codex.wordpress.org/Child_Themes
 
@@ -39,7 +39,8 @@
 		## 3.5 - WP Comments
 		## 3.6 - WP Widgets
 	# 4.0 - Plugins
-		## 4.1 - Jetpack
+		## 4.1 - Imagelightbox
+		## 4.2 - Jetpack
 
 ----------------------------------------------------------------------------------- */
 
@@ -88,4 +89,5 @@
 /*---------------------------------------------------------------------------------
 04 Plugins
 ----------------------------------------------------------------------------------- */
+@import "plugins/imagelightbox";
 @import "plugins/jetpack";

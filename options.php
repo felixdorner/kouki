@@ -6,9 +6,9 @@
  * for the front end theme customizer.
  */
 function optionsframework_option_name() {
-	
+
 	$optionsframework_settings = get_option('optionsframework');
-	
+
 	$optionsframework_settings['id'] = 'kouki';
 	update_option('optionsframework', $optionsframework_settings);
 
@@ -23,16 +23,22 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array( "name" => __('General','kouki'),
-						"type" => "heading");	
+						"type" => "heading");
 
 	$options[] = array( "name" => __('Logo','kouki'),
 						"desc" => __('Upload a custom logo.','kouki'),
 						"id" => "kouki_logo",
-						"type" => "upload");	
+						"type" => "upload");
 
 	$options[] = array( "name" => __('Hide Description','kouki'),
 						"desc" => __('Do you like to hide the blog description?','kouki'),
 						"id" => "kouki_blog_description",
+						"std" => "0",
+						"type" => "checkbox");
+
+	$options[] = array( "name" => __('Deactivate Lightbox','kouki'),
+						"desc" => __('Deactivate the lightbox feature in case you have issues with another lightbox plugin.','kouki'),
+						"id" => "kouki_lightbox",
 						"std" => "0",
 						"type" => "checkbox");
 
@@ -79,7 +85,7 @@ function optionsframework_options() {
 						"desc" => __('Select a color for meta texts, section dividers and other small texts.','kouki'),
 						"id" => "kouki_meta_color",
 						"std" => "#c0c0c0",
-						"type" => "color");	
+						"type" => "color");
 
 	$options[] = array( "name" => __('Fonts','kouki'),
 						"type" => "heading");

@@ -108,8 +108,7 @@ function kouki_scripts() {
 
   wp_enqueue_style( 'kouki-font-awesome', get_template_directory_uri() . "/assets/fonts/font-awesome/font-awesome.min.css", array(), '4.1.0', 'screen' );
   wp_enqueue_style( 'kouki-style', get_stylesheet_uri(), array(), '20160128' );
-  
-  wp_enqueue_script( 'kouki-lightbox', get_template_directory_uri() . '/assets/js/imagelightbox.min.js', array('jquery'), '20160128', true );
+
   wp_enqueue_script( 'kouki-js', get_template_directory_uri().'/assets/js/theme.js', array( 'jquery', 'jquery-masonry' ), '20150209', true );
 
   if ( is_singular() && comments_open() ) {
@@ -158,9 +157,23 @@ require get_template_directory() . '/inc/plugins/plugin-activation.php';
 require get_template_directory() . '/inc/plugins/options-framework.php';
 require get_template_directory() . '/inc/plugins/jetpack.php';
 
+/*-----------------------------------------------------------------------------------*/
+/* Lightbox init based on theme options
+/*-----------------------------------------------------------------------------------*/
+
+if ( ( function_exists( 'of_get_option' ) ) && ( !of_get_option( 'kouki_lightbox' ) ) ) {
+
+  function kouki_lightbox() {
+    wp_enqueue_script( 'kouki-lightbox', get_template_directory_uri() . '/assets/js/imagelightbox.min.js', array('jquery'), '20160128', true );
+    wp_enqueue_script( 'kouki-lightbox-init', get_template_directory_uri().'/assets/js/lightbox-init.js', array('jquery'), '20160628', true );
+  }
+  add_action( 'wp_enqueue_scripts', 'kouki_lightbox' );
+
+}
+
 /**
  * IMPORTANT NOTE:
- * Do not add any custom code here. Please use a child theme so that your 
+ * Do not add any custom code here. Please use a child theme so that your
  * customizations aren't lost after updates.
  * http://codex.wordpress.org/Child_Themes
  */
