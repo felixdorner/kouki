@@ -1,5 +1,8 @@
 # Kouki Changelog
 
+### *20160628* - 1.9.1
+* **Dev** Updated FontAwesome
+
 ### *20160628* - 1.9.0
 * **New** Kouki's lightbox feature can be deactivated via theme options in case of conflicts
 * **Tweak** Added an activity indicator for the lightbox feature
