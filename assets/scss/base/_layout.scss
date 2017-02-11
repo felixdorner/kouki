@@ -1,5 +1,5 @@
 /********************
- * 1.3 Layout 
+ * 1.3 Layout
  */
 
 /**
@@ -20,7 +20,7 @@
  */
 header, .wrapper {
   margin-right: auto;
-  margin-left: auto;  
+  margin-left: auto;
   max-width: 1200px;
   width: 100%;
 }
@@ -52,6 +52,7 @@ header, .wrapper {
 }
 
 .pagination,
+.nav-links,
 .comment-navigation {
   @include row();
 
@@ -69,7 +70,7 @@ header, .wrapper {
   }
 }
 
-.footer-links { 
+.footer-links {
   @include clearfix;
   max-width: 90%;
   margin: 0 auto;

@@ -2,7 +2,7 @@
 /*---------------------------------------------------------------------------------
 
 	Theme Name: Kouki
-	Version: 1.9.3
+	Version: 2.0.0
 	Author: Felix Dorner
 	Author URI: https://felixdorner.de
 	Theme URI: https://kouki.felixdorner.de
@@ -10,7 +10,7 @@
 	License: GNU GENERAL PUBLIC LICENSE, Version 2
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	Text Domain: kouki
-	Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
+	Tags: one-column, grid-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, blog, food-and-drink, holiday, news, photography, portfolio
 
 	Kouki WordPress Theme, Copyright (C) 2015-2016, Felix Dorner
 	Kouki is distributed under the terms of the GNU GPL
@@ -254,7 +254,7 @@ hr {
   }
 }
 /********************
- * 1.3 Layout 
+ * 1.3 Layout
  */
 /**
  * Wordpress specific classes for the content-width theme-feature
@@ -307,16 +307,19 @@ header, .wrapper {
 }
 
 .pagination,
+.nav-links,
 .comment-navigation {
   display: block;
 }
 .pagination::after,
+.nav-links::after,
 .comment-navigation::after {
   clear: both;
   content: "";
-  display: table;
+  display: block;
 }
 .pagination div,
+.nav-links div,
 .comment-navigation div {
   float: left;
   display: block;
@@ -324,15 +327,18 @@ header, .wrapper {
   width: 48.57143%;
 }
 .pagination div:last-child,
+.nav-links div:last-child,
 .comment-navigation div:last-child {
   margin-right: 0;
 }
 .pagination .nav-next,
+.nav-links .nav-next,
 .comment-navigation .nav-next {
   text-align: right;
   float: right;
 }
 .pagination .nav-previous,
+.nav-links .nav-previous,
 .comment-navigation .nav-previous {
   text-align: left;
   float: left;
@@ -345,7 +351,7 @@ header, .wrapper {
 .footer-links::after {
   clear: both;
   content: "";
-  display: table;
+  display: block;
 }
 @media screen and (min-width: 40em) {
   .footer-links {
@@ -381,7 +387,7 @@ aside:last-child {
   aside::after {
     clear: both;
     content: "";
-    display: table;
+    display: block;
   }
 }
 
@@ -651,7 +657,7 @@ p, pre, address {
   }
 }
 /********************
- * 1.4 Colors 
+ * 1.4 Colors
  */
 /**
  * Globals
@@ -671,7 +677,7 @@ body {
 /**
  * Content
  */
-.meta, .wp-caption-text {
+.meta {
   color: #C0C0C0;
 }
 
@@ -721,7 +727,7 @@ footer {
   /* Above WP toolbar. */
 }
 
-/******************** 
+/********************
  * 2.2 Typo
  */
 /**
@@ -864,6 +870,14 @@ blockquote, q {
   font-size: .8em;
 }
 
+.hentry-masonry header {
+  margin-bottom: 30px;
+}
+
+.hentry-masonry header p {
+  margin: 15px 0 0;
+}
+
 .entry-content h1,
 .entry-content h2,
 .entry-content h3,
@@ -994,6 +1008,7 @@ h6 a:hover {
  */
 .btn,
 .pagination a,
+.nav-links a,
 input[type=submit],
 #infinite-handle span {
   display: inline-block;
@@ -1010,6 +1025,7 @@ input[type=submit],
  */
 a.btn-neutral,
 .pagination a,
+.nav-links a,
 #infinite-handle span {
   border: 1px solid #151515;
   color: #151515;
@@ -1045,6 +1061,7 @@ a.btn-extra {
  */
 .btn:hover,
 .pagination a:hover,
+.nav-links a:hover,
 input[type=submit]:hover,
 #infinite-handle span:hover {
   opacity: .4;
@@ -1513,7 +1530,7 @@ img.alignleft {
   margin-top: 15px;
   text-transform: uppercase;
   letter-spacing: .2em;
-  font-size: .8em;
+  font-size: .6em;
 }
 
 /**

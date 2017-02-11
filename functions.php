@@ -106,11 +106,8 @@ add_action( 'widgets_init', 'kouki_widgets_init' );
 
 function kouki_scripts() {
 
-  wp_enqueue_style( 'kouki-font-awesome', get_template_directory_uri() . "/assets/fonts/font-awesome/font-awesome.min.css", array(), '4.6.3', 'screen' );
-  wp_enqueue_style( 'kouki-style', get_stylesheet_uri(), array(), '20160628' );
-
+  wp_enqueue_style( 'kouki-style', get_stylesheet_uri(), array(), '20170210' );
   wp_enqueue_script( 'kouki-js', get_template_directory_uri().'/assets/js/theme.js', array( 'jquery', 'jquery-masonry' ), '20160628', true );
-
   if ( is_singular() && comments_open() ) {
     wp_enqueue_script( 'comment-reply' );
   }
@@ -149,7 +146,6 @@ endif;
 /*-----------------------------------------------------------------------------------*/
 
 require get_template_directory() . '/inc/back-compat.php';
-require get_template_directory() . '/inc/admin/welcome-screen/welcome-screen.php';
 require get_template_directory() . '/inc/comments.php';
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
@@ -168,6 +164,31 @@ if ( ( function_exists( 'of_get_option' ) ) && ( !of_get_option( 'kouki_lightbox
     wp_enqueue_script( 'kouki-lightbox-init', get_template_directory_uri().'/assets/js/lightbox-init.js', array('jquery'), '20160628', true );
   }
   add_action( 'wp_enqueue_scripts', 'kouki_lightbox' );
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Font Awesome init based on theme options
+/*-----------------------------------------------------------------------------------*/
+
+if ( ( function_exists( 'of_get_option' ) ) && (
+  ( of_get_option( 'kouki_behance' ) ) xor
+  ( of_get_option( 'kouki_dribbble' ) ) xor
+  ( of_get_option( 'kouki_facebook' ) ) xor
+  ( of_get_option( 'kouki_instagram' ) ) xor
+  ( of_get_option( 'kouki_linkedin' ) ) xor
+  ( of_get_option( 'kouki_mail' ) ) xor
+  ( of_get_option( 'kouki_pinterest' ) ) xor
+  ( of_get_option( 'kouki_rss' ) ) xor
+  ( of_get_option( 'kouki_soundcloud' ) ) xor
+  ( of_get_option( 'kouki_tumblr' ) ) xor
+  ( of_get_option( 'kouki_twitter' ) )
+) ) {
+
+  function kouki_fontawesome() {
+    wp_enqueue_style( 'kouki-font-awesome', get_template_directory_uri() . "/assets/fonts/font-awesome/font-awesome.min.css", array(), '4.7.0' );
+  }
+  add_action( 'wp_enqueue_scripts', 'kouki_fontawesome' );
 
 }
 

@@ -3,11 +3,11 @@
 Contributers: Felix Dorner
 Requires at least: 3.8
 Tested up to: 4.5.3
-Version: 1.9.3
+Version: 2.0.0
 Donate link: https://felixdorner.de
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: gray, white, light, one-column, responsive-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready
+Tags: one-column, grid-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, blog, food-and-drink, holiday, news, photography, portfolio
 
 == Description ==
 
@@ -24,7 +24,7 @@ A beautiful and minimal theme for personal blogs. Kouki is meant for publishers 
 
 == Frequently Asked Questions ==
 
-= How to assign a featured image above a post title?  =
+= How to assign a featured image above a post title? =
 
 A so-called featured image can be assigned via the controls on the right side when editing a page or post in WordPress.
 
@@ -34,7 +34,7 @@ A so-called featured image can be assigned via the controls on the right side wh
 2. Install & activate the plugin.
 3. Find the options panel in your dashboard under 'Appearance' -> 'Theme Options'.
 
-= How to display the post-meta like categories, tags & the author of posts?  =
+= How to display the post-meta like categories, tags & the author of posts? =
 
 You can control which meta data to show if you activate the theme options plugin.
 

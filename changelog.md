@@ -1,5 +1,16 @@
 # Kouki Changelog
 
+### *20170210* - 2.0.0
+* **New** Added post navigation
+* **New** FontAwesome loads conditionally based on theme options
+* **Tweak** Removed Admin Screen
+* **Tweak** Aligned wp-caption color with text color
+* **Fix** Post's meta information paragraph is not showing in markup anymore if there is no information to show
+* **Dev** Updated FontAwesome
+* **Dev** Updated TGM Activation Script
+* **Dev** Updated NPM and Bower dependencies
+* **Dev** Updated POT Language file
+
 ### *20160628* - 1.9.3
 * **Dev** Updated some script and style version descriptions in functions.php
 

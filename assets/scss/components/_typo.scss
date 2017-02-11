@@ -1,4 +1,4 @@
-/******************** 
+/********************
  * 2.2 Typo
  */
 
@@ -121,6 +121,12 @@ blockquote, q {
   letter-spacing: .2em;
   font-weight: 300;
   font-size: .8em;
+}
+.hentry-masonry header {
+  margin-bottom: 30px;
+}
+.hentry-masonry header p {
+  margin: 15px 0 0;
 }
 .entry-content h1,
 .entry-content h2,

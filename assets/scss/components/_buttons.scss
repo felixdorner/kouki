@@ -7,6 +7,7 @@
  */
 .btn,
 .pagination a,
+.nav-links a,
 input[type=submit],
 #infinite-handle span {
   display: inline-block;
@@ -27,6 +28,7 @@ input[type=submit],
  */
 a.btn-neutral,
 .pagination a,
+.nav-links a,
 #infinite-handle span {
   border: 1px solid #151515;
   color: #151515;
@@ -62,6 +64,7 @@ a.btn-extra {
  */
 .btn:hover,
 .pagination a:hover,
+.nav-links a:hover,
 input[type=submit]:hover,
 #infinite-handle span:hover {
   opacity: .4;

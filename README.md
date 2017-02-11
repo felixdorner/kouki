@@ -4,7 +4,7 @@
 
 Kouki is meant for publishers who like to display their content in a delightful and minimal way. Ideal for food blogs, photographers, minimalists, tumble logs and everyone else who likes an unobstrusive WordPress theme. Non-mandatory theme options help you to individualize the theme to your needs. Change colors, choose fonts from the Google libary and add social icons. The theme is responsive and looks good on small devices.
 
-[Live Demo](http://kouki.felixdorner.de) / [Download Theme](https://wordpress.org/themes/kouki/)
+[Live Demo](https://kouki.felixdorner.de) / [Download Theme](https://wordpress.org/themes/kouki/)
 
 ## Support
 
@@ -19,8 +19,8 @@ Would you like to translate Kouki in to your language? Get involved [here](https
 ## Author
 
 **Felix Dorner**  
-*Designer and developer*
+*Design and development*
 
-- [Website](http://felixdorner.de)
+- [Website](https://felixdorner.de)
 - [Twitter](https://twitter.com/felixdorner)
 - [Dribbble](https://www.dribbble.com/felixdorner)

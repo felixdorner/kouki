@@ -23,7 +23,7 @@ module.exports = function(grunt) {
           sourcemap: 'none'
         },
         files: {
-          'style.compiled.css': 'assets/scss/style.scss'          
+          'style.compiled.css': 'assets/scss/style.scss'
         }
       }
     },
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
           browsers: ['last 2 versions', 'ie 8', 'ie 9']
-        },          
+        },
         files: {
           'style.css': 'style.compiled.css'
         }
@@ -48,37 +48,37 @@ module.exports = function(grunt) {
           src : ['style.css', 'assets/js/*.js']
         },
         options: {
-          proxy: "kouki.felixdorner.dev",
+          proxy: "kouki.dev",
           watchTask: true
         }
       }
     },
 
     clean: {
-      build: ["kouki"],          
+      build: ["kouki"],
     },
 
     copy: {
       build: {
-        expand: true, 
-        src: [  
-          '**/*', 
-          '!**/node_modules/**', 
-          '!**/bower_components/**', 
-          '!**/.sass-cache/**', 
-          '!**/.git/**', 
-          '!**/scss/**', 
-          '!Gruntfile.js', 
-          '!package.json', 
-          '!bower.json', 
-          '!style.compiled.css', 
+        expand: true,
+        src: [
+          '**/*',
+          '!**/node_modules/**',
+          '!**/bower_components/**',
+          '!**/.sass-cache/**',
+          '!**/.git/**',
+          '!**/scss/**',
+          '!Gruntfile.js',
+          '!package.json',
+          '!bower.json',
+          '!style.compiled.css',
           '!.gitignore',
           '!.DS_store',
           '!kouki.zip',
           '!README.md',
           '!changelog.md'
-        ], 
-        dest: 'kouki/'     
+        ],
+        dest: 'kouki/'
       },
     },
 

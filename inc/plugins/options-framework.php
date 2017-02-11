@@ -9,7 +9,7 @@
 
 function kouki_theme_styles() { ?>
 
-  <style type="text/css" media="screen">   
+  <style type="text/css" media="screen">
 
     /**
      * Text Colors
@@ -73,10 +73,10 @@ function kouki_theme_styles() { ?>
 
     <?php $meta_color = of_get_option('kouki_meta_color'); ?>
     <?php if ($meta_color) : ?>
-      .meta, .wp-caption-text, .sticky-tag {
+      .meta, .sticky-tag {
         color: <?php echo esc_attr($meta_color); ?>;
       }
-    <?php endif; ?> 
+    <?php endif; ?>
 
     /**
      * Fonts
@@ -107,16 +107,16 @@ add_action( 'wp_head', 'kouki_theme_styles' );
  * This code allows the theme to work without errors if the Options Framework plugin has been disabled.
  */
 if ( ! function_exists( 'of_get_option' ) ) {
-  
+
   function of_get_option( $name, $default = false ) {
     $optionsframework_settings = get_option( 'optionsframework' );
     // Gets the unique option id
     $option_name = $optionsframework_settings['id'];
-    
+
     if ( get_option( $option_name ) ) {
       $options = get_option( $option_name );
     }
-    
+
     if ( isset( $options[$name] ) ) {
       return $options[$name];
     } else {

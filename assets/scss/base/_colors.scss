@@ -1,5 +1,5 @@
 /********************
- * 1.4 Colors 
+ * 1.4 Colors
  */
 
 /**
@@ -20,7 +20,7 @@ body {
 /**
  * Content
  */
-.meta, .wp-caption-text {
+.meta {
   color: $gray;
 }
 
@@ -29,7 +29,7 @@ body {
  */
 footer {
   color: $gray;
-  background: $base-bg-color; 
+  background: $base-bg-color;
 }
 .call-to-action {
   background: $medium-gray;
