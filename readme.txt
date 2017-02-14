@@ -2,7 +2,7 @@
 
 Contributers: Felix Dorner
 Requires at least: 3.8
-Tested up to: 4.5.3
+Tested up to: 4.7
 Version: 2.0.0
 Donate link: https://felixdorner.de
 License: GPLv2 or later
