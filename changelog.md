@@ -1,5 +1,9 @@
 # Kouki Changelog
 
+### *20180618* - 2.1.0
+* **Tweak** Refinded readme texts
+* **Dev** Removed editor styles to reduce unnecessary maintenance work
+
 ### *20170210* - 2.0.0
 * **New** Added post navigation
 * **New** FontAwesome loads conditionally based on theme options

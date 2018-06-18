@@ -2,8 +2,8 @@
 
 Contributers: Felix Dorner
 Requires at least: 3.8
-Tested up to: 4.7
-Version: 2.0.0
+Tested up to: 4.9.6
+Version: 2.1.0
 Donate link: https://felixdorner.de
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -21,6 +21,10 @@ A beautiful and minimal theme for personal blogs. Kouki is meant for publishers 
 4. Click Install Now.
 5. After WordPress installs the theme, click Activate.
 6. You've successfully installed your new theme!
+
+== Support ==
+
+As this is a free theme, support is very limited. The community may help out in the designated support forum: https://wordpress.org/support/theme/kouki
 
 == Frequently Asked Questions ==
 
@@ -52,16 +56,51 @@ Yes you can - but you'll need to install/activate the Jetpack Plugin.
 	c. btn btn-negative
 	d. btn btn-extra
 
-= I need more help! What should I do? =
+== Contributing ==
 
-As this is a free theme, support is limited to the basics. You can find me helping out in the designated support forum: https://wordpress.org/support/theme/kouki
+= Found a bug? =
 
-== Credits & Licenses ==
+Please report the issue here: https://github.com/felixdorner/kouki/issues
+Want to contribute a patch or create a new feature? Just send me a pull request and I will review it.
 
-Photos in the the screenshot by freefoodphotos.com are licensed under CC BY 3.0.
-Google webfonts and FontAwesome are distributed under SIL Open Font License.
-ImageLightbox JS by Osvaldas Valutis is distributed for use under the MIT License.
-TGM Activation Plugin is distributed under the terms of the GNU GPL.
+= Translation =
 
-Kouki WordPress Theme, Copyright (C) 2015-2016, Felix Dorner
+Would you like to translate Kouki in to your language?
+Get involved here: https://translate.wordpress.org/projects/wp-themes/kouki
+
+== Copyright ==
+
+Kouki WordPress Theme, Copyright 2018 WordPress.org
 Kouki is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+Kouki bundles the following third-party resources:
+
+ImageLightbox, Copyright 2016 Osvaldas Valutis
+License: MIT
+Source: https://github.com/osvaldasvalutis/imageLightbox.js
+
+Photos in screenshot belong to freefoodphotos.com
+License: CC BY 3.0
+Source: http://freefoodphotos.com/
+
+TGM Activation Plugin
+License: GNU GPL v2 or later
+Source: http://tgmpluginactivation.com/
+
+Google Webfonts
+License: SIL Open Font License
+Source: https://fonts.google.com/
+
+FontAwesome
+License: SIL Open Font License
+Source: https://fontawesome.com/
