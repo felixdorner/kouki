@@ -1,8 +1,8 @@
 {
-  "name": "kouki",
-  "version": "2.0.0",
-  "dependencies": {
-    "bourbon": "4.3.2",
-    "neat": "1.8.0"
-  }
+	"name": "kouki",
+	"version": "2.0.0",
+	"dependencies": {
+		"bourbon": "4.3.2",
+		"neat": "1.8.0"
+	}
 }

@@ -3,122 +3,248 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Kouki\n"
-"POT-Creation-Date: 2017-02-10 22:32+0100\n"
-"PO-Revision-Date: 2017-02-10 22:30+0100\n"
+"POT-Creation-Date: 2021-01-27 17:39+0100\n"
+"PO-Revision-Date: 2021-01-27 17:36+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: node_modules\n"
 
-#: archive.php:26
+#: archive.php:14
 #, php-format
 msgid "#%s"
 msgstr ""
 
-#: archive.php:39
+#: archive.php:27
 msgid "Author: "
 msgstr ""
 
-#: archive.php:42
+#: archive.php:30
 msgid "Archive"
 msgstr ""
 
-#: comments.php:21
+#: comments.php:11
 #, php-format
 msgid "One thought"
 msgid_plural "%1$s thoughts"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:39
+#: comments.php:29
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:40
+#: comments.php:30
 msgid "&larr; Older Comments"
 msgstr ""
 
-#: comments.php:41
+#: comments.php:31
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: comments.php:46
+#: comments.php:36
 msgid "Comments are closed."
 msgstr ""
 
-#: comments.php:52
+#: comments.php:42
 msgid "Reply"
 msgstr ""
 
-#: comments.php:57
+#: comments.php:46
 msgid "Name"
 msgstr ""
 
-#: comments.php:60
+#: comments.php:47
 msgid "Email"
 msgstr ""
 
-#: comments.php:63
+#: comments.php:48
 msgid "Website"
 msgstr ""
 
-#: comments.php:66
+#: comments.php:50
 msgid "Comment"
 msgstr ""
 
-#: footer.php:88
-msgid "https://wordpress.org/"
+#: footer.php:35
+msgid "Visit Behance profile"
 msgstr ""
 
-#: footer.php:88
-#, php-format
-msgid "Proudly powered by %s"
+#: footer.php:37
+msgid "Behance icon"
 msgstr ""
 
-#: footer.php:89
-msgid "http://felixdorner.com/"
+#: footer.php:44
+msgid "Visit Dribbble profile"
+msgstr ""
+
+#: footer.php:46
+msgid "Dribbble icon"
+msgstr ""
+
+#: footer.php:53
+msgid "Visit Facebook profile"
+msgstr ""
+
+#: footer.php:55
+msgid "Facebook icon"
+msgstr ""
+
+#: footer.php:62
+msgid "Visit Github profile"
+msgstr ""
+
+#: footer.php:64
+msgid "Github icon"
+msgstr ""
+
+#: footer.php:71
+msgid "Visit Instagram profile"
+msgstr ""
+
+#: footer.php:73
+msgid "Instagram icon"
+msgstr ""
+
+#: footer.php:81
+msgid "Visit LinkedIn profile"
+msgstr ""
+
+#: footer.php:83
+msgid "LinkedIn icon"
 msgstr ""
 
 #: footer.php:90
-#, php-format
-msgid "Theme by %s"
+msgid "Open Email link"
 msgstr ""
 
-#: functions.php:93 options.php:150
+#: footer.php:92
+msgid "Email icon"
+msgstr ""
+
+#: footer.php:99
+msgid "Visit Pinterest profile"
+msgstr ""
+
+#: footer.php:101
+msgid "Pinterest icon"
+msgstr ""
+
+#: footer.php:108
+msgid "Open RSS feed"
+msgstr ""
+
+#: footer.php:110
+msgid "RSS icon"
+msgstr ""
+
+#: footer.php:117
+msgid "Visit SoundCloud profile"
+msgstr ""
+
+#: footer.php:119
+msgid "SoundCloud icon"
+msgstr ""
+
+#: footer.php:126
+msgid "Visit Spotify profile"
+msgstr ""
+
+#: footer.php:128
+msgid "Spotify icon"
+msgstr ""
+
+#: footer.php:135
+msgid "Visit Tumblr site"
+msgstr ""
+
+#: footer.php:137
+msgid "Tumblr icon"
+msgstr ""
+
+#: footer.php:144
+msgid "Visit Twitter profile"
+msgstr ""
+
+#: footer.php:146
+msgid "Twitter icon"
+msgstr ""
+
+#: footer.php:153
+msgid "Visit YouTube profile"
+msgstr ""
+
+#: footer.php:155
+msgid "YouTube icon"
+msgstr ""
+
+#. translators: %s: WordPress.
+#: footer.php:171
+#, php-format
+msgid "Proudly powered by %s."
+msgstr ""
+
+#: footer.php:172
+msgid "https://wordpress.org/"
+msgstr ""
+
+#. translators: %s: Felix Dorner.
+#: footer.php:178
+#, php-format
+msgid "Theme Kouki by %s."
+msgstr ""
+
+#: footer.php:179
+msgid "https://felixdorner.de/"
+msgstr ""
+
+#: functions.php:80 options.php:162 options.php:435
 msgid "Footer"
 msgstr ""
 
-#: inc/back-compat.php:35
-#, php-format
-msgid "Page %s"
+#: header.php:19
+msgid "Skip to content"
 msgstr ""
 
-#: inc/comments.php:21
+#: header.php:48
+msgid "Open menu"
+msgstr ""
+
+#: header.php:49
+msgid "Menu toggle icon"
+msgstr ""
+
+#: inc/back-compat.php:20 inc/back-compat.php:28 inc/back-compat.php:39
+#, php-format
+msgid ""
+"Theme requires at least WordPress version 4.5. You are running version %s. "
+"Please upgrade and try again."
+msgstr ""
+
+#: inc/comments.php:20
 #, php-format
 msgid "<h4 class=\"comment-cite\">%s</h4>"
 msgstr ""
 
-#: inc/comments.php:22
+#: inc/comments.php:21
 #, php-format
 msgid "%1$s"
 msgstr ""
 
-#: inc/comments.php:33
+#: inc/comments.php:32
 msgid "Your comment is awaiting moderation."
-msgstr ""
-
-#: inc/extras.php:33
-msgid "Read More &rarr;"
 msgstr ""
 
 #: inc/plugins/class-tgm-plugin-activation.php:327
@@ -129,11 +255,13 @@ msgstr ""
 msgid "Install Plugins"
 msgstr ""
 
+#. translators: %s: plugin name.
 #: inc/plugins/class-tgm-plugin-activation.php:330
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
+#. translators: %s: plugin name.
 #: inc/plugins/class-tgm-plugin-activation.php:332
 #, php-format
 msgid "Updating Plugin: %s"
@@ -143,6 +271,7 @@ msgstr ""
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
+#. translators: 1: plugin name(s).
 #: inc/plugins/class-tgm-plugin-activation.php:336
 #, php-format
 msgid "This theme requires the following plugin: %1$s."
@@ -150,6 +279,7 @@ msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: plugin name(s).
 #: inc/plugins/class-tgm-plugin-activation.php:342
 #, php-format
 msgid "This theme recommends the following plugin: %1$s."
@@ -157,6 +287,7 @@ msgid_plural "This theme recommends the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: plugin name(s).
 #: inc/plugins/class-tgm-plugin-activation.php:348
 #, php-format
 msgid ""
@@ -168,6 +299,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: plugin name(s).
 #: inc/plugins/class-tgm-plugin-activation.php:354
 #, php-format
 msgid "There is an update available for: %1$s."
@@ -175,6 +307,7 @@ msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: plugin name(s).
 #: inc/plugins/class-tgm-plugin-activation.php:360
 #, php-format
 msgid "The following required plugin is currently inactive: %1$s."
@@ -182,6 +315,7 @@ msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: plugin name(s).
 #: inc/plugins/class-tgm-plugin-activation.php:366
 #, php-format
 msgid "The following recommended plugin is currently inactive: %1$s."
@@ -230,11 +364,13 @@ msgid_plural "The following plugins were activated successfully:"
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: plugin name.
 #: inc/plugins/class-tgm-plugin-activation.php:390
 #, php-format
 msgid "No action taken. Plugin %1$s was already active."
 msgstr ""
 
+#. translators: 1: plugin name.
 #: inc/plugins/class-tgm-plugin-activation.php:392
 #, php-format
 msgid ""
@@ -242,6 +378,7 @@ msgid ""
 "Please update the plugin."
 msgstr ""
 
+#. translators: 1: dashboard link.
 #: inc/plugins/class-tgm-plugin-activation.php:394
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
@@ -294,6 +431,7 @@ msgctxt "plugin A *and* plugin B"
 msgid "and"
 msgstr ""
 
+#. translators: %s: version number
 #: inc/plugins/class-tgm-plugin-activation.php:1982
 #, php-format
 msgid "TGMPA v%s"
@@ -343,12 +481,14 @@ msgstr ""
 msgid "Update recommended"
 msgstr ""
 
+#. translators: 1: install status, 2: update status
 #: inc/plugins/class-tgm-plugin-activation.php:2342
 #, php-format
 msgctxt "Install/Update Status"
 msgid "%1$s, %2$s"
 msgstr ""
 
+#. translators: 1: number of plugins.
 #: inc/plugins/class-tgm-plugin-activation.php:2388
 #, php-format
 msgctxt "plugins"
@@ -357,6 +497,7 @@ msgid_plural "All <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: number of plugins.
 #: inc/plugins/class-tgm-plugin-activation.php:2392
 #, php-format
 msgid "To Install <span class=\"count\">(%s)</span>"
@@ -364,6 +505,7 @@ msgid_plural "To Install <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: number of plugins.
 #: inc/plugins/class-tgm-plugin-activation.php:2396
 #, php-format
 msgid "Update Available <span class=\"count\">(%s)</span>"
@@ -371,6 +513,7 @@ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
+#. translators: 1: number of plugins.
 #: inc/plugins/class-tgm-plugin-activation.php:2400
 #, php-format
 msgid "To Activate <span class=\"count\">(%s)</span>"
@@ -419,16 +562,19 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
+#. translators: %2$s: plugin name in screen reader markup
 #: inc/plugins/class-tgm-plugin-activation.php:2603
 #, php-format
 msgid "Install %2$s"
 msgstr ""
 
+#. translators: %2$s: plugin name in screen reader markup
 #: inc/plugins/class-tgm-plugin-activation.php:2608
 #, php-format
 msgid "Update %2$s"
 msgstr ""
 
+#. translators: %2$s: plugin name in screen reader markup
 #: inc/plugins/class-tgm-plugin-activation.php:2614
 #, php-format
 msgid "Activate %2$s"
@@ -478,16 +624,19 @@ msgstr ""
 msgid "Plugin activation failed."
 msgstr ""
 
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/plugins/class-tgm-plugin-activation.php:3498
 #, php-format
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
+#. translators: 1: plugin name, 2: error message.
 #: inc/plugins/class-tgm-plugin-activation.php:3501
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
+#. translators: 1: plugin name.
 #: inc/plugins/class-tgm-plugin-activation.php:3503
 #, php-format
 msgid "The installation of %1$s failed."
@@ -499,6 +648,7 @@ msgid ""
 "while on some hosts, so please be patient."
 msgstr ""
 
+#. translators: 1: plugin name.
 #: inc/plugins/class-tgm-plugin-activation.php:3509
 #, php-format
 msgid "%1$s installed and activated successfully."
@@ -518,6 +668,7 @@ msgstr ""
 msgid "All installations and activations have been completed."
 msgstr ""
 
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/plugins/class-tgm-plugin-activation.php:3512
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
@@ -529,6 +680,7 @@ msgid ""
 "hosts, so please be patient."
 msgstr ""
 
+#. translators: 1: plugin name.
 #: inc/plugins/class-tgm-plugin-activation.php:3517
 #, php-format
 msgid "%1$s installed successfully."
@@ -538,52 +690,57 @@ msgstr ""
 msgid "All installations have been completed."
 msgstr ""
 
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
 #: inc/plugins/class-tgm-plugin-activation.php:3520
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: inc/plugins/jetpack.php:48
+#: inc/plugins/jetpack.php:43
 msgid "More"
 msgstr ""
 
-#: inc/template-tags.php:21
+#: inc/template-functions.php:23
+msgid "Read More &rarr;"
+msgstr ""
+
+#: inc/template-tags.php:17
 msgid "Older Posts"
 msgstr ""
 
-#: inc/template-tags.php:27
+#: inc/template-tags.php:23
 msgid "Newer posts"
 msgstr ""
 
-#: inc/template-tags.php:70
+#: inc/template-tags.php:58
 msgid "Posted "
 msgstr ""
 
-#: inc/template-tags.php:71
+#: inc/template-tags.php:59
 msgid "by "
 msgstr ""
 
-#: inc/template-tags.php:71
+#: inc/template-tags.php:59
 msgid " "
 msgstr ""
 
-#: inc/template-tags.php:72
+#: inc/template-tags.php:60
 msgid "on"
 msgstr ""
 
-#: inc/template-tags.php:73
+#: inc/template-tags.php:61
 msgid "in"
 msgstr ""
 
-#: inc/template-tags.php:75
+#: inc/template-tags.php:63
 msgid "No Comments"
 msgstr ""
 
-#: inc/template-tags.php:75
+#: inc/template-tags.php:63
 msgid "One Comment"
 msgstr ""
 
-#: inc/template-tags.php:75
+#: inc/template-tags.php:63
 msgid "% Comments"
 msgstr ""
 
@@ -596,32 +753,33 @@ msgid "Logo"
 msgstr ""
 
 #: options.php:29
-msgid "Upload a custom logo."
+msgid ""
+"You can upload a custom logo here. However, this option is deprecated. "
+"Please use the customizer to add a logo."
 msgstr ""
 
-#: options.php:33
+#: options.php:33 options.php:665
 msgid "Hide Description"
 msgstr ""
 
-#: options.php:34
+#: options.php:34 options.php:666
 msgid "Do you like to hide the blog description?"
 msgstr ""
 
-#: options.php:39
+#: options.php:39 options.php:680
 msgid "Deactivate Lightbox"
 msgstr ""
 
-#: options.php:40
+#: options.php:40 options.php:681
 msgid ""
-"Deactivate the lightbox feature in case you have issues with another "
-"lightbox plugin."
+"Deactivate the lightbox feature in case you have issues with other plugins."
 msgstr ""
 
-#: options.php:45 options.php:277
+#: options.php:45 options.php:335
 msgid "Colors"
 msgstr ""
 
-#: options.php:48 options.php:288
+#: options.php:48 options.php:346
 msgid "Text Color"
 msgstr ""
 
@@ -629,7 +787,7 @@ msgstr ""
 msgid "Select a text-color for your theme."
 msgstr ""
 
-#: options.php:54 options.php:301
+#: options.php:54 options.php:359
 msgid "Headline Color"
 msgstr ""
 
@@ -637,7 +795,7 @@ msgstr ""
 msgid "Select a color for your headlines."
 msgstr ""
 
-#: options.php:60 options.php:314
+#: options.php:60 options.php:372
 msgid "Link Color"
 msgstr ""
 
@@ -645,7 +803,7 @@ msgstr ""
 msgid "Select a color for your links."
 msgstr ""
 
-#: options.php:66 options.php:327
+#: options.php:66 options.php:385
 msgid "Positive Buttons"
 msgstr ""
 
@@ -653,7 +811,7 @@ msgstr ""
 msgid "Select a color for positive buttons."
 msgstr ""
 
-#: options.php:72 options.php:340
+#: options.php:72 options.php:398
 msgid "Negative Buttons"
 msgstr ""
 
@@ -661,7 +819,7 @@ msgstr ""
 msgid "Select a color for negative buttons."
 msgstr ""
 
-#: options.php:78 options.php:353
+#: options.php:78 options.php:411
 msgid "Extra Buttons"
 msgstr ""
 
@@ -669,7 +827,7 @@ msgstr ""
 msgid "Select a color for extra buttons."
 msgstr ""
 
-#: options.php:84 options.php:366
+#: options.php:84 options.php:424
 msgid "Meta Text"
 msgstr ""
 
@@ -677,237 +835,299 @@ msgstr ""
 msgid "Select a color for meta texts, section dividers and other small texts."
 msgstr ""
 
-#: options.php:90 options.php:240
+#: options.php:90 options.php:270
 msgid "Fonts"
 msgstr ""
 
-#: options.php:93 options.php:251
+#: options.php:93 options.php:281
 msgid "Primary Font"
 msgstr ""
 
-#: options.php:94 options.php:272
+#: options.php:94 options.php:330
 msgid ""
 "Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
 "\"_blank\">Google Web Font</a> you want to use for texts."
 msgstr ""
 
-#: options.php:99 options.php:265
-msgid "Secondary Font"
+#: options.php:99 options.php:295
+msgid "Primary Font Weight"
 msgstr ""
 
 #: options.php:100
+msgid "Enter the font weight you want to use for texts."
+msgstr ""
+
+#: options.php:105 options.php:309
+msgid "Secondary Font"
+msgstr ""
+
+#: options.php:106
 msgid ""
 "Enter the name of the <a href=\"http://www.google.com/webfonts\" target="
 "\"_blank\">Google Web Font</a> you want to use for headings. Hint: Leave "
 "blank if you do not want to load this style."
 msgstr ""
 
-#: options.php:105
+#: options.php:111 options.php:323
+msgid "Secondary Font Weight"
+msgstr ""
+
+#: options.php:112
+msgid "Enter the font weight you want to use for headings."
+msgstr ""
+
+#: options.php:117
 msgid "Posts"
 msgstr ""
 
-#: options.php:108
+#: options.php:120 options.php:695
 msgid "Show Excerpts"
 msgstr ""
 
-#: options.php:109
+#: options.php:121 options.php:696
 msgid ""
 "Check this box to show the excerpt on index and archive pages instead of the "
 "full content."
 msgstr ""
 
-#: options.php:114
+#: options.php:126 options.php:710
 msgid "Show Author"
 msgstr ""
 
-#: options.php:115
+#: options.php:127 options.php:711
 msgid "Check this box to show the author."
 msgstr ""
 
-#: options.php:120
+#: options.php:132 options.php:725
 msgid "Show Date"
 msgstr ""
 
-#: options.php:121
+#: options.php:133 options.php:726
 msgid "Check this box to show the publish date."
 msgstr ""
 
-#: options.php:126
+#: options.php:138 options.php:740
 msgid "Show Category"
 msgstr ""
 
-#: options.php:127
+#: options.php:139 options.php:741
 msgid "Check this box to show the category."
 msgstr ""
 
-#: options.php:132
+#: options.php:144 options.php:755
 msgid "Show Comment-Count"
 msgstr ""
 
-#: options.php:133
+#: options.php:145 options.php:756
 msgid "Check this box to show the comment count."
 msgstr ""
 
-#: options.php:138
+#: options.php:150 options.php:770
 msgid "Show Tags"
 msgstr ""
 
-#: options.php:139
+#: options.php:151 options.php:771
 msgid "Check this box to show tags on single articles below the content."
 msgstr ""
 
-#: options.php:144
+#: options.php:156 options.php:785
 msgid "Show Featured-Image"
 msgstr ""
 
-#: options.php:145
+#: options.php:157 options.php:786
 msgid "Check this box to show the featured image on single posts."
 msgstr ""
 
-#: options.php:153
-msgid "Mail Icon"
+#: options.php:165 options.php:446
+msgid "Email Address"
 msgstr ""
 
-#: options.php:154
+#: options.php:166
 msgid ""
 "Enter your Email Address if you like to display the icon at the bottom of "
 "the footer."
 msgstr ""
 
-#: options.php:159
-msgid "RSS Feed Icon"
+#: options.php:171 options.php:460
+msgid "RSS Feed Link"
 msgstr ""
 
-#: options.php:160
+#: options.php:172
 msgid ""
 "Enter the link to your RSS Feed if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:165
-msgid "Social: Behance Icon"
+#: options.php:177 options.php:474
+msgid "Behance Link"
 msgstr ""
 
-#: options.php:166
+#: options.php:178
 msgid ""
 "Enter the link to your Behance page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:171
-msgid "Social: Dribbble Icon"
+#: options.php:183 options.php:488
+msgid "Dribbble Link"
 msgstr ""
 
-#: options.php:172
+#: options.php:184
 msgid ""
 "Enter the link to your Dribbble page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:177
-msgid "Social: Facebook Icon"
+#: options.php:189 options.php:502
+msgid "Facebook Link"
 msgstr ""
 
-#: options.php:178
+#: options.php:190
 msgid ""
 "Enter the link to your Facebook page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:183
-msgid "Social: Instagram Icon"
+#: options.php:195 options.php:516
+msgid "Github Link"
 msgstr ""
 
-#: options.php:184
+#: options.php:196
+msgid ""
+"Enter the link to your Githup page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:201 options.php:530
+msgid "Instagram Link"
+msgstr ""
+
+#: options.php:202
 msgid ""
 "Enter the link to your Instagram page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:189
-msgid "Social: LinkedIn Icon"
+#: options.php:207 options.php:544
+msgid "LinkedIn Link"
 msgstr ""
 
-#: options.php:190
+#: options.php:208
 msgid ""
 "Enter the link to your LinkedIn page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:195
-msgid "Social: Pinterest Icon"
+#: options.php:213 options.php:558
+msgid "Pinterest Link"
 msgstr ""
 
-#: options.php:196
+#: options.php:214
 msgid ""
 "Enter the link to your Pinterest page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:201
-msgid "Social: SoundCloud Icon"
+#: options.php:219 options.php:572
+msgid "SoundCloud Link"
 msgstr ""
 
-#: options.php:202
+#: options.php:220
 msgid ""
 "Enter the link to your SoundCloud page if you like to display the icon at "
 "the bottom of the footer."
 msgstr ""
 
-#: options.php:207
-msgid "Social: Tumblr Icon"
+#: options.php:225 options.php:586
+msgid "Spotify Link"
 msgstr ""
 
-#: options.php:208
+#: options.php:226
+msgid ""
+"Enter the link to your Spotify profile if you like to display the icon at "
+"the bottom of the footer."
+msgstr ""
+
+#: options.php:231 options.php:600
+msgid "Tumblr Link"
+msgstr ""
+
+#: options.php:232
 msgid ""
 "Enter the link to your Tumblr page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:213
-msgid "Social: Twitter Icon"
+#: options.php:237 options.php:614
+msgid "Twitter Link"
 msgstr ""
 
-#: options.php:214
+#: options.php:238
 msgid ""
 "Enter the link to your Twitter page if you like to display the icon at the "
 "bottom of the footer."
 msgstr ""
 
-#: options.php:219
+#: options.php:243 options.php:628
+msgid "YouTube Link"
+msgstr ""
+
+#: options.php:244
+msgid ""
+"Enter the link to your YouTube page if you like to display the icon at the "
+"bottom of the footer."
+msgstr ""
+
+#: options.php:249
 msgid "Footer-credits"
 msgstr ""
 
-#: options.php:220
+#: options.php:250
 msgid "The text will appear below the footer."
 msgstr ""
 
-#: options.php:372
+#: options.php:430
 msgid "Change theme colors."
 msgstr ""
 
-#: search.php:11
+#: options.php:642
+msgid "Footer Credits"
+msgstr ""
+
+#: options.php:649
+msgid "Change footer meta."
+msgstr ""
+
+#: options.php:654
+msgid "Additional Options"
+msgstr ""
+
+#: options.php:793
+msgid "Adjust additional theme options."
+msgstr ""
+
+#: search.php:4
 msgid "Search Results"
 msgstr ""
 
-#: searchform.php:8
+#: searchform.php:1
 msgid "Type and press enter to search."
 msgstr ""
 
-#: template-parts/content-masonry.php:23
+#: template-parts/content-masonry.php:15
 msgid "Featured"
 msgstr ""
 
-#: template-parts/content-masonry.php:35 template-parts/content-page.php:28
-#: template-parts/content-single.php:29
+#: template-parts/content-masonry.php:28 template-parts/content-page.php:20
+#: template-parts/content-single.php:21
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/content-none.php:15
+#: template-parts/content-none.php:7
 msgid "Nothing here"
 msgstr ""
 
-#: template-parts/content-none.php:19
+#: template-parts/content-none.php:12
 msgid "Sorry, but what you are looking for could not be found."
 msgstr ""
 
@@ -916,7 +1136,7 @@ msgid "Kouki"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://kouki.felixdorner.de"
+msgid "https://felixdorner.de/kouki"
 msgstr ""
 
 #. Description of the plugin/theme

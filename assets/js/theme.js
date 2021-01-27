@@ -25,7 +25,7 @@ jQuery( document ).ready( function( $ ) {
 	//open/close primary navigation
 	$('.primary-nav-trigger').on('click', function(){
 		$('.menu-icon').toggleClass('is-clicked');
-	  $( "#menu" ).fadeToggle('fast');
+		$( "#menu" ).fadeToggle('fast');
 	});
 
 	/*--------------------------------------------------------------
@@ -69,16 +69,16 @@ jQuery( document ).ready( function( $ ) {
 
 	var galleries = document.querySelectorAll('.gallery');
 	for ( var i=0, len = galleries.length; i < len; i++ ) {
-	  var gallery = galleries[i];
-	  initMasonry( gallery );
+		var gallery = galleries[i];
+		initMasonry( gallery );
 	}
 	function initMasonry( container ) {
-	  var imgLoad = imagesLoaded( container, function() {
-	    new Masonry( container, {
-	      itemSelector: '.gallery-item',
-	      columnWidth: '.gallery-item'
-	    });
-	  });
+		var imgLoad = imagesLoaded( container, function() {
+			new Masonry( container, {
+				itemSelector: '.gallery-item',
+				columnWidth: '.gallery-item'
+			});
+		});
 	}
 
 });

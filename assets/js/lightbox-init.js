@@ -6,7 +6,9 @@ jQuery( document ).ready( function( $ ) {
 
 	"use strict";
 
-	$(".entry-content a").attr('data-imagelightbox', '');
+	$(".gallery .gallery-icon > a").attr('data-imagelightbox', '');
+	$(".wp-block-image > a").attr('data-imagelightbox', '');
+	$(".wp-block-gallery figure > a").attr('data-imagelightbox', '');
 
 	// Activity Indicator
 	var activityIndicatorOn = function() {

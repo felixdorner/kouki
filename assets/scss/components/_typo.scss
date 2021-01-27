@@ -6,10 +6,10 @@
  * Typo Helpers
  */
 .t-lightweight {
-  font-weight: 300;
+	font-weight: 300;
 }
 .t-italic {
-  font-style: italic;
+	font-style: italic;
 }
 
 /**
@@ -20,54 +20,58 @@ button,
 input,
 select,
 textarea {
-  font-size: $base-font-size;
-  font-family: $base-font-family;
-  line-height: $base-line-height;
+	font-size: $base-font-size;
+	font-family: $base-font-family;
+	line-height: $base-line-height;
 
-  text-rendering: optimizeLegibility;
+	text-rendering: optimizeLegibility;
 }
 small {
-  font-size: $small-font-size;
+	font-size: $small-font-size;
 }
 big {
-  font-size: $big-font-size;
+	font-size: $big-font-size;
 }
 b, strong {
-  font-weight: bold;
+	font-weight: bold;
 }
-dfn, cite, em, i {
-  font-style: italic;
+dfn, em, i {
+	font-style: italic;
+}
+cite {
+	display: block;
+	font-size: $small-font-size;
 }
 pre {
-  overflow: auto;
-  padding: 30px;
-  max-width: 100%;
-  background: #f5f5f5;
-  font-family: $pre-font-family;
+	overflow: auto;
+	padding: $spacing-s;
+	max-width: 100%;
+	background: $light-gray;
+	font-family: $pre-font-family;
 }
 code, kbd, tt, var {
-  font-family: $code-font-family;
+	font-family: $code-font-family;
 }
 abbr, acronym {
-  border-bottom: 1px dotted #666;
-  cursor: help;
+	border-bottom: 1px dotted #666;
+	cursor: help;
 }
 mark, ins {
-  background: #fff9c0;
-  text-decoration: none;
+	background: #fff9c0;
+	text-decoration: none;
 }
 sup, sub {
-  position: relative;
-  height: 0;
-  vertical-align: baseline;
-  font-size: 75%;
-  line-height: 0;
+	position: relative;
+	height: 0;
+	vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
 }
 sup {
-  bottom: 1ex;
+	bottom: 1ex;
 }
 sub {
-  top: .5ex;
+	top: .5ex;
 }
 
 /**
@@ -79,54 +83,52 @@ h3,
 h4,
 h5,
 h6,
-blockquote,
+blockquote p,
 q,
 .widgetTitle {
-  clear: both;
-  font-family: $headings-font-family;
-  line-height: $headings-line-height;
-  word-wrap: break-word;
+	clear: both;
+	font-family: $headings-font-family;
+	line-height: $headings-line-height;
+	word-wrap: break-word;
 }
 h1 {
-  font-size: 3.8em;
+	font-size: 3.8em;
 }
 h2 {
-  font-size: 2.4em;
-  line-height: 1.2em;
+	font-size: 2.4em;
+	line-height: 1.2em;
 }
 h2.meta {
-  font-family: $base-font-family;
+	font-family: $base-font-family;
 }
 h3 {
-  font-size: 2em;
+	font-size: 2em;
 }
 h4 {
-  font-size: 1.6em;
+	font-size: 1.6em;
 }
 h5 {
-  font-size: 1.4em;
+	font-size: 1.4em;
 }
 h6 {
-  font-size: 1.2em;
+	font-size: 1.2em;
 }
-blockquote, q {
-  font-size: 2em;
+blockquote p, q {
+	font-size: 1.4em;
 }
 
 /**
  * Theme-related typo styles
  */
 .meta, .more-link {
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-weight: 300;
-  font-size: .8em;
+	font-weight: 300;
+	font-size: .9em;
 }
 .hentry-masonry header {
-  margin-bottom: 30px;
+	margin-bottom: $spacing-s;
 }
 .hentry-masonry header p {
-  margin: 15px 0 0;
+	margin: $spacing-xs 0 0;
 }
 .entry-content h1,
 .entry-content h2,
@@ -140,73 +142,73 @@ blockquote, q {
 .comment-content h4,
 .comment-content h5,
 .comment-content h6, {
-  margin-bottom: 30px;
+	margin-bottom: $spacing-s;
 }
 .entry-content header h1,
 .entry-content header h2 {
-  margin-bottom: 8px;
+	margin-bottom: 8px;
 }
 
 /**
  * Responsive settings for typo
  */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
-  /* Headings */
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 2em;
-  }
-  h3 {
-    font-size: 1.8em;
-  }
-  h4 {
-    font-size: 1.6em;
-  }
-  h5 {
-    font-size: 1.4em;
-  }
-  h6 {
-    font-size: 1.2em;
-  }
-  blockquote, q {
-    font-size: 1.6em;
-  }
+	/* Headings */
+	h1 {
+		font-size: 3em;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	h3 {
+		font-size: 1.8em;
+	}
+	h4 {
+		font-size: 1.6em;
+	}
+	h5 {
+		font-size: 1.4em;
+	}
+	h6 {
+		font-size: 1.2em;
+	}
+	blockquote p, q {
+		font-size: 1.6em;
+	}
 }
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
 
-  /* Globals */
-  pre {
-    padding: 15px;
-  }
+	/* Globals */
+	pre {
+		padding: $spacing-xs;
+	}
 
-  /* Headings */
-  h1 {
-    font-size: 2.4em;
-  }
-  h2 {
-    font-size: 1.8em;
-  }
-  h3 {
-    font-size: 1.6em;
-  }
-  h4 {
-    font-size: 1.4em;
-  }
-  h5 {
-    font-size: 1.2em;
-  }
-  h6 {
-    font-size: 1em;
-  }
-  blockquote, q {
-    font-size: 1.2em;
-  }
+	/* Headings */
+	h1 {
+		font-size: 2.4em;
+	}
+	h2 {
+		font-size: 1.8em;
+	}
+	h3 {
+		font-size: 1.6em;
+	}
+	h4 {
+		font-size: 1.4em;
+	}
+	h5 {
+		font-size: 1.2em;
+	}
+	h6 {
+		font-size: 1em;
+	}
+	blockquote p, q {
+		font-size: 1.2em;
+	}
 
-  /* Theme-related typo styles */
-  .meta {
-    font-size: .7em;
-  }
+	/* Theme-related typo styles */
+	.meta {
+		font-size: .7em;
+	}
 }

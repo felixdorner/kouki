@@ -1,13 +1,13 @@
 === Kouki WordPress Theme ===
 
 Contributers: Felix Dorner
-Requires at least: 3.8
-Tested up to: 4.9.6
-Version: 2.1.0
 Donate link: https://felixdorner.de
+Requires at least: 4.5
+Requires PHP: 5.6
+Tested up to: 5.6
+Stable tag: trunk
 License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: one-column, grid-layout, custom-colors, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, blog, food-and-drink, holiday, news, photography, portfolio
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
@@ -46,16 +46,6 @@ You can control which meta data to show if you activate the theme options plugin
 
 Yes you can - but you'll need to install/activate the Jetpack Plugin.
 
-= How to implement Kouki's custom buttons? =
-
-1. Add a link in the editor.
-2. Switch from visual to text mode.
-3. Add the desired classes to the link:
-	a. btn btn-neutral
-	b. btn btn-positive
-	c. btn btn-negative
-	d. btn btn-extra
-
 == Contributing ==
 
 = Found a bug? =
@@ -70,7 +60,7 @@ Get involved here: https://translate.wordpress.org/projects/wp-themes/kouki
 
 == Copyright ==
 
-Kouki WordPress Theme, Copyright 2018 WordPress.org
+Kouki WordPress Theme, Copyright 2015 - 2021 WordPress.org
 Kouki is distributed under the terms of the GNU GPL
 
 This program is free software: you can redistribute it and/or modify
@@ -85,13 +75,13 @@ GNU General Public License for more details.
 
 Kouki bundles the following third-party resources:
 
-ImageLightbox, Copyright 2016 Osvaldas Valutis
+ImageLightbox, Copyright 2021 Osvaldas Valutis
 License: MIT
 Source: https://github.com/osvaldasvalutis/imageLightbox.js
 
-Photos in screenshot belong to freefoodphotos.com
-License: CC BY 3.0
-Source: http://freefoodphotos.com/
+Photos in screenshot belong to Foodiesfeed
+License: CC0
+Source: https://www.foodiesfeed.com/
 
 TGM Activation Plugin
 License: GNU GPL v2 or later

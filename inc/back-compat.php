@@ -1,54 +1,42 @@
 <?php
+
+/*----------------------------------------------------------------------------*/
+/* Kouki back compat functionality
+/*----------------------------------------------------------------------------*/
+
 /**
- * Kouki back compat functionality
- *
- * @package kouki
- * @since 1.0.0
+ * Prevents switching to this theme on old versions of WordPress.
+ * Switches to the default theme.
  */
+function kouki_switch_theme() {switch_theme( WP_DEFAULT_THEME );unset( $_GET['activated'] );
+	add_action( 'admin_notices', 'kouki_upgrade_notice' );
+}
+add_action( 'after_switch_theme', 'kouki_switch_theme' );
 
-if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
-	/**
-	 * Filters wp_title to print a neat <title> tag based on what is being viewed.
-	 *
-	 * @param string $title Default title text for current view.
-	 * @param string $sep Optional separator.
-	 * @return string The filtered title.	 
-	 */
-	function kouki_wp_title( $title, $sep ) {
-		if ( is_feed() ) {
-			return $title;
-		}
+/**
+ * Adds a message for unsuccessful theme switch.
+ */
+function kouki_upgrade_notice() {
+	$message = sprintf( __( 'Theme requires at least WordPress version 4.5. You are running version %s. Please upgrade and try again.', 'kouki' ), $GLOBALS['wp_version'] );
+	printf( '<div class="error"><p>%s</p></div>', $message );
+}
 
-		global $page, $paged;
+/**
+ * Prevents the Customizer from being loaded on WordPress versions prior to 4.5.
+ */
+function kouki_customize() {
+	wp_die( sprintf( __( 'Theme requires at least WordPress version 4.5. You are running version %s. Please upgrade and try again.', 'kouki' ), $GLOBALS['wp_version'] ), '', array(
+		'back_link' => true,
+	) );
+}
+add_action( 'load-customize.php', 'kouki_customize' );
 
-		// Add the blog name
-		$title .= get_bloginfo( 'name', 'display' );
-
-		// Add the blog description for the home/front page.
-		$site_description = get_bloginfo( 'description', 'display' );
-		if ( $site_description && ( is_home() || is_front_page() ) ) {
-			$title .= " $sep $site_description";
-		}
-
-		// Add a page number if necessary:
-		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-			$title .= " $sep " . sprintf( __( 'Page %s', 'kouki' ), max( $paged, $page ) );
-		}
-
-		return $title;
+/**
+ * Prevents the Theme Preview from being loaded on WordPress versions prior to 4.5.
+ */
+function kouki_preview() {
+	if ( isset( $_GET['preview'] ) ) {
+		wp_die( sprintf( __( 'Theme requires at least WordPress version 4.5. You are running version %s. Please upgrade and try again.', 'kouki' ), $GLOBALS['wp_version'] ) );
 	}
-	add_filter( 'wp_title', 'kouki_wp_title', 10, 2 );
-
-	/**
-	 * Title shim for sites older than WordPress 4.1.
-	 *
-	 * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
-	 * @todo Remove this function when WordPress 4.3 is released.
-	 */
-	function kouki_render_title() {
-		?>
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
-		<?php
-	}
-	add_action( 'wp_head', 'kouki_render_title' );
-endif;
+}
+add_action( 'template_redirect', 'kouki_preview' );

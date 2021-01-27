@@ -3,17 +3,17 @@
  */
 
 a {
-  color: #c0c0c0;
-  text-decoration: none;
-  -webkit-transition: all .2s linear;
-     -moz-transition: all .2s linear;
-      -ms-transition: all .2s linear;
-       -o-transition: all .2s linear;
-          transition: all .2s linear;
+	color: $gray;
+	text-decoration: none;
+	-webkit-transition: all .2s linear;
+		 -moz-transition: all .2s linear;
+			-ms-transition: all .2s linear;
+			 -o-transition: all .2s linear;
+					transition: all .2s linear;
 }
 a:hover,
 input[type=submit]:hover {
-  opacity: .8;
+	opacity: .8;
 }
 h1 a,
 h2 a,
@@ -26,6 +26,7 @@ h2 a:hover,
 h3 a:hover,
 h4 a:hover,
 h5 a:hover,
-h6 a:hover {
-  color: $base-font-color;
+h6 a:hover,
+.custom-logo-link {
+	color: $base-font-color;
 }

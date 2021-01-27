@@ -10,17 +10,17 @@
 .nav-links a,
 input[type=submit],
 #infinite-handle span {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 2px;
-  background: none;
-  text-decoration: none;
-  font-weight: 300;
-  -webkit-transition: all .2s linear;
-     -moz-transition: all .2s linear;
-      -ms-transition: all .2s linear;
-       -o-transition: all .2s linear;
-          transition: all .2s linear;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 2px;
+	background: none;
+	text-decoration: none;
+	font-weight: 300;
+	-webkit-transition: all .2s linear;
+		 -moz-transition: all .2s linear;
+			-ms-transition: all .2s linear;
+			 -o-transition: all .2s linear;
+					transition: all .2s linear;
 }
 
 /**
@@ -30,8 +30,8 @@ a.btn-neutral,
 .pagination a,
 .nav-links a,
 #infinite-handle span {
-  border: 1px solid #151515;
-  color: #151515;
+	border: 1px solid #151515;
+	color: #151515;
 }
 
 /**
@@ -39,24 +39,24 @@ a.btn-neutral,
  */
 a.btn-positive,
 input[type=submit] {
-  border: 1px solid #2ecc71;
-  color: #2ecc71;
+	border: 1px solid #2ecc71;
+	color: #2ecc71;
 }
 
 /**
  * Negative button-color
  */
 a.btn-negative {
-  border: 1px solid #ff4136;
-  color: #ff4136;
+	border: 1px solid #ff4136;
+	color: #ff4136;
 }
 
 /**
  * Extra button-color
  */
 a.btn-extra {
-  border: 1px solid #0d8eff;
-  color: #0d8eff;
+	border: 1px solid #0d8eff;
+	color: #0d8eff;
 }
 
 /**
@@ -67,6 +67,6 @@ a.btn-extra {
 .nav-links a:hover,
 input[type=submit]:hover,
 #infinite-handle span:hover {
-  opacity: .4;
-  cursor: pointer;
+	opacity: .4;
+	cursor: pointer;
 }

@@ -1,18 +1,6 @@
-<?php
-/**
- * The template to display posts in archives.
- *
- * @package kouki
- */
-
-get_header(); ?>
-
-
+<?php get_header(); ?>
 
 <?php
-/**
- * Here we check which title to display.
- */
 global $post;
 if( is_archive() && have_posts() ) : ?>
 
@@ -36,10 +24,10 @@ if( is_archive() && have_posts() ) : ?>
 
 		elseif( is_author() ) :
 			$current_author = $wp_query->get_queried_object();
-			_e( 'Author: ', 'kouki' ); echo $current_author->display_name;
+			esc_html_e( 'Author: ', 'kouki' ); echo $current_author->display_name;
 
 		elseif( isset( $_GET['paged'] ) && !empty( $_GET['paged'] ) ) :
-			_e( 'Archive', 'kouki' );
+			esc_html_e( 'Archive', 'kouki' );
 
 		else :
 			the_title();
@@ -50,27 +38,23 @@ if( is_archive() && have_posts() ) : ?>
 
 <?php endif; ?>
 
-<main>
+<?php if ( have_posts() ) : ?>
 
-		<?php if ( have_posts() ) : ?>
+	<div class="masonry-wrapper">
+		<div id="content" class="js-masonry">
+			<?php while ( have_posts() ) : the_post();
+				get_template_part( 'template-parts/content', 'masonry' );
+			endwhile; ?>
+		</div>
+	</div>
 
-			<div id="content" class="js-masonry">
-				<?php while ( have_posts() ) : the_post();
-					get_template_part( 'template-parts/content', 'masonry' );
-				endwhile; ?>
-			</div>
+	<?php kouki_paging_nav();
 
-			<?php kouki_paging_nav();
+else :
 
-		else :
+	get_template_part( 'template-parts/content', 'none' );
 
-			/**
-			 * If no posts, include the "No posts found" template.
-			 */
-			get_template_part( 'template-parts/content', 'none' );
+endif; ?>
 
-		endif; ?>
-
-</main>
 
 <?php get_footer(); ?>

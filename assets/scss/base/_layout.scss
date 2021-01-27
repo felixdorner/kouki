@@ -3,30 +3,19 @@
  */
 
 /**
- * Wordpress specific classes for the content-width theme-feature
- * Reference: http://codex.wordpress.org/Content_Width
- */
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-  max-width: 100%;
-  height: auto;
-}
-
-/**
  * Set the frame
  */
-header, .wrapper {
+header,
+.wrapper {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
   width: 100%;
 }
 
-.wrapper {
-  border-radius: 2px;
+.masonry-wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .hentry-masonry {
@@ -35,14 +24,8 @@ header, .wrapper {
   display: inline-block;
 
   @include media($medium-screen) {
-    padding: 30px;
+    padding: 30px 15px;
     width: 50%;
-    &:nth-child(odd) {
-      padding-right: 15px;
-    }
-    &:nth-child(even) {
-      padding-left: 15px;
-    }
   }
 }
 
@@ -82,8 +65,15 @@ header, .wrapper {
 aside {
   @include span-columns(12 of 12);
 
-  @include media($medium-screen) {
+	@include media($medium-screen) {
+    @include span-columns(6 of 12);
+    @include omega(2n);
+    @include clearfix;
+  }
+
+  @include media($large-screen) {
     @include span-columns(4 of 12);
+		@include omega-reset(2n);
     @include omega(3n);
     @include clearfix;
   }
@@ -107,16 +97,6 @@ aside {
 .col-centered {
   float: none;
   margin: 0 auto;
-}
-
-/**
- * Floats
- */
-.f-left {
-  float: left;
-}
-.f-right {
-  float: right;
 }
 
 /**
@@ -192,48 +172,22 @@ aside {
 .m-1-0-0 {
   margin-top: 30px;
 }
-.full .m-top-bar {
-  /* Should have the same height as the fixed top-bar */
+.m-top-bar {
   margin-top: 130px;
 }
-.m-top-bar {
-  /* Should have the same height as the fixed top-bar */
-  margin-top: 129px;
+
+blockquote p:last-of-type {
+  margin-bottom: 0px;
 }
 
-/* Global margins */
-p, pre, address {
-  margin-bottom: 30px;
-}
-
-/**
- * Positioning helpers
- */
-.v-top {
-  vertical-align: top;
-}
-.inline {
-  display: inline-block;
-}
-
-/**
- * Flexbox centering
- */
-.flexbox {
-  display: -webkit-box;
-  display:    -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display:         flex;
-}
-.flexbox-child {
-  margin: auto;
+blockquote > cite {
+  margin-top: 15px;
 }
 
 /**
  * Responsive settings for the layout
  */
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
   /* Column helpers */
   .col-6, .col-4 {
@@ -251,7 +205,7 @@ p, pre, address {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
 
   /* Paddings */
   .pad-0-0-1 {
@@ -308,9 +262,6 @@ p, pre, address {
 
   /* Margins */
   .m-top-bar {
-    margin-top: 99px;
-  }
-  p, pre {
-    margin-bottom: 15px;
+    margin-top: 100px;
   }
 }

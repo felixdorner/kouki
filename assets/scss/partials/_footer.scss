@@ -1,72 +1,63 @@
-/******************** 
+/********************
  * 3.3 Footer
  */
 
 footer hr {
-  border-color: #DFDFDF;
-  border-width: 1px;
-  margin: 0 auto 15px;
-  width: 4em;
+	margin: 0 auto 15px;
+	width: 96px;
 }
 
-.footer-links {    
-  padding: $spacing-m 0 0;
-  text-align: center;
-  font-size: .8em;
-  font-weight: 300;
-  color: black;
+.footer-links {
+	padding: $spacing-m 0 0;
+	text-align: center;
+	font-weight: 300;
+	color: black;
 
-  aside {
-    margin-bottom: $spacing-m;    
-  }
+	aside {
+		margin-bottom: $spacing-m;
+	}
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding:0;
-  }
+	ul {
+		list-style: none;
+		margin: 0;
+		padding:0;
+	}
 
-  li {
-    margin-bottom: 8px;
-  }
+	li {
+		margin-bottom: 8px;
+	}
 
-  .sub-menu li {
-    margin-bottom: 0;
-    a:before {
-      content: '— ';
-    }
-  }
+	.sub-menu li {
+		font-size: .8em;
+		margin-bottom: 0;
+	}
 
-  a {
-    color: $gray;
-    width: 100%;
-  }
-
-  .widget-title {
-    color: $base-font-color;
-    font-size: 1.2em;
-    margin-bottom: 1em;
-    text-transform: uppercase;
-  }
+	.widget-title {
+		color: $base-font-color;
+		font-size: 1.2em;
+		margin-bottom: 1em;
+	}
 }
 
 /**
  * Social Icons
  */
-.social i {
-  display: inline-block;
-  font-size: 1.6em;
-  padding: 15px 10px;
+.social a {
+	display: inline-block;
+	padding: 15px 10px;
+	line-height: 1;
+	color: $gray;
+}
+
+.social svg {
+	width: auto;
+	height: 24px;
+}
+
+.social svg path {
+	fill: $gray;
 }
 
 footer .meta {
-    font-size: .7em;
-  }
-
-/**
- * Responsive settings for the footer
- */
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 480px) {
+	font-size: .9em;
 }

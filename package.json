@@ -1,14 +1,14 @@
 {
-  "name": "kouki",
-  "version": "2.0.0",
-  "devDependencies": {
-    "grunt": "1.0.1",
-    "grunt-autoprefixer": "3.0.4",
-    "grunt-browser-sync": "2.2.0",
-    "grunt-contrib-clean": "1.0.0",
-    "grunt-contrib-copy": "1.0.0",
-    "grunt-contrib-sass": "1.0.0",
-    "grunt-contrib-watch": "1.0.0",
-    "load-grunt-tasks": "3.5.2"
-  }
+	"name": "kouki",
+	"version": "3.0.0",
+	"devDependencies": {
+		"grunt": "1.3.0",
+		"grunt-autoprefixer": "3.0.4",
+		"grunt-browser-sync": "2.2.0",
+		"grunt-contrib-clean": "2.0.0",
+		"grunt-contrib-copy": "1.0.0",
+		"grunt-contrib-sass": "2.0.0",
+		"grunt-contrib-watch": "1.1.0",
+		"load-grunt-tasks": "5.1.0"
+	}
 }

@@ -1,5 +1,21 @@
 # Kouki Changelog
 
+### *20210127* - 3.0.0
+* **New** Full Block-Editor support
+* **New** New options to set font-weights for custom fonts
+* **New** Added new social networks as options to the footer
+* **New** Custom logo upload within the Customizer
+* **Tweak** Now, all theme options are also represented in the Customizer
+* **Tweak** Removed FontAwesome and implemented inline SVG icons instead
+* **Tweak** Improved accessibility
+* **Tweak** Tweaked default options a little
+* **Dev** New and bigger theme screenshot
+* **Dev** Refactored some code (e.g. added body_open class, style improvements, etc.)
+* **Dev** Updated scripts
+* **Dev** Updated NPM dependencies
+* **Dev** Aligned editor whitespace (tabs instead of spaces) with WordPress coding standards
+* **Dev** Updated POT Language file
+
 ### *20180618* - 2.1.0
 * **Tweak** Refinded readme texts
 * **Dev** Removed editor styles to reduce unnecessary maintenance work

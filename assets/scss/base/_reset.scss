@@ -1,59 +1,62 @@
 /********************
- * 1.1 Reset 
+ * 1.1 Reset
  */
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  border: 0;
-  vertical-align: baseline;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
 }
 html {
-  overflow-y: scroll;
-  font-size: 62.5%;
+	overflow-y: scroll;
+	font-size: 62.5%;
 
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
 }
 body {
-  position: relative;
-  overflow-x: hidden;
-  background: #fff;
+	position: relative;
+	overflow-x: hidden;
+	background: #fff;
 }
 *, *:before, *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+					box-sizing: border-box;
 }
 article, aside, details, figcaption, figure, footer, header, nav, section {
-  display: block;
+	display: block;
 }
 table {
-  border-spacing: 0;
-  /* tables still need 'cellspacing="0"' in the markup */
-  border-collapse: separate;
+	border-spacing: 0;
+	/* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
 }
 caption, th, td {
-  text-align: left;
-  font-weight: normal;
+	text-align: left;
+	font-weight: normal;
 }
 blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
+	content: '';
 }
 blockquote, q {
-  quotes: '' '';
+	quotes: '' '';
 }
-a:focus {
-  outline: thin dotted;
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+	outline: 1px dashed;
 }
 a:hover, a:active {
-  outline: 0;
+	outline: 0;
 }
 a img {
-  border: 0;
+	border: 0;
 }

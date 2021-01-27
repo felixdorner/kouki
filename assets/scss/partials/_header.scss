@@ -1,4 +1,4 @@
-/******************** 
+/********************
  * 3.1 Header
  */
 
@@ -6,106 +6,91 @@
  * Layout of the top-bar wrapper
  */
 .top-bar {
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  padding: 30px;
-  -webkit-transition: all .2s;
-     -moz-transition: all .2s;
-      -ms-transition: all .2s;
-       -o-transition: all .2s;
-          transition: all .2s;
-  /* Hardware accelerate transitions */
-  -webkit-transform: translateZ(0);
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	padding: 30px;
+	-webkit-transition: all .2s;
+		 -moz-transition: all .2s;
+			-ms-transition: all .2s;
+			 -o-transition: all .2s;
+					transition: all .2s;
+	/* Hardware accelerate transitions */
+	-webkit-transform: translateZ(0);
 }
 .admin-bar .top-bar {
-  top: 32px;
+	top: 32px;
 }
 .tb-large {
-  padding: 30px;
-  -webkit-transition: all .2s;
-     -moz-transition: all .2s;
-      -ms-transition: all .2s;
-       -o-transition: all .2s;
-          transition: all .2s;
-  /* Hardware accelerate transitions */
-  -webkit-transform: translateZ(0);
+	padding: 30px;
+	-webkit-transition: all .2s;
+		 -moz-transition: all .2s;
+			-ms-transition: all .2s;
+			 -o-transition: all .2s;
+					transition: all .2s;
+	/* Hardware accelerate transitions */
+	-webkit-transform: translateZ(0);
 }
 .full .top-bar,
 .full .tb-large {
-  border-bottom: 1px solid rgba(0,0,0,.05);
+	border-bottom: 1px solid rgba(0,0,0,.05);
 }
-// .home .top-bar,
-// .home .tb-large {
-//   border: none;
-// }
 .tb-small {
-  padding: 0px 30px 12px;
-  background: rgba(255,255,255,.8);
-  -webkit-transition: all .2s;
-     -moz-transition: all .2s;
-      -ms-transition: all .2s;
-       -o-transition: all .2s;
-          transition: all .2s;
-  /* Hardware accelerate transitions */
-  -webkit-transform: translateZ(0);
+	padding: 0px 30px 12px;
+	background: rgba(255,255,255,.8);
+	-webkit-transition: all .2s;
+		 -moz-transition: all .2s;
+			-ms-transition: all .2s;
+			 -o-transition: all .2s;
+					transition: all .2s;
+	/* Hardware accelerate transitions */
+	-webkit-transform: translateZ(0);
 }
 
 /**
  * Layout of branding in top-bar
  */
 .tb-logo {
-  float: left;
-  width: 80%;
+	float: left;
+	width: 80%;
 }
 
 .tb-logo h1 {
-  float: left;
-  clear: right;
-  margin-top: 12px;
-  text-align: left;
-  font-size: 1.6em;
+	float: left;
+	clear: right;
+	margin-top: 11px;
+	text-align: left;
+	font-size: 1.6em;
 }
 .tb-logo img {
-  float: left;
-  margin: 16px 15px 0 0;
-  max-height: 35px;
-  width: auto;
-  text-align: left;
+	float: left;
+	margin: 10px 8px 0 0;
+	max-height: 36px;
+	width: auto;
+	text-align: left;
 }
 
 /**
  * Container holding the toggle menu
  */
 .navigation-toggle-wrapper {
-  position: relative;
-  float: right;
-  width: 20%;
-  text-align: right;
+	position: relative;
+	float: right;
+	width: 20%;
+	text-align: right;
 }
 
 /**
  * Responsive settings for the top-bar
  */
-@media only screen and (max-width: 768px) {
-}
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
 
-  /* Layout of the top-bar wrapper */
-  .top-bar, .tb-large {
-    padding: 15px;
-  }
-  .tb-small {
-    padding: 0 15px 12px;
-  }
+	/* Layout of the top-bar wrapper */
+	.top-bar, .tb-large {
+		padding: 15px;
+	}
+	.tb-small {
+		padding: 0 15px 12px;
+	}
 
-  /* Layout of branding in top-bar */
-  .tb-logo img {
-    margin: 18px 10px 0 0;
-    max-height: 30px;
-  }
-  .tb-logo h1 {
-    margin-top: 12px;
-    font-size: 1.4em;
-  }
 }

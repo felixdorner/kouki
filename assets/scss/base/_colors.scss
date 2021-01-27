@@ -6,31 +6,28 @@
  * Globals
  */
 body {
-  color: $base-font-color;
-  background: $base-bg-color;
+	color: $base-font-color;
+	background: $base-bg-color;
 }
 
 /**
  * Grid
  */
 .wrapper {
-  background: $wrapper-bg-color;
+	background: $wrapper-bg-color;
 }
 
 /**
  * Content
  */
 .meta {
-  color: $gray;
+	color: $gray;
 }
 
 /**
  * Footer
  */
 footer {
-  color: $gray;
-  background: $base-bg-color;
-}
-.call-to-action {
-  background: $medium-gray;
+	color: $gray;
+	background: $base-bg-color;
 }

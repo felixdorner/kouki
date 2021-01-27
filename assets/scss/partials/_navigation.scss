@@ -1,4 +1,4 @@
-/******************** 
+/********************
  * 3.2 Navigation Toggle
  */
 
@@ -7,169 +7,168 @@
 $menu-icon-color: #151515;
 
 .primary-nav-trigger {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 4px;
-  height: 50px;
-  width: 50px;  
-  z-index: 99999;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 4px;
+	height: 50px;
+	width: 50px;
+	z-index: 99999;
+	background: transparent;
+	border: none;
+	cursor: pointer;
 
-  .menu-icon {
-    /* this span is the central line of the menu icon */
-    display: inline-block;
-    position: absolute;
-    @include center;
-    width: 25px;
-    height: 2px;
-    border-radius: 2px;
-    background-color: $menu-icon-color;
-    @include transition(background-color .3s);
+	.menu-icon {
+		/* this span is the central line of the menu icon */
+		display: inline-block;
+		position: absolute;
+		@include center;
+		width: 25px;
+		height: 2px;
+		border-radius: 2px;
+		background-color: $menu-icon-color;
+		@include transition(background-color .3s);
 
-    
-    /* these are the upper and lower lines in the menu icon */
-    &::before, &:after {
-      content: '';
-      width: 100%;
-      height: 100%; 
-      position: absolute;
-      background-color: $menu-icon-color;
-      right: 0;
 
-      -webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
-      -moz-transition: -moz-transform .3s, top .3s, background-color 0s;
-      transition: transform .3s, top .3s, background-color 0s;
-    }
-    
-    &::before {
-      top: -7px;
-    }
+		/* these are the upper and lower lines in the menu icon */
+		&::before, &:after {
+			content: '';
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: $menu-icon-color;
+			right: 0;
 
-    &::after {
-      top: 7px;
-    }
+			-webkit-transition: -webkit-transform .3s, top .3s, background-color 0s;
+			-moz-transition: -moz-transform .3s, top .3s, background-color 0s;
+			transition: transform .3s, top .3s, background-color 0s;
+		}
 
-    &.is-clicked {
-      background-color: transparent;
+		&::before {
+			top: -7px;
+		}
 
-      &::before, &::after {
-        background-color: $menu-icon-color;
-      }
+		&::after {
+			top: 7px;
+		}
 
-      &::before {
-        top: 0;
-        @include transform(rotate(135deg));
-      }
+		&.is-clicked {
+			background-color: transparent;
 
-      &::after {
-        top: 0;
-        @include transform(rotate(225deg));
-      }
-    }
-    
-  }
+			&::before, &::after {
+				background-color: $menu-icon-color;
+			}
+
+			&::before {
+				top: 0;
+				@include transform(rotate(135deg));
+			}
+
+			&::after {
+				top: 0;
+				@include transform(rotate(225deg));
+			}
+		}
+
+	}
 
 }
 
 /* Menu Appearance*/
 
 #menu {
-  position: absolute;
-  z-index: 99999;
-  display: none;
-  right: 0; 
-  top: 60px; 
-  
-  @include media($medium-screen) {
-    right: -20px;
-  }
+	position: absolute;
+	z-index: 99999;
+	display: none;
+	right: 0;
+	top: 60px;
 
-   @include media($large-screen) {
-    right: -20px;
-  }
+	@include media($medium-screen) {
+		right: -20px;
+	}
+
+	 @include media($large-screen) {
+		right: -20px;
+	}
 
 }
 #menu ul, #menu li, #menu li a {
-  display: block;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 #menu > ul {
-  padding: 15px 30px;
-  min-width: 200px;
-  background: #151515;
-  text-align: right;
-  border-radius: 4px;
-  overflow-y: scroll;
-  max-height: 80vh;
+	padding: 15px 30px;
+	min-width: 200px;
+	background: #151515;
+	text-align: right;
+	border-radius: 4px;
+	overflow-y: scroll;
+	max-height: 80vh;
 }
 #menu li a {
-  padding: 10px 0;
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: all .2s;
-     -moz-transition: all .2s;
-       -o-transition: all .2s;
-          transition: all .2s;
-}
-#menu > ul > li > a {
-  //border-bottom: 1px solid rgba( 255, 255, 255, .1);
+	padding: 10px 0;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: all .2s;
+		 -moz-transition: all .2s;
+			 -o-transition: all .2s;
+					transition: all .2s;
 }
 #menu > ul > li.menu-item-has-children > a {
-  border: none;
+	border: none;
 }
 #menu > ul > li.menu-item-has-children > a:after,
 #menu > ul ul > li.menu-item-has-children > a:after {
-  top: 50%;
-  right: 0px;
-  margin-top: -6px;
-  margin-left: 4px;
-  height: auto;
-  content: '\f107';
-  font-family: 'FontAwesome';
-  line-height: 12px;
+	display: inline-block;
+	width: 10px;
+	height: 16px;
+	content: "";
+	background-image: url(./assets/img/angle-down.svg);
+	vertical-align: middle;
+	margin-left: 4px;
+	margin-bottom: 2px;
 }
-#menu li a:hover,
-#menu li a:focus {
-  opacity: .4;
+#menu li a:hover {
+	opacity: .6;
 }
 #menu ul ul {
-  padding-bottom: 10px;
-  //border-bottom: 1px solid rgba( 255, 255, 255, .1);
+	padding-bottom: 10px;
+	//border-bottom: 1px solid rgba( 255, 255, 255, .1);
 }
 #menu ul ul ul {
-  padding-bottom: 10px;
-  //border-bottom: 1px solid rgba( 255, 255, 255, .1);
-  font-size: .8em;
+	padding-bottom: 10px;
+	//border-bottom: 1px solid rgba( 255, 255, 255, .1);
+	font-size: .8em;
 }
 #menu ul ul li a,
 #menu ul ul ul li a {
-  padding: 2px 0;
-  font-size: .8em;
+	padding: 2px 0;
+	font-size: .8em;
 }
 
 /* Menu Detail - Triangle */
 
 #menu:after {
-  bottom: 100%;
-  right: 16px;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(21, 21, 21, 0);
-  border-bottom-color: #151515;
-  border-width: 10px;
-  margin-left: -10px;
-  
-  @include media($medium-screen) {
-    right: 35px;
-  }
+	bottom: 100%;
+	right: 16px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(21, 21, 21, 0);
+	border-bottom-color: #151515;
+	border-width: 10px;
+	margin-left: -10px;
 
-  @include media($large-screen) {
-    right: 35px;
-  }
+	@include media($medium-screen) {
+		right: 35px;
+	}
+
+	@include media($large-screen) {
+		right: 35px;
+	}
 }

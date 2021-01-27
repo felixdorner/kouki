@@ -1,70 +1,63 @@
 /********************
- * 1.2 Elements 
+ * 1.2 Elements
  */
 
 /**
  * Lists
  */
 ul, ol {
-  margin: 0 0 30px 30px;
+	margin: 0 0 30px 30px;
 }
 ul {
-  list-style: disc;
+	list-style: disc;
+}
+ul ul {
+	list-style: circle;
 }
 ol {
-  list-style: decimal;
+	list-style: decimal;
+}
+ol ol {
+	list-style: lower-alpha;
 }
 ul ul, ol ol, ul ol, ol ul {
-  margin: .6em 0 .6em 1.5em;
-}
-.post ul, .post ol {
-  line-height: 2em;
+	margin: .6em 0 .6em 1.5em;
 }
 
 /**
  * Tables
  */
 table {
-  margin-bottom: 5%;
-  padding: 0;
-  width: 100%;
-}
-table thead {
-  background: #f5f5f5;
+	width: 100%;
 }
 table th {
-  padding: 10px;
+	padding: 10px;
 }
-table thead th {  
-  font-weight: bold;
+table thead th {
+	font-weight: 700;
 }
-table td, #content table th {
-  padding: 10px;
+table td,
+table th {
+	padding: 10px;
 }
-table td {
-  border-bottom: solid 1px #f7f7f7;
-}
-table tr:last-child td {
-  border-bottom: none;
-}
-table tr:nth-child(even) {
-  background: #f5f5f5;
+table tbody tr:nth-child(odd) {
+	background: $light-gray;
 }
 
 /**
  * Definition Lists
  */
  dl {
-  margin: 0 0 30px;
+	margin: 0 0 30px;
  }
- dt { 
-  font-weight: bold; 
-  margin-bottom: 4px;
+ dt {
+	font-weight: bold;
+	margin-bottom: 4px;
 }
 dd {
-  border-bottom: 1px solid $medium-gray; 
-  padding-bottom: 4px; 
-  margin-bottom: 30px;
+	border-bottom: 1px solid $medium-gray;
+	padding-bottom: 4px;
+	margin-bottom: 30px;
 }
 
 /**
@@ -74,46 +67,50 @@ input[type=text],
 input[type=email],
 input[type=password],
 textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  background: #f5f5f5;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	background: #f5f5f5;
 }
 
-select { 
-  max-width:100%; 
+select {
+	max-width:100%;
 }
 
 /**
  * Media
  */
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
+img,
+picture,
+figure {
+	max-width: 100%;
+	height: auto;
+	margin: 0;
 }
 
-iframe, embed { 
-  max-width:100%; 
+embed,
+iframe,
+object {
+	max-width: 100%;
+	margin: 0;
 }
 
 /**
  * Other
  */
 hr {
-  margin: 5% 0;
-  height: 1px;
-  border: 0;
-  border-bottom: solid 1px #eee;
-  background-color: transparent;
+	margin: 60px 0;
+	height: 1px;
+	border: 0;
+	background-color: gray;
 }
 
 /**
  * Responsive settings for elements
  */
-@media only screen and (max-width: 480px) {
-  /* Lists */
-  ul, ol {
-    margin: 0 0 15px 15px;
-  }
+@media (max-width: 480px) {
+	/* Lists */
+	ul, ol {
+		margin: 0 0 15px 15px;
+	}
 }
