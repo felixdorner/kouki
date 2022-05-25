@@ -2,7 +2,7 @@
 	"name": "kouki",
 	"version": "3.0.0",
 	"devDependencies": {
-		"grunt": "1.3.0",
+		"grunt": "1.5.3",
 		"grunt-autoprefixer": "3.0.4",
 		"grunt-browser-sync": "2.2.0",
 		"grunt-contrib-clean": "2.0.0",
